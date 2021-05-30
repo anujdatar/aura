@@ -1,0 +1,76 @@
+@charset "utf-8";
+/*
+	CSS Document
+	Created by: Nilesh Dandige
+	Kruti Infomedia, Pune (India)
+	http://www.krutiinfomedia.com
+	Email: contact@krutiinfomedia.com
+*/
+html{margin:0px; padding:0px; border:0px;}
+div{margin:0px; padding:0px; border:0px;}
+img{margin:0px; padding:0px; border:0px;}
+form{margin:0px; padding:0px; border:0px;}
+#ServicesText table{ border-collapse:collapse}
+#ServicesText td{ padding:2px 0px 12px 5px;}
+#ServicesText th{ text-align:left; padding:2px 0px 2px 5px; border-bottom:#999999 2px solid; border-left:#999999 2px solid; background:#c8d5e3}
+
+h1, h2, h3, h4, h5, h6 {margin:0px; padding:0px; font-weight:normal}
+h1{font-size:22px; color:#314987; padding:5px 0px 12px 0px}
+h2{font-size:20px; color:#303030;}
+h3{font-size:13px; font-weight:bold; color: #FFFFFF; padding:5px 0px 10px 0px; text-align:center}
+h5{font-size:20px; color:#FF6600; text-align:right; width:210px; border-bottom:1px solid #acacac; padding:10px 0px 10px 0px; float:left; text-align:right;}
+h6{width:400px; height:30px; line-height:30px; float:left; padding-left:25px; font-size:30px; color:#768185;}
+
+body {margin:4px auto 10px auto; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:17px;}
+#mainContainer{ width:1000px; height:auto; margin:0px auto 0px auto; background:#FFFFFF; position:relative}
+#logo{ width:243px; height:111px; position:absolute; top:0px; left:25px; z-index:15 }
+/*////////////////////////////BANNER HOME [START]////////////////////////////////////*/
+#slideshowHome {width:1000px;	height:440px;}
+#slideshowHome DIV {position:absolute;	top:0px;	z-index:8;	opacity:0.0;	height:440px;}
+#slideshowHome DIV.active {	z-index:10;	opacity:1.0;}
+#slideshowHome DIV.last-active {z-index:9;}
+#slideshowHome DIV IMG {height:440px; display:block;}
+/*////////////////////////////BANNER HOME [END]////////////////////////////////////*/
+/*////////////////////////////BANNER INNER [START]////////////////////////////////////*/
+#slideshowInner {width:1000px;	height:250px;}
+#slideshowInner DIV {position:absolute;	top:0px;	z-index:8;	opacity:0.0;	height:250px;}
+#slideshowInner DIV.active {	z-index:10; opacity:1.0;}
+#slideshowInner DIV.last-active {z-index:9;}
+#slideshowInner DIV IMG {height:250px; display:block;}
+/*////////////////////////////BANNER INNER [END]////////////////////////////////////*/
+#main_menu_container{ width:1000px; height:31px; background:url(../images/menu_back.jpg) repeat-x; font-size:15px; line-height:31px; clear:both;}
+.main_menu{height:31px; float:left; border-right: #084990 1px solid; display:block}
+.main_menu a{ text-decoration:none; color:#FFFFFF; padding:0px 30px; display:block}
+.main_menu a:hover{ background:url(../images/menu_back_over.jpg) repeat-x; padding:0px 30px; display:block }
+.main_menu span{ background:url(../images/menu_back_over.jpg) repeat-x; padding:0px 30px; color:#FFFFFF; display:block }
+
+#subMenuHolder1{width:240px; height:500px; float:left; background:url(../images/services_back.jpg) left top no-repeat; text-align:center; padding-left:20px;}
+#subMenuHolder{width:240px; height:300px; float:left; background:url(../images/services_back.jpg) left top no-repeat; text-align:center; padding-left:20px}
+.submenu {width:210px; border-bottom:1px solid #acacac;	padding:10px 0px 10px 0px; font-size:13px; float:left; text-align:right; font-weight:bold}
+.submenu a {background:url(../images/sublink_bullet.jpg) right no-repeat; padding-right:15px; text-decoration:none; color:#333333}
+.submenu a:hover {color: #ff6600}
+.submenu span{color: #ff6600; padding-right:15px; background:url(../images/sublink_bullet_over.jpg) right no-repeat; }
+
+#ServicesHolder{width:680px; height:300px; float:right}
+#VideoHolder{width:450px; height:253px; float:left;}
+#ServicesText{width:220px; height:270px; float:right; text-align:left}
+
+
+
+#mainContentArea{width:950px; height:auto; margin:25px 25px 0px 25px; text-align:justify}
+#galleryHolder{width:950px; height:120px; padding:0px 25px 25px 25px;}
+.galleryIcon {width:128px; height:100px; float:left; background:#CCCCCC; margin:8px 8px 0px 0px}
+/*For logo scroll [START]*/
+#left {	width: 800px;	height: 100px;	overflow: hidden;	padding: 0px; float:right; font-size:15px; line-height:30px; 	}
+#left img {	height: 100px;	margin: 0px;	border: 0px;	clear:both;	}
+/*For logo scroll [END]*/
+#socialIconHolder{width:400px; height:30px; float:right; padding-right:25px; text-align:right}
+
+#footer_holder{ width:1000px; height:120px; line-height:30px; clear:both; background: url(../images/footer_back.jpg) repeat #768185; color:#FFFFFF; font-size:14px}
+
+#footerLeft, #footerMiddle, #footerRight {height:auto; float:left; padding-left:25px; padding-top:15px}
+#footerLeft{width:370px; height:auto; }
+#footerMiddle{width:300px; height:auto; }
+#footerRight{width:200px; height:auto; }
+
+#copyright{width:1000px; height:30px; font-size:10px; text-align:center; line-height:30px; background: url(../images/copyright.jpg) top no-repeat}
