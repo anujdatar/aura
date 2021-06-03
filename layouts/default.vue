@@ -1,6 +1,6 @@
 <template>
   <div class="bg-blue-gray-200">
-    <the-navigation />
+    <aura-navigation />
     <Nuxt />
   </div>
 </template>

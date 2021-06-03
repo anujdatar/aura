@@ -62,7 +62,7 @@
               Our Team
             </h2>
             <p class="home-info-text">
-              The team of Aura, comprising of 100+ qualified engineers and technicians, possesses a strong experience in the domains of development, marketing, engineering operations, projects and quality assurance.
+              Aura's team comprising of 100+ qualified engineers and technicians, possesses a strong experience in the domains of development, marketing, engineering operations, projects and quality assurance.
             </p>
             <p class="home-info-text">
               Aura Laser has presently spearheaded a major up scaling of its capacity in Metal Cutting &amp; fabrication with addition of workspace area, machineries like CNC Plasma Cutting, CNC Straightening, CNC Rolling and Robotic Welding to support its multi segmental growth.
@@ -84,7 +84,7 @@
     </div>
     <div class="relative bg-blue-gray-200 mt-auto">
       <the-slant color="text-blue-gray-200" />
-      <the-footer />
+      <aura-footer />
     </div>
   </div>
 </template>

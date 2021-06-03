@@ -80,7 +80,7 @@
     </div>
     <div class="relative bg-blue-gray-200 mt-auto">
       <the-slant color="text-blue-gray-200" />
-      <the-footer />
+      <aura-footer />
     </div>
   </div>
 </template>
