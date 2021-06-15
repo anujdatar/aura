@@ -1,12 +1,14 @@
 <template>
   <nav class="sticky top-0 z-50 w-full flex flex-row items-center justify-between h-12">
-    <nuxt-link to="/" class="flex flex-row pl-1 md:pl-8">
-      <img src="~/assets/images/aura_logo.png" alt="brand-logo" class="w-10 mr-2">
-      <strong class="text-3xl text-green-600 font-serif">{{ appTitle }}</strong>
+    <!-- site logo / brand -->
+    <nuxt-link to="/" class="flex flex-row pl-2 md:pl-8">
+      <img src="~/assets/images/aura_logo.png" alt="brand-logo" class="w-10 mr-2 pt-2 text-justify">
+      <strong class="text-3xl text-green-600 font-serif items-center flex">{{ appTitle }}</strong>
     </nuxt-link>
-    <div class="flex flex-row h-full justify-center items-center invisible md:visible pr-8">
+    <!-- site navigation links -->
+    <div class="flex flex-row h-full justify-center items-center hidden md:flex pr-8">
       <nuxt-link
-        v-for="(route, i) in routes"
+        v-for="(route, i) in appRoutes"
         :key="i"
         :to="route.path"
         :data-hover="route.title"
