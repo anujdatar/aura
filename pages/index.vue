@@ -39,7 +39,7 @@
 
     <div class="relative bg-white">
       <the-slant />
-      <div class="container flex mt-30 mb-30 mx-auto px-8 pt-12 w-3/4 md:w-auto">
+      <div class="container mt-30 mb-30 pt-12">
         <div class="flex md:flex-row flex-col-reverse justify-center">
           <div class="flex flex-col">
             <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-left text-center">
@@ -55,7 +55,7 @@
           <img src="~/assets/images/team.jpg" alt="team-image" class="md:max-w-1/2 rounded-xl mx-auto md:ml-6">
         </div>
       </div>
-      <div class="container flex flex-col mx-auto p-8 pb-18">
+      <div class="container flex-col pb-18">
         <h2 class="text-2xl block text-blue-gray-700 font-semibold text-center">
           Our Clients
         </h2>
@@ -109,15 +109,16 @@ export default {
 <style>
 .container {
   @apply max-w-screen-lg;
+  @apply flex;
+  @apply mx-auto;
+  @apply w-3/4;
+  @apply md:w-auto;
+  @apply px-8;
 }
 .home-info-text {
   @apply text-sm;
   @apply text-blue-gray-500;
   @apply mb-2;
   @apply text-justify;
-}
-#home-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('~/assets/images/hero_home.jpeg');
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 </style>
