@@ -19,7 +19,7 @@
       </nuxt-link>
     </div>
     <!-- Sidebar toggle button -->
-    <div class="block md:hidden text-white cursor-pointer pr-2 h-12 w-12" @click="toggleSidebar">
+    <div class="burger block md:hidden text-white cursor-pointer pr-2 h-12 w-12" @click="toggleSidebar">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
@@ -77,5 +77,8 @@ export default {
   @apply text-blue-gray-800;
   @apply font-semibold;
   text-decoration: none;
+}
+.is-scrolled .burger {
+  @apply text-blue-gray-800;
 }
 </style>
