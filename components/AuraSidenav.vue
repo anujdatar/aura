@@ -1,36 +1,14 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div
-    class="aside fixed inset-0 overflow-hidden z-49"
+    class="aside fixed inset-0 overflow-hidden z-51"
     aria-labelledby="slide-over-title"
     role="dialog"
     aria-modal="true"
     :class="isSidebarOpen ? onOpen : ''"
   >
-    <div class="absolute inset-0 overflow-hidden aside-bg">
-      <!--
-      Background overlay, show/hide based on slide-over state.
-
-      Entering: "ease-in-out duration-500"
-        From: "opacity-0"
-        To: "opacity-100"
-      Leaving: "ease-in-out duration-500"
-        From: "opacity-100"
-        To: "opacity-0"
-    -->
-      <div class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" />
-
-      <div class="fixed inset-y-0 right-0 pl-10 max-w-full flex aside-fg">
-        <!--
-        Slide-over panel, show/hide based on slide-over state.
-
-        Entering: "transform transition ease-in-out duration-500 sm:duration-700"
-          From: "translate-x-full"
-          To: "translate-x-0"
-        Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
-          From: "translate-x-0"
-          To: "translate-x-full"
-      -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="fixed inset-y-0 right-0 pl-10 max-w-full flex">
         <div class="w-screen max-w-md">
           <div class="h-full flex flex-col py-2 bg-white shadow-xl">
             <div class="px-2 pb-2 shadow border-b">
@@ -105,22 +83,11 @@ export default {
 </script>
 
 <style>
-.aside.is-open {
-  @apply z-51;
-}
-.aside .aside-bg {
-  @apply ease-in-out duration-500;
-  @apply opacity-0;
-}
-.aside.is-open .aside-bg {
-  @apply opacity-100;
-}
-
-.aside .aside-fg {
+.aside {
   @apply transform transition ease-in-out duration-500;
   @apply translate-x-full;
 }
-.aside.is-open .aside-fg {
+.aside.is-open {
   @apply translate-x-0;
 }
 </style>
