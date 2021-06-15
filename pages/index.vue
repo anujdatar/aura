@@ -1,42 +1,26 @@
 <template>
   <div class="-mt-13 overflow-hidden">
-    <div class="w-screen relative flex content-center items-center justify-center min-h-screen-100 border">
-      <div id="home-hero" class="absolute inline-block w-full h-full top-0 bg-center bg-cover pt-16 pb-32" />
-      <div class="container flex flex-col absolute top-36">
-        <h1 class="text-3xl font-semibold text-white text-center opacity-100">
-          The Largest Setup of Precision Metal Cutting &amp; Fabrication
-        </h1>
-        <p class="text-md text-blue-gray-200 text-center">
-          CNC Laser Cutting, CNC Plasma Cutting, CNC Bending, CNC Rolling, CNC Straightening, Welding
-        </p>
-      </div>
-    </div>
-    <div class="container flex md:flex-row flex-col z-25 relative mx-auto -mt-24 items-center">
+    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
+    <div class="container md:flex-row flex-col z-25 relative -mt-24 items-center">
       <home-card
         :card-title="card1.title"
         :card-content="card1.content"
+        :card-image="card1.image"
         class="md:mt-8"
-      >
-        <img src="~/assets/images/card_images/trumpf.jpg" alt="" class="w-20 h-20 rounded-lg">
-        <!-- <laser-icon /> -->
-      </home-card>
+      />
       <home-card
         :card-title="card2.title"
         :card-content="card2.content"
-      >
-        <img src="~/assets/images/card_images/fixture.jpg" alt="" class="w-20 h-20 rounded-lg">
-        <!-- <anvil-icon /> -->
-      </home-card>
+        :card-image="card2.image"
+      />
       <home-card
         :card-title="card3.title"
         :card-content="card3.content"
+        :card-image="card3.image"
         class="md:mt-12"
-      >
-        <!-- <bulldozer-icon /> -->
-        <img src="~/assets/images/card_images/tractor.jpg" alt="" class="w-20 h-20 rounded-lg">
-      </home-card>
+      />
     </div>
-    <div class="container flex mt-30 mb-30 mx-auto px-8 w-3/4 md:w-auto">
+    <div class="container mt-30 mb-30">
       <div class="flex md:flex-row flex-col justify-center">
         <img src="~/assets/images/factory.jpg" alt="factory-image" class="md:max-w-1/2 rounded-xl mx-auto md:mr-6">
         <div class="flex flex-col">
@@ -93,20 +77,26 @@
 export default {
   data () {
     return {
+      heroTitle: 'The Largest Setup of Precision Metal Cutting & Fabrication',
+      heroContent: 'CNC Laser Cutting, CNC Plasma Cutting, CNC Bending, CNC Rolling, CNC Straightening, Welding',
+      heroImage: require('~/assets/images/hero_home.jpeg'),
       card1: {
         color: 'bg-red-300',
         title: 'Precision Metal Cutting & Fabrication',
-        content: 'The largest setup for CNC laser and plasma cutting, bending, rolling, straightening and welding.'
+        content: 'The largest setup for CNC laser and plasma cutting, bending, rolling, straightening and welding.',
+        image: require('~/assets/images/card_images/trumpf.jpg')
       },
       card2: {
         color: 'bg-blue-300',
         title: 'A Complete Solution',
-        content: 'In Metal Fabrication and Assembly. MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly.'
+        content: 'In Metal Fabrication and Assembly. MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly.',
+        image: require('~/assets/images/card_images/fixture.jpg')
       },
       card3: {
         color: 'bg-green-300',
         title: 'Catering to major OEMs',
-        content: 'Earthmoving and construction, Agricultural Equipment, Electrical Systems, Textile Machinery, Packing Machines and many more.'
+        content: 'Earthmoving and construction, Agricultural Equipment, Electrical Systems, Textile Machinery, Packing Machines and many more.',
+        image: require('~/assets/images/card_images/tractor.jpg')
       }
     }
   },
