@@ -69,23 +69,23 @@ export default {
       heroImage: require('~/assets/images/hero_services.jpeg'),
       service1: {
         cardTitle: 'CNC Laser Cutting',
-        videoLink: 'https://www.youtube-nocookie.com/embed/9k2hIgwluP4'
+        videoLink: 'https://www.youtube.com/embed/9k2hIgwluP4'
       },
       service2: {
         cardTitle: 'CNC Plasma Cutting',
-        videoLink: 'https://www.youtube-nocookie.com/embed/451xMlS69Ho'
+        videoLink: 'https://www.youtube.com/embed/451xMlS69Ho'
       },
       service3: {
         cardTitle: 'CNC Bending',
-        videoLink: 'https://www.youtube-nocookie.com/embed/jONKl9u27TY'
+        videoLink: 'https://www.youtube.com/embed/jONKl9u27TY'
       },
       service4: {
         cardTitle: 'CNC Rolling(4 Rolls System)',
-        videoLink: 'https://www.youtube-nocookie.com/embed/dbspCBzFkZ0'
+        videoLink: 'https://www.youtube.com/embed/dbspCBzFkZ0'
       },
       service5: {
         cardTitle: 'Metal Fabrication',
-        videoLink: 'https://www.youtube-nocookie.com/embed/iN-45MhK8eg'
+        videoLink: 'https://www.youtube.com/embed/iN-45MhK8eg'
       },
       service6: {
         cardTitle: 'Surface Treatment'
