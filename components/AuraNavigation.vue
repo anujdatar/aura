@@ -18,21 +18,26 @@
         {{ route.title }}
       </nuxt-link>
     </div>
+    <!-- Sidebar toggle button -->
+    <div class="block md:hidden text-white cursor-pointer pr-2 h-12 w-12" @click="toggleSidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
   </nav>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
-  data () {
-    return {
-      appTitle: 'Aura',
-      routes: [
-        { title: 'Home', path: '/' },
-        { title: 'About', path: 'about' },
-        { title: 'Capabilities', path: 'capabilities' },
-        { title: 'Services', path: 'services' },
-        { title: 'Contact', path: 'contact' }
-      ]
+  props: {
+    appTitle: {
+      type: String,
+      default: 'App'
+    },
+    appRoutes: {
+      type: Array,
+      required: true
     }
   },
   mounted () {
@@ -42,6 +47,7 @@ export default {
     window.removeEventListener('scroll', this.onScroll)
   },
   methods: {
+    ...mapMutations(['toggleSidebar']),
     onScroll (e) {
       const myNav = window.document.querySelector('nav')
       if (window.pageYOffset > 0) {
@@ -54,7 +60,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .nuxt-link-exact-active {
   @apply border-green-600;
   @apply text-green-600;
