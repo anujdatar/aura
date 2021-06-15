@@ -60,15 +60,15 @@
         <form class="flex flex-col" @submit.prevent="submitFormButton">
           <div class="input-div">
             <label for="name" class="input-label">Full Name</label>
-            <input id="name" type="text" name="name" placeholder="Full Name" class="input-field">
+            <input id="name" type="text" name="name" placeholder="Full Name" class="input-field text-blue-gray-800">
           </div>
           <div class="input-div">
             <label for="email" class="input-label">Email</label>
-            <input id="email" type="email" name="email" placeholder="Email" class="input-field">
+            <input id="email" type="email" name="email" placeholder="Email" class="input-field text-blue-gray-800">
           </div>
           <div class="input-div">
             <label for="message" class="input-label">Message</label>
-            <textarea id="message" name="message" placeholder="Type a message.." class="input-field" rows="4" />
+            <textarea id="message" name="message" placeholder="Type a message.." class="input-field text-blue-gray-800" rows="4" />
           </div>
           <div class="text-center mt-6">
             <button class="bg-blue-gray-800 text-white active:bg-blue-gray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
