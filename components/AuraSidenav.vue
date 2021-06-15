@@ -66,7 +66,7 @@
                 :data-hover="route.title"
                 tabindex="0"
                 class="uppercase py-4 px-4 flex items-center border-transparent text-sm nav-link text-blue-gray-700 font-bold"
-                @click="closeSidebar"
+                @click.native="toggleSidebar"
               >
                 {{ route.title }}
               </nuxt-link>
@@ -100,7 +100,7 @@ export default {
       return 'is-open'
     }
   },
-  methods: mapMutations(['toggleSidebar', 'closeSidebar'])
+  methods: mapMutations(['toggleSidebar'])
 }
 </script>
 
