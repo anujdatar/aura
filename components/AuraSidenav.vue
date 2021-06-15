@@ -40,7 +40,7 @@
                   <strong class="text-3xl text-green-600 font-serif items-center flex">{{ appTitle }}</strong>
                 </nuxt-link>
                 <div class="ml-3 h-7 flex items-center">
-                  <button class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" @click="toggleSidebar">
+                  <button class="bg-white rounded-md text-blue-gray-800 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" @click="toggleSidebar">
                     <span class="sr-only">Close panel</span>
                     <!-- Heroicon name: outline/x -->
                     <svg
