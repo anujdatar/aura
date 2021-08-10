@@ -25,13 +25,13 @@
         <img src="~/assets/images/factory.jpg" alt="factory-image" class="md:max-w-1/2 rounded-xl mx-auto md:mr-6">
         <div class="flex flex-col">
           <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-right text-center">
-            An ISO 9001:2008 certified company
+            An ISO 9001:2015 certified company
           </h2>
           <p class="home-info-text hidden lg:block">
-            Situated near Pune, the engineering Capital of India, Aura LaserFab offers both manufacturing and job shopping services in the field of CNC Laser Cutting Services.
+            Situated near Pune, the engineering Capital of India, Aura LaserFab offers both manufacturing and job shopping services in the field of CNC Laser Cutting and Sheet Metal Fabrication.
           </p>
           <p class="home-info-text">
-            Equipped with the latest machines for CNC Laser Cutting, Bending, and Fabrication, Aura manufactures a large variety of components with a mix of volumes. Using contemporary techniques we deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from a precise laser cut–bent component to a complex welded and painted assembly using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
+            Equipped with the latest machines for CNC Laser Cutting, Bending, and Fabrication, Aura manufactures a large variety of components with a mix of volumes. Using contemporary techniques we deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from precise laser cut–bend components to complex welded and painted assemblies using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@
               Our Team
             </h2>
             <p class="home-info-text">
-              Aura's team comprising of 100+ qualified engineers and technicians, possesses a strong experience in the domains of development, marketing, engineering operations, projects and quality assurance.
+              The Core Team of over 75 qualified engineers and technicians, have a strong and diverse experience in of design & development, engineering, operations, project management and quality assurance.
             </p>
             <p class="home-info-text">
               Aura Laser has presently spearheaded a major up scaling of its capacity in Metal Cutting &amp; fabrication with addition of workspace area, machineries like CNC Plasma Cutting, CNC Straightening, CNC Rolling and Robotic Welding to support its multi segmental growth.
@@ -77,25 +77,25 @@
 export default {
   data () {
     return {
-      heroTitle: 'The Largest Setup of Precision Metal Cutting & Fabrication',
-      heroContent: 'CNC Laser Cutting, CNC Plasma Cutting, CNC Bending, CNC Rolling, CNC Straightening, Welding',
+      heroTitle: 'Pioneer & Leader',
+      heroContent: 'Precision Laser Cutting and Sheet Metal Fabrication',
       heroImage: require('~/assets/images/hero_home.jpeg'),
       card1: {
         color: 'bg-red-300',
         title: 'Precision Metal Cutting & Fabrication',
-        content: 'The largest setup for CNC laser and plasma cutting, bending, rolling, straightening and welding.',
+        content: 'The largest setup for CNC laser cutting, bending, rolling, straightening and welding.',
         image: require('~/assets/images/card_images/trumpf.jpg')
       },
       card2: {
         color: 'bg-blue-300',
-        title: 'A Complete Solution',
-        content: 'In Metal Fabrication and Assembly. MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly.',
+        title: 'A Complete Solution In Metal Fabrication & Assembly',
+        content: 'MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly.',
         image: require('~/assets/images/card_images/fixture.jpg')
       },
       card3: {
         color: 'bg-green-300',
         title: 'Catering to major OEMs',
-        content: 'Earthmoving and construction, Agricultural Equipment, Electrical Systems, Textile Machinery, Packing Machines and many more.',
+        content: 'Earthmoving and construction, Electrical Systems, Agricultural Equipment, Textile Machinery, Packing Machines and many more.',
         image: require('~/assets/images/card_images/tractor.jpg')
       }
     }
