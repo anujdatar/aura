@@ -62,11 +62,14 @@ export default {
 
 <style>
 .nuxt-link-exact-active {
-  @apply border-green-600;
-  @apply text-green-600;
+  /* @apply border-green-600; */
+  /* @apply text-green-600; */
+  @apply border-orange-400;
+  @apply text-orange-400;
 }
 .nav-link:hover:not(.nuxt-link-exact-active) {
-  @apply bg-green-400;
+  /* @apply bg-green-400; */
+  @apply bg-orange-400;
   @apply text-white;
 }
 .is-scrolled {
