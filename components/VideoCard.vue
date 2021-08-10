@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col mb-12 md:mb-40 justify-center w-full mx-auto drop-shadow-red-900 drop-shadow-2xl rounded-lg"
+    class="flex flex-col mb-20 md:mb-40 justify-center w-full mx-auto rounded-lg"
     :class="textRight ? 'md:flex-row-reverse' : 'md:flex-row'"
   >
     <div
@@ -13,6 +13,7 @@
       <div class="text-sm home-info-text">
         {{ cardContent }}
       </div>
+      <slot />
     </div>
     <div class="w-full md:w-1/2">
       <iframe
@@ -21,7 +22,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        class="w-full h-full rounded-lg"
+        class="w-full min-h-52 rounded-lg"
       />
     </div>
   </div>
