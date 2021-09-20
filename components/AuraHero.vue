@@ -5,6 +5,9 @@
       <h1 class="text-3xl font-semibold text-white text-center opacity-100">
         {{ title }}
       </h1>
+      <h2 class="text-2xl font-semibold text-white text-center opacity-100">
+        <slot />
+      </h2>
       <p class="text-md text-blue-gray-200 text-center">
         {{ content }}
       </p>

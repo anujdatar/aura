@@ -1,6 +1,8 @@
 <template>
   <div class="page-content overflow-hidden">
-    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
+    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage">
+      <span>in</span>
+    </aura-hero>
     <div class="container md:flex-row flex-col relative -mt-24 items-center">
       <home-card
         :card-title="card1.title"
