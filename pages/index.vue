@@ -1,5 +1,5 @@
 <template>
-  <div class="-mt-13 overflow-hidden">
+  <div class="page-content overflow-hidden">
     <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
     <div class="container md:flex-row flex-col relative -mt-24 items-center">
       <home-card
@@ -114,6 +114,9 @@ export default {
   @apply w-3/4;
   @apply md:w-auto;
   @apply px-8;
+}
+.page-content {
+  @apply -mt-24
 }
 .home-info-text {
   @apply text-sm;

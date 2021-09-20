@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-gray-700 text-blue-gray-200 -mt-13  min-h-screen flex flex-col overflow-hidden">
+  <div class="page-content bg-blue-gray-700 text-blue-gray-200  min-h-screen flex flex-col overflow-hidden">
     <div class="container relative flex flex-col centent-center items-center justify-center mt-20 mb-30">
       <div class="flex flex-col md:flex-row justify-between">
         <div class="p-2">

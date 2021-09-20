@@ -1,5 +1,5 @@
 <template>
-  <div class="-mt-13 overflow-hidden flex flex-col min-h-screen">
+  <div class="page-content overflow-hidden flex flex-col min-h-screen">
     <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
     <div class="container mt-20 mb-8 w-full">
       <div class="flex md:flex-row flex-col justify-center items-center text-justify">
