@@ -15,7 +15,7 @@ export default {
       routes: [
         { title: 'Home', path: '/' },
         { title: 'About', path: 'about' },
-        { title: 'Capabilities', path: 'capabilities' },
+        // { title: 'Capabilities', path: 'capabilities' },
         { title: 'Services', path: 'services' },
         { title: 'Contact', path: 'contact' }
       ]
