@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="relative bg-white">
+    <div class="relative bg-white pb-12">
       <the-slant />
       <div class="container mt-30 mb-30 pt-12">
         <div class="flex md:flex-row flex-col-reverse justify-center">
@@ -57,7 +57,7 @@
           <img src="~/assets/images/team.jpg" alt="team-image" class="md:max-w-1/2 rounded-xl mx-auto md:ml-6">
         </div>
       </div>
-      <div class="container flex-col pb-18">
+      <!-- <div class="container flex-col pb-18">
         <h2 class="text-2xl block text-blue-gray-700 font-semibold text-center">
           Our Clients
         </h2>
@@ -66,7 +66,7 @@
             <client-logo :image="i" />
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="relative bg-blue-gray-200 mt-auto">
       <the-slant color="text-blue-gray-200" />
