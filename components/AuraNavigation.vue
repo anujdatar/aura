@@ -1,22 +1,36 @@
 <template>
-  <nav class="sticky top-0 z-50 w-full flex flex-row items-center justify-between h-12">
+  <nav class="sticky top-0 z-50 w-full flex flex-row items-center justify-between h-24">
     <!-- site logo / brand -->
     <nuxt-link to="/" class="flex flex-row pl-2 md:pl-8">
-      <img src="~/assets/images/aura_logo.png" alt="brand-logo" class="w-10 mr-2 pt-2 text-justify">
-      <strong class="text-3xl text-green-600 font-serif items-center flex">{{ appTitle }}</strong>
+      <img src="~/assets/images/aura_logo_1.png" alt="brand-logo" class="w-36 mr-2 pt-2 text-justify">
+      <!-- <strong class="text-3xl text-green-600 font-serif items-center flex">{{ appTitle }}</strong> -->
     </nuxt-link>
     <!-- site navigation links -->
-    <div class="flex flex-row h-full justify-center items-center hidden md:flex pr-8">
-      <nuxt-link
-        v-for="(route, i) in appRoutes"
-        :key="i"
-        :to="route.path"
-        :data-hover="route.title"
-        tabindex="0"
-        class="h-full uppercase pl-1 pr-1 mr-2 flex items-center border-b-3 border-transparent text-sm nav-link text-white font-semibold"
-      >
-        {{ route.title }}
-      </nuxt-link>
+    <div class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
+      <div class="flex flex-row w-full text-white contact-info items-center justify-between px-2">
+        <span class="flex flex-row justify-center items-center align-middle">
+          <mail-icon class="w-4 h-full mr-1 pt-1" />
+          <span class="h-full flex justify-center items-center text-center align-middle">
+            sales@auralaser.in
+          </span>
+        </span>
+        <span class="flex flex-row justify-center items-center">
+          <phone-icon class="w-4 h-full mr-1 pt-1" />
+          +91-9881727472
+        </span>
+      </div>
+      <div class="flex flex-row w-full h-5/8">
+        <nuxt-link
+          v-for="(route, i) in appRoutes"
+          :key="i"
+          :to="route.path"
+          :data-hover="route.title"
+          tabindex="0"
+          class="h-full uppercase px-2 py-3 mr-2 flex items-center border-b-3 border-transparent text-md nav-link text-white"
+        >
+          {{ route.title }}
+        </nuxt-link>
+      </div>
     </div>
     <!-- Sidebar toggle button -->
     <div class="burger block md:hidden text-white cursor-pointer pr-2 h-12 w-12" @click="toggleSidebar">
@@ -29,7 +43,10 @@
 
 <script>
 import { mapMutations } from 'vuex'
+import PhoneIcon from '@/assets/icons/phone_icon.svg?inline'
+import MailIcon from '@/assets/icons/mail_icon.svg?inline'
 export default {
+  components: { PhoneIcon, MailIcon },
   props: {
     appTitle: {
       type: String,
@@ -75,10 +92,12 @@ export default {
 .is-scrolled {
   @apply bg-white;
 }
-
+.is-scrolled .contact-info {
+  @apply text-blue-gray-800;
+}
 .is-scrolled .nav-link {
   @apply text-blue-gray-800;
-  @apply font-semibold;
+  /* @apply font-semibold; */
   text-decoration: none;
 }
 .is-scrolled .burger {
