@@ -64,8 +64,8 @@ export default {
 .nuxt-link-exact-active {
   /* @apply border-green-600; */
   /* @apply text-green-600; */
-  @apply border-orange-400;
-  @apply text-orange-400;
+  @apply border-orange-400 !important;
+  @apply text-orange-400 !important;
 }
 .nav-link:hover:not(.nuxt-link-exact-active) {
   /* @apply bg-green-400; */
