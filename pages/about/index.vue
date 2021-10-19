@@ -1,65 +1,92 @@
 <template>
   <div class="page-content overflow-hidden flex flex-col min-h-screen">
     <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
-    <div class="container mt-20 mb-8 w-full">
-      <div class="flex md:flex-row flex-col justify-center items-center text-justify">
+    <div class="container">
+      <div class="container-inner">
         <div class="text-justify">
-          <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-left text-center">
+          <h2 class="heading text-center md:text-left">
             About Aura
           </h2>
-          <p class="home-info-text">
-            With more than twenty five years of experience each in CNC laser cutting, bending and metal fabrication, the leadership of the company is with the dynamic duo, the founder-directors, Mr. Unmesh Mahajani, B.E. (Mech) from NIT Durgapur and Mr. Abhay Paranjpe, a chartered accountant.
+          <p class="paragraph">
+            With more than twenty five years of experience each in CNC laser
+            cutting, bending and metal fabrication, the leadership of the company
+            is with the dynamic duo, the founder-directors, Mr. Unmesh Mahajani,
+            B.E. (Mech) from NIT Durgapur and Mr. Abhay Paranjpe, a chartered
+            accountant.
           </p>
-          <p class="home-info-text">
-            Both the Directors possess the capability of understanding diverse product requirements and having dealt with a diverse set of clients, they can offer valuable feedbacks and suggestions to customers to improve their products and bottom line.Our vision is to capture a significant market share in the business of metal fabrication and assembly.
+          <p class="paragraph">
+            Both the Directors possess the capability of understanding diverse
+            product requirements and having dealt with a diverse set of clients,
+            they can offer valuable feedbacks and suggestions to customers to
+            improve their products and bottom line.Our vision is to capture a
+            significant market share in the business of metal fabrication and
+            assembly.
           </p>
-          <p class="home-info-text">
-            A team of around 100 + Qualified Employees, highly competent technicians and engineers are the strong pillars of this organization. The employees possess requisite domain experience in CNC Technology, Engineering, Sheet Metal Processing – Laser Cutting, Plasma Cutting, Bending, Rolling, Machining, Precision Fabrication, Assembly and Quality Assurance.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-8 w-full">
-      <div class="flex md:flex-row flex-col justify-center items-center">
-        <div class="text-justify">
-          <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-left text-center">
-            Our Mission
-          </h2>
-          <p class="home-info-text">
-            Our mission is to provide a complete solution to customer requirements, nurture and maintain ethical values, focus on quality in ever business process while fostering Continuous Improvement in our in house systems.
-          </p>
-          <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-left text-center pt-8">
-            Our Vision
-          </h2>
-          <p class="home-info-text">
-            Our vision is to capture a significant market share in the business of metal fabrication and assembly.
+          <p class="paragraph">
+            A team of around 100 + Qualified Employees, highly competent
+            technicians and engineers are the strong pillars of this organization.
+            The employees possess requisite domain experience in CNC Technology,
+            Engineering, Sheet Metal Processing – Laser Cutting, Plasma Cutting,
+            Bending, Rolling, Machining, Precision Fabrication, Assembly and
+            Quality Assurance.
           </p>
         </div>
-      </div>
-    </div>
-    <div class="container mt-8 mb-30 pt-12">
-      <div class="flex md:flex-row flex-col-reverse justify-center">
-        <div class="flex flex-col">
-          <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-left text-center">
-            Our Team
-          </h2>
-          <p class="home-info-text">
-            The Core Team of over 75 qualified engineers and technicians, have a strong and diverse experience in of design & development, engineering, operations, project management and quality assurance.
-          </p>
-          <p class="home-info-text">
-            Aura Laser has presently spearheaded a major up scaling of its capacity in Metal Cutting &amp; fabrication with addition of workspace area, machineries like CNC Plasma Cutting, CNC Straightening, CNC Rolling and Robotic Welding to support its multi segmental growth.
-          </p>
-        </div>
-        <img src="~/assets/images/team.jpg" alt="team-image" class="md:max-w-1/2 rounded-xl mx-auto md:ml-6">
       </div>
     </div>
     <div class="relative bg-white">
       <the-slant />
-      <div class="container flex-col pb-18">
-        <h2 class="text-2xl block text-blue-gray-700 font-semibold text-center mb-10">
+      <div class="container flex-col">
+        <div class="container-inner">
+          <div class="text-justify">
+            <h2 class="heading text-center md:text-left">
+              Our Mission
+            </h2>
+            <p class="paragraph">
+              Our mission is to provide a complete solution to customer requirements,
+              nurture and maintain ethical values, focus on quality in ever business
+              process while fostering Continuous Improvement in our in house systems.
+            </p>
+            <h2 class="heading text-center md:text-left pt-8">
+              Our Vision
+            </h2>
+            <p class="paragraph">
+              Our vision is to capture a significant market share in the business
+              of metal fabrication and assembly.
+            </p>
+          </div>
+        </div>
+        <div class="container-inner pt-8">
+          <div class="flex flex-col">
+            <h2 class="heading text-center md:text-left">
+              Our Team
+            </h2>
+            <p class="paragraph">
+              The Core Team of over 75 qualified engineers and technicians, have a
+              strong and diverse experience in of design & development, engineering,
+              operations, project management and quality assurance.
+            </p>
+            <p class="paragraph">
+              Aura Laser has presently spearheaded a major up scaling of its
+              capacity in Metal Cutting &amp; fabrication with addition of workspace
+              area, machineries like CNC Plasma Cutting, CNC Straightening, CNC
+              Rolling and Robotic Welding to support its multi segmental growth.
+            </p>
+          </div>
+          <img
+            src="~/assets/images/team.jpg"
+            alt="team-image"
+            class="md:max-w-1/2 rounded-xl mx-auto md:ml-6"
+          >
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-blue-gray-200">
+      <the-slant color="text-blue-gray-200" />
+      <div class="container flex-col">
+        <h2 class="heading text-center">
           How we can help
         </h2>
-        <div class="flex flex-row flex-wrap items-center justify-center relative">
+        <div class="flex flex-row flex-wrap items-center justify-center relative mt-8">
           <about-card :image-src="card1.imageSrc" :card-content="card1.content" />
           <about-card :image-src="card2.imageSrc" :card-content="card2.content" />
           <about-card :image-src="card3.imageSrc" :card-content="card3.content" />
@@ -70,8 +97,8 @@
         </div>
       </div>
     </div>
-    <div class="relative bg-blue-gray-200 mt-auto">
-      <the-slant color="text-blue-gray-200" />
+    <div class="relative bg-white mt-auto">
+      <the-slant color="text-white" />
       <aura-footer />
     </div>
   </div>

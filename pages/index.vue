@@ -3,7 +3,7 @@
     <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage">
       <span>in</span>
     </aura-hero>
-    <div class="container md:flex-row flex-col relative -mt-24 items-center">
+    <div class="container page-content md:flex-row flex-col relative items-center">
       <home-card
         :card-title="card1.title"
         :card-content="card1.content"
@@ -22,41 +22,64 @@
         class="md:mt-12"
       />
     </div>
-    <div class="container mt-30 mb-30">
-      <div class="flex md:flex-row flex-col justify-center">
-        <img src="~/assets/images/factory.jpg" alt="factory-image" class="md:max-w-1/2 rounded-xl mx-auto md:mr-6">
+    <div class="container">
+      <div class="container-inner">
+        <img
+          src="~/assets/images/factory.jpg"
+          alt="factory-image"
+          class="md:max-w-1/2 rounded-xl mx-auto md:mr-6"
+        >
         <div class="flex flex-col">
-          <h2 class="font-semibold text-3xl text-blue-gray-700 mb-2 md:text-right text-center">
+          <h2 class="heading text-center md:text-right">
             An ISO 9001:2015 certified company
           </h2>
-          <p class="home-info-text hidden lg:block">
-            Situated near Pune, the engineering Capital of India, Aura LaserFab offers both manufacturing and job shopping services in the field of CNC Laser Cutting and Sheet Metal Fabrication.
+          <p class="paragraph hidden lg:block">
+            Situated near Pune, the engineering Capital of India, Aura LaserFab
+            offers both manufacturing and job shopping services in the field of
+            CNC Laser Cutting and Sheet Metal Fabrication.
           </p>
-          <p class="home-info-text">
-            Equipped with the latest machines for CNC Laser Cutting, Bending, and Fabrication, Aura manufactures a large variety of components with a mix of volumes. Using contemporary techniques we deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from precise laser cut–bend components to complex welded and painted assemblies using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
+          <p class="paragraph">
+            Equipped with the latest machines for CNC Laser Cutting, Bending,
+            and Fabrication, Aura manufactures a large variety of components
+            with a mix of volumes. Using contemporary techniques we deliver
+            components in shorter lead time meeting universally acceptable
+            quality standards. We manufacture products ranging from precise
+            laser cut–bend components to complex welded and painted assemblies
+            using a variety of raw materials like carbon steel, stainless steel,
+            aluminium, and special steels.
           </p>
         </div>
       </div>
     </div>
     <div class="relative bg-white pb-12">
       <the-slant />
-      <div class="container mt-30 mb-30 pt-12">
-        <div class="flex md:flex-row flex-col-reverse justify-center">
+      <div class="container pt-12">
+        <div class="container-inner">
           <div class="flex flex-col">
-            <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-left text-center">
+            <h2 class="heading text-center md:text-left">
               Our Team
             </h2>
-            <p class="home-info-text">
-              The Core Team of over 75 qualified engineers and technicians, have a strong and diverse experience in of design & development, engineering, operations, project management and quality assurance.
+            <p class="paragraph">
+              The Core Team of over 75 qualified engineers and technicians, have
+              a strong and diverse experience in of design & development,
+              engineering, operations, project management and quality assurance.
             </p>
-            <p class="home-info-text">
-              Aura Laser has presently spearheaded a major up scaling of its capacity in Metal Cutting &amp; fabrication with addition of workspace area, machineries like CNC Plasma Cutting, CNC Straightening, CNC Rolling and Robotic Welding to support its multi segmental growth.
+            <p class="paragraph">
+              Aura Laser has presently spearheaded a major up scaling of its
+              capacity in Metal Cutting &amp; fabrication with addition of
+              workspace area, machineries like CNC Plasma Cutting, CNC
+              Straightening, CNC Rolling and Robotic Welding to support its
+              multi segmental growth.
             </p>
           </div>
-          <img src="~/assets/images/team.jpg" alt="team-image" class="md:max-w-1/2 rounded-xl mx-auto md:ml-6">
+          <img
+            src="~/assets/images/team.jpg"
+            alt="team-image"
+            class="md:max-w-1/2 rounded-xl mx-auto md:ml-6"
+          >
         </div>
       </div>
-      <!-- <div class="container flex-col pb-18">
+      <!-- <div class="container flex-col">
         <h2 class="text-2xl block text-blue-gray-700 font-semibold text-center">
           Our Clients
         </h2>
@@ -108,6 +131,9 @@ export default {
 </script>
 
 <style>
+.page-content {
+  @apply -mt-24 !important;
+}
 .container {
   @apply max-w-screen-lg;
   @apply flex;
@@ -115,11 +141,25 @@ export default {
   @apply w-3/4;
   @apply md:w-auto;
   @apply px-8;
+  @apply mt-30;
+  @apply mb-30;
 }
-.page-content {
-  @apply -mt-24
+.container-inner {
+  @apply flex;
+  @apply flex-col;
+  @apply md:flex-row;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-justify;
 }
-.home-info-text {
+.heading {
+  @apply font-semibold;
+  @apply text-3xl;
+  @apply text-blue-gray-700;
+  @apply mb-2;
+  /* @apply text-center; */
+}
+.paragraph {
   @apply text-blue-gray-500;
   @apply mb-2;
   @apply text-justify;
