@@ -8,13 +8,13 @@
     <!-- site navigation links -->
     <div class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
       <div class="flex flex-row w-full text-white contact-info items-center justify-between px-2">
-        <span class="flex flex-row justify-center items-center align-middle">
+        <span class="flex flex-row justify-center items-center align-middle text-lg">
           <mail-icon class="w-4 h-full mr-1 pt-1" />
           <span class="h-full flex justify-center items-center text-center align-middle">
             sales@auralaser.in
           </span>
         </span>
-        <span class="flex flex-row justify-center items-center">
+        <span class="flex flex-row justify-center items-center text-lg ml-4">
           <phone-icon class="w-4 h-full mr-1 pt-1" />
           +91-9881727472
         </span>
@@ -78,29 +78,19 @@ export default {
 </script>
 
 <style>
+nav {
+  transition: 1s;
+}
 .nuxt-link-exact-active {
-  /* @apply border-green-600; */
-  /* @apply text-green-600; */
-  @apply border-orange-400 !important;
-  @apply text-orange-400 !important;
+  @apply border-orange-500 !important;
+  @apply text-orange-500 !important;
 }
 .nav-link:hover:not(.nuxt-link-exact-active) {
-  /* @apply bg-green-400; */
-  @apply bg-orange-400;
+  @apply bg-orange-500;
   @apply text-white;
 }
 .is-scrolled {
-  @apply bg-white;
-}
-.is-scrolled .contact-info {
-  @apply text-blue-gray-800;
-}
-.is-scrolled .nav-link {
-  @apply text-blue-gray-800;
-  /* @apply font-semibold; */
-  text-decoration: none;
-}
-.is-scrolled .burger {
-  @apply text-blue-gray-800;
+  @apply bg-black;
+  @apply opacity-80;
 }
 </style>
