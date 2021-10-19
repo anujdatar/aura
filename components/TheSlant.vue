@@ -8,7 +8,10 @@
       viewBox="0 0 2560 100"
       x="0"
       y="0"
-    ><polygon class="fill-current" points="2560 0 2560 100 0 100" :class="color" /></svg>
+    >
+      <polygon class="fill-current" points="2560 0 2560 100 0 100" :class="color" />
+      <polygon class="fill-current text-orange-400" points="0,95 2650,0 2650,5 0,100 " />
+    </svg>
   </div>
 </template>
 
