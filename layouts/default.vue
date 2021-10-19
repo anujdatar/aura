@@ -14,9 +14,9 @@ export default {
       appTitle: 'Aura',
       routes: [
         { title: 'Home', path: '/' },
-        { title: 'About', path: 'about' },
-        // { title: 'Capabilities', path: 'capabilities' },
+        { title: 'Industries', path: 'industries' },
         { title: 'Services', path: 'services' },
+        { title: 'About', path: 'about' },
         { title: 'Contact', path: 'contact' }
       ]
     }

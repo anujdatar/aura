@@ -1,7 +1,8 @@
 <template>
-  <div class="-mt-13 overflow-hidden flex flex-col min-h-screen">
+  <div class="page-content overflow-hidden flex flex-col min-h-screen">
     <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" image-offset="75%" />
-    <aura-timeline />
+    <!-- <aura-timeline /> -->
+    <!-- <test-component class="mb-20" /> -->
     <div class="relative bg-blue-gray-200 mt-auto">
       <the-slant color="text-blue-gray-200" />
       <aura-footer />
@@ -19,7 +20,7 @@ export default {
     }
   },
   head () {
-    return { title: 'Capabilities' }
+    return { title: 'Industries' }
   }
 }
 </script>
