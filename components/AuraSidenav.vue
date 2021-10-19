@@ -14,8 +14,7 @@
             <div class="px-2 pb-2 shadow border-b">
               <div class="flex items-center justify-between">
                 <nuxt-link to="/" class="flex flex-row pl-1">
-                  <img src="~/assets/images/aura_logo.png" alt="brand-logo" class="w-10 mr-2 pt-2 text-justify">
-                  <strong class="text-3xl text-green-600 font-serif items-center flex">{{ appTitle }}</strong>
+                  <img src="~/assets/images/aura_logo_1.png" alt="brand-logo" class="w-32 mr-2 pt-2 text-justify">
                 </nuxt-link>
                 <div class="ml-3 h-7 flex items-center">
                   <button class="bg-white rounded-md text-blue-gray-800 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" @click="toggleSidebar">
@@ -36,19 +35,17 @@
               </div>
             </div>
             <div class="mt-6 relative flex-1">
-              <!-- Replace with your content -->
               <nuxt-link
                 v-for="(route, i) in appRoutes"
                 :key="i"
                 :to="route.path"
                 :data-hover="route.title"
                 tabindex="0"
-                class="uppercase py-4 px-4 flex items-center border-transparent text-sm nav-link text-blue-gray-700 font-bold"
+                class="uppercase py-4 px-4 flex items-center border-transparent text-sm nav-link text-blue-gray-700 font-semibold"
                 @click.native="toggleSidebar"
               >
                 {{ route.title }}
               </nuxt-link>
-            <!-- /End replace -->
             </div>
           </div>
         </div>
