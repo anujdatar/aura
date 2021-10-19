@@ -2,13 +2,13 @@
   <div class="w-screen relative flex content-center items-center justify-center min-h-screen-150">
     <div class="hero-image absolute inline-block w-full h-full top-0 bg-center bg-cover pt-16 pb-32" :style="heroImage" />
     <div class="container flex flex-col relative">
-      <h1 class="text-3xl font-semibold text-white text-center opacity-100">
+      <h1 class="text-4xl font-semibold text-white text-center opacity-100">
         {{ title }}
       </h1>
-      <h2 class="text-2xl font-semibold text-white text-center opacity-100">
+      <h2 class="text-3xl font-semibold text-white text-center opacity-100">
         <slot />
       </h2>
-      <p class="text-md text-blue-gray-200 text-center">
+      <p class="text-xl text-blue-gray-200 text-center">
         {{ content }}
       </p>
     </div>
@@ -55,7 +55,7 @@ export default {
 
 <style>
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), var(--hero-image);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), var(--hero-image);
   background-position-y: var(--hero-offset);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
