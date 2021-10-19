@@ -26,7 +26,7 @@
       <div class="flex md:flex-row flex-col justify-center">
         <img src="~/assets/images/factory.jpg" alt="factory-image" class="md:max-w-1/2 rounded-xl mx-auto md:mr-6">
         <div class="flex flex-col">
-          <h2 class="font-semibold text-2xl text-blue-gray-700 mb-2 md:text-right text-center">
+          <h2 class="font-semibold text-3xl text-blue-gray-700 mb-2 md:text-right text-center">
             An ISO 9001:2015 certified company
           </h2>
           <p class="home-info-text hidden lg:block">
@@ -38,7 +38,6 @@
         </div>
       </div>
     </div>
-
     <div class="relative bg-white pb-12">
       <the-slant />
       <div class="container mt-30 mb-30 pt-12">
@@ -121,7 +120,6 @@ export default {
   @apply -mt-24
 }
 .home-info-text {
-  @apply text-sm;
   @apply text-blue-gray-500;
   @apply mb-2;
   @apply text-justify;
