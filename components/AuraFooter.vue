@@ -3,7 +3,18 @@
     class="text-sm flex flex-col justify-center text-center mt-auto pt-10"
     :class="textColor"
   >
-    <div class="border-b border-blue-gray-600 pb-3 shadow-sm">
+    <div class="text-left ml-4">
+      <h2 class="text-lg">
+        Aura Laserfab Pvt. Ltd.
+      </h2>
+      <p class="text-sm leading-8">
+        Gat No. 1021, Pune-Bangalore Highway, Near Pune, Shirwal
+      </p>
+      <p class="text-sm leading-8">
+        Dist. Satara - 412801
+      </p>
+    </div>
+    <!-- <div class="border-b border-blue-gray-600 pb-3 shadow-sm">
       <h3 class="font-bold text-xl mb-2 text-blue-gray-600">
         Our Services
       </h3>
@@ -20,7 +31,7 @@
         <li>Stainless Steal Welding</li>
         <li>Painting &amp; Powder Coating</li>
       </ul>
-    </div>
+    </div> -->
     <div class="pt-3">
       &copy; 2006-2021 Aura Laserfab Pvt. Ltd.
     </div>
