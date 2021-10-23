@@ -105,19 +105,16 @@ export default {
       heroContent: 'Precision Laser Cutting and Sheet Metal Fabrication',
       heroImage: require('~/assets/images/hero_home.jpeg'),
       card1: {
-        color: 'bg-red-300',
         title: 'Precision Metal Cutting & Fabrication',
         content: 'The largest setup for CNC laser cutting, bending, rolling, straightening and welding.',
         image: require('~/assets/images/card_images/trumpf.jpg')
       },
       card2: {
-        color: 'bg-blue-300',
         title: 'A Complete Solution In Metal Fabrication & Assembly',
         content: 'MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly.',
         image: require('~/assets/images/card_images/fixture.jpg')
       },
       card3: {
-        color: 'bg-green-300',
         title: 'Catering to major OEMs',
         content: 'Earthmoving and construction, Electrical Systems, Agricultural Equipment, Textile Machinery, Packing Machines and many more.',
         image: require('~/assets/images/card_images/tractor.jpg')
