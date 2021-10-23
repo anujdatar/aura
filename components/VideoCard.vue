@@ -7,10 +7,10 @@
       class="w-full md:w-1/2 flex flex-col justify-center mb-5 md:mb-0"
       :class="textRight ? 'md:pl-8' : 'md:pr-8'"
     >
-      <div class="font-bold text-xl text-blue-gray-700 text-center md:text-left">
+      <div class="sub-heading text-center md:text-left">
         {{ cardTitle }}
       </div>
-      <div class="text-sm home-info-text">
+      <div class="text-sm paragraph">
         {{ cardContent }}
       </div>
       <slot />

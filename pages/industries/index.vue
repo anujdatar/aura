@@ -4,7 +4,7 @@
     <!-- <aura-timeline /> -->
     <!-- <test-component class="mb-20" /> -->
     <div class="relative bg-blue-gray-200 mt-auto">
-      <the-slant color="text-blue-gray-200" />
+      <section-separator color="text-blue-gray-200" />
       <aura-footer />
     </div>
   </div>

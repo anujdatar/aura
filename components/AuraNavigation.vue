@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 z-50 w-full flex flex-row items-center justify-between h-24">
+  <nav class="sticky top-0 z-50 w-full flex flex-row items-center justify-between h-24 text-white">
     <!-- site logo / brand -->
     <nuxt-link to="/" class="flex flex-row pl-2 md:pl-8">
       <img src="~/assets/images/aura_logo_1.png" alt="brand-logo" class="w-36 mr-2 pt-2 text-justify">
@@ -7,7 +7,7 @@
     </nuxt-link>
     <!-- site navigation links -->
     <div class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
-      <div class="flex flex-row w-full text-white contact-info items-center justify-between px-2">
+      <div class="flex flex-row w-full contact-info items-center justify-between px-2">
         <span class="flex flex-row justify-center items-center align-middle text-lg">
           <mail-icon class="w-4 h-full mr-1 pt-1" />
           <span class="h-full flex justify-center items-center text-center align-middle">
@@ -26,14 +26,14 @@
           :to="route.path"
           :data-hover="route.title"
           tabindex="0"
-          class="h-full uppercase px-2 py-3 mr-2 flex items-center border-b-3 border-transparent text-md nav-link text-white"
+          class="h-full uppercase px-2 py-3 mr-2 flex items-center border-b-3 border-transparent text-md nav-link"
         >
           {{ route.title }}
         </nuxt-link>
       </div>
     </div>
     <!-- Sidebar toggle button -->
-    <div class="burger block md:hidden text-white cursor-pointer pr-2 h-12 w-12" @click="toggleSidebar">
+    <div class="burger block md:hidden cursor-pointer pr-2 h-12 w-12 hover:text-alt" @click="toggleSidebar">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full p-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
@@ -79,14 +79,16 @@ export default {
 
 <style>
 nav {
-  transition: 1s;
+  transition-property: background-color;
+  /* transition-timing-function: ease; */
+  transition-duration: 1s;
 }
 .nuxt-link-exact-active {
-  @apply border-orange-500 !important;
-  @apply text-orange-500 !important;
+  @apply border-accent !important;
+  @apply text-accent !important;
 }
 .nav-link:hover:not(.nuxt-link-exact-active) {
-  @apply bg-orange-500;
+  @apply bg-accent;
   @apply text-white;
 }
 .is-scrolled {

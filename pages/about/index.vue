@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="relative bg-white">
-      <the-slant />
+      <section-separator />
       <div class="container flex-col">
         <div class="container-inner">
           <div class="text-justify">
@@ -80,8 +80,8 @@
         </div>
       </div>
     </div>
-    <div class="relative bg-blue-gray-200">
-      <the-slant color="text-blue-gray-200" />
+    <div class="relative bg-alt">
+      <section-separator color="text-alt" />
       <div class="container flex-col">
         <h2 class="heading text-center">
           How we can help
@@ -98,7 +98,7 @@
       </div>
     </div>
     <div class="relative bg-white mt-auto">
-      <the-slant color="text-white" />
+      <section-separator color="text-white" />
       <aura-footer />
     </div>
   </div>

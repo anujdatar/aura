@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="relative bg-white">
-      <the-slant />
+      <section-separator />
       <div class="container flex-col">
         <video-card :card-title="service1.cardTitle" :video-link="service1.videoLink" />
         <video-card :card-title="service2.cardTitle" :video-link="service2.videoLink" text-right />
@@ -71,8 +71,8 @@
         <video-card :card-title="service6.cardTitle" text-right />
       </div>
     </div>
-    <div class="relative bg-blue-gray-200 mt-auto">
-      <the-slant color="text-blue-gray-200" />
+    <div class="relative bg-alt mt-auto">
+      <section-separator color="text-alt" />
       <aura-footer />
     </div>
   </div>

@@ -43,7 +43,7 @@ export default {
   props: {
     textColor: {
       type: String,
-      default: 'text-blue-gray-500'
+      default: 'text-secondary'
     }
   }
 }

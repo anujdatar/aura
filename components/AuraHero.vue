@@ -8,10 +8,11 @@
       <h2 class="text-3xl font-semibold text-white text-center opacity-100">
         <slot />
       </h2>
-      <p class="text-xl text-blue-gray-200 text-center">
+      <p class="text-xl text-alt text-center">
         {{ content }}
       </p>
     </div>
+    <section-separator class="top-auto bottom-0" color="text-alt" />
   </div>
 </template>
 

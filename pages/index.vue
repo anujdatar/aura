@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="relative bg-white pb-12">
-      <the-slant />
+      <section-separator />
       <div class="container pt-12">
         <div class="container-inner">
           <div class="flex flex-col">
@@ -90,8 +90,8 @@
         </div>
       </div> -->
     </div>
-    <div class="relative bg-blue-gray-200 mt-auto">
-      <the-slant color="text-blue-gray-200" />
+    <div class="relative bg-alt mt-auto">
+      <section-separator color="text-alt" />
       <aura-footer />
     </div>
   </div>
@@ -155,12 +155,17 @@ export default {
 .heading {
   @apply font-semibold;
   @apply text-3xl;
-  @apply text-blue-gray-700;
+  @apply text-primary;
   @apply mb-2;
   /* @apply text-center; */
 }
+.sub-heading {
+  @apply font-semibold;
+  @apply text-xl;
+  @apply text-primary;
+}
 .paragraph {
-  @apply text-blue-gray-500;
+  @apply text-secondary;
   @apply mb-2;
   @apply text-justify;
 }
