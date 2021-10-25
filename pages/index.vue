@@ -1,9 +1,21 @@
 <template>
   <div class="page-content overflow-hidden">
-    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage">
-      <span>in</span>
-    </aura-hero>
-    <div class="container page-content md:flex-row flex-col relative items-center">
+    <div class="bg-primary w-full h-24 absolute top-0" />
+    <div class="home-heading w-full relative mt-26 mb-6 text-center">
+      <h1 class="heading">
+        Pioneer &amp; Leader
+      </h1>
+      <h3 class="sub-heading">
+        in
+      </h3>
+      <p class="sub-heading">
+        Precision Laser Cutting and Sheet Metal Fabrication
+      </p>
+    </div>
+    <div class="relative mb-30">
+      <photo-grid />
+    </div>
+    <div class="container page-content md:flex-row flex-col relative items-center pt-20">
       <home-card
         :card-title="card1.title"
         :card-content="card1.content"
