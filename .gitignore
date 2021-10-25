@@ -35,6 +35,11 @@ build/
 dist/
 release-builds/
 
+# temporary/test components, code, pages, etc
+tmp/
+pages/test/*.vue
+components/TestComponent.vue
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -80,7 +85,6 @@ typings/
 .serverless
 
 # misc
-tmp/
 auth/
 /.sass-cache
 /connect.lock
