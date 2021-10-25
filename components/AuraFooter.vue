@@ -3,43 +3,38 @@
     class="text-sm flex flex-col justify-center text-center mt-auto pt-10"
     :class="textColor"
   >
-    <div class="text-left ml-4">
-      <h2 class="text-lg">
-        Aura Laserfab Pvt. Ltd.
-      </h2>
-      <p class="text-sm leading-8">
-        Gat No. 1021, Pune-Bangalore Highway, Near Pune, Shirwal
-      </p>
-      <p class="text-sm leading-8">
-        Dist. Satara - 412801
-      </p>
+    <div class="flex flex-row w-full justify-between">
+      <div class="text-left ml-4">
+        <h2 class="text-lg text-primary">
+          Aura Laserfab Pvt. Ltd.
+        </h2>
+        <p class="text-sm leading-6">
+          Gat No. 1021, Pune-Bangalore Highway, Near Pune, Shirwal
+        </p>
+        <p class="text-sm leading-6">
+          Dist. Satara - 412801
+        </p>
+      </div>
+      <div class="flex items-end">
+        <a href="https://www.youtube.com/channel/UCM-qRH75zRIPxla2Ty-2MYQ" target="_blank" rel="noopener noreferrer">
+          <youtube-icon class="w-8 text-primary mr-1" />
+        </a>
+        <a href="https://linkedin.com/company/aura-laserfab-private-limited-pune" target="_blank" rel="noopener noreferrer">
+          <linkedin-icon class="w-8 text-primary mr-2" />
+        </a>
+      </div>
     </div>
-    <!-- <div class="border-b border-blue-gray-600 pb-3 shadow-sm">
-      <h3 class="font-bold text-xl mb-2 text-blue-gray-600">
-        Our Services
-      </h3>
-      <ul id="footerServices" class="leading-loose">
-        <li>
-          Product Development &amp; Engineering
-        </li>
-        <li>CNC Laser Cutting</li>
-        <li>CNC Plasma Cutting</li>
-        <li>CNC Oxy-fuel Cutting</li>
-        <li>CNC Bending</li>
-        <li>CNC Rolling</li>
-        <li>Carbon Steel Welding</li>
-        <li>Stainless Steal Welding</li>
-        <li>Painting &amp; Powder Coating</li>
-      </ul>
-    </div> -->
-    <div class="pt-3">
+    <div class="pt-3 leading-8">
       &copy; 2006-2021 Aura Laserfab Pvt. Ltd.
     </div>
   </div>
 </template>
 
 <script>
+import YoutubeIcon from '@/assets/icons/youtube_icon.svg?inline'
+import LinkedinIcon from '@/assets/icons/linkedin_icon.svg?inline'
 export default {
+  components: { YoutubeIcon, LinkedinIcon },
   props: {
     textColor: {
       type: String,
