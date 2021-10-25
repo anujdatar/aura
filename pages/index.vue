@@ -20,7 +20,6 @@
         :card-title="card1.title"
         :card-content="card1.content"
         :card-image="card1.image"
-        class="md:mt-8"
       />
       <home-card
         :card-title="card2.title"
@@ -31,7 +30,6 @@
         :card-title="card3.title"
         :card-content="card3.content"
         :card-image="card3.image"
-        class="md:mt-12"
       />
     </div>
     <div class="relative bg-white pb-12">
