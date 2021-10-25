@@ -34,73 +34,37 @@
         class="md:mt-12"
       />
     </div>
-    <div class="container">
-      <div class="container-inner">
-        <img
-          src="~/assets/images/factory.jpg"
-          alt="factory-image"
-          class="md:max-w-1/2 rounded-xl mx-auto md:mr-6"
-        >
-        <div class="flex flex-col">
-          <h2 class="heading text-center md:text-right">
-            An ISO 9001:2015 certified company
-          </h2>
-          <p class="paragraph hidden lg:block">
-            Situated near Pune, the engineering Capital of India, Aura LaserFab
-            offers both manufacturing and job shopping services in the field of
-            CNC Laser Cutting and Sheet Metal Fabrication.
-          </p>
-          <p class="paragraph">
-            Equipped with the latest machines for CNC Laser Cutting, Bending,
-            and Fabrication, Aura manufactures a large variety of components
-            with a mix of volumes. Using contemporary techniques we deliver
-            components in shorter lead time meeting universally acceptable
-            quality standards. We manufacture products ranging from precise
-            laser cut–bend components to complex welded and painted assemblies
-            using a variety of raw materials like carbon steel, stainless steel,
-            aluminium, and special steels.
-          </p>
-        </div>
-      </div>
-    </div>
     <div class="relative bg-white pb-12">
       <section-separator />
       <div class="container pt-12">
         <div class="container-inner">
+          <img
+            src="~/assets/images/factory.jpg"
+            alt="factory-image"
+            class="md:max-w-1/2 rounded-xl mx-auto md:mr-6"
+          >
           <div class="flex flex-col">
-            <h2 class="heading text-center md:text-left">
-              Our Team
+            <h2 class="heading text-center md:text-right">
+              An ISO 9001:2015 certified company
             </h2>
-            <p class="paragraph">
-              The Core Team of over 75 qualified engineers and technicians, have
-              a strong and diverse experience in of design & development,
-              engineering, operations, project management and quality assurance.
+            <p class="paragraph hidden lg:block">
+              Situated near Pune, the engineering Capital of India, Aura LaserFab
+              offers both manufacturing and job shopping services in the field of
+              CNC Laser Cutting and Sheet Metal Fabrication.
             </p>
             <p class="paragraph">
-              Aura Laser has presently spearheaded a major up scaling of its
-              capacity in Metal Cutting &amp; fabrication with addition of
-              workspace area, machineries like CNC Plasma Cutting, CNC
-              Straightening, CNC Rolling and Robotic Welding to support its
-              multi segmental growth.
+              Equipped with the latest machines for CNC Laser Cutting, Bending,
+              and Fabrication, Aura manufactures a large variety of components
+              with a mix of volumes. Using contemporary techniques we deliver
+              components in shorter lead time meeting universally acceptable
+              quality standards. We manufacture products ranging from precise
+              laser cut–bend components to complex welded and painted assemblies
+              using a variety of raw materials like carbon steel, stainless steel,
+              aluminium, and special steels.
             </p>
           </div>
-          <img
-            src="~/assets/images/team.jpg"
-            alt="team-image"
-            class="md:max-w-1/2 rounded-xl mx-auto md:ml-6"
-          >
         </div>
       </div>
-      <!-- <div class="container flex-col">
-        <h2 class="text-2xl block text-blue-gray-700 font-semibold text-center">
-          Our Clients
-        </h2>
-        <div class="flex flex-row flex-wrap items-center justify-center">
-          <div v-for="i in 14" :key="i" class="p-2">
-            <client-logo :image="i" />
-          </div>
-        </div>
-      </div> -->
     </div>
     <div class="relative bg-alt mt-auto">
       <section-separator color="text-alt" />
