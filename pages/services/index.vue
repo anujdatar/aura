@@ -68,7 +68,7 @@
         <video-card :card-title="service3.cardTitle" :video-link="service3.videoLink" />
         <video-card :card-title="service4.cardTitle" :video-link="service4.videoLink" text-right />
         <video-card :card-title="service5.cardTitle" :video-link="service5.videoLink" />
-        <video-card :card-title="service6.cardTitle" text-right />
+        <video-card :card-title="service6.cardTitle" :video-link="service6.videoLink" text-right />
       </div>
     </div>
     <div class="relative bg-alt mt-auto">
@@ -102,11 +102,12 @@ export default {
         videoLink: 'https://www.youtube-nocookie.com/embed/dbspCBzFkZ0'
       },
       service5: {
-        cardTitle: 'Metal Fabrication',
+        cardTitle: 'Robotic Metal Fabrication',
         videoLink: 'https://www.youtube-nocookie.com/embed/iN-45MhK8eg'
       },
       service6: {
-        cardTitle: 'Surface Treatment'
+        cardTitle: 'Manual Metal Fabrication',
+        videoLink: 'https://www.youtube-nocookie.com/embed/iN-45MhK8eg'
       }
     }
   },
