@@ -58,6 +58,7 @@ export default {
     }
   },
   mounted () {
+    this.onScroll() // check page y-position on reload
     window.addEventListener('scroll', this.onScroll)
   },
   beforeDestroy () {
