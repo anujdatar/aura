@@ -6,7 +6,7 @@
     aria-modal="true"
     :class="isSidebarOpen ? onOpen : ''"
   >
-    <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden" @click="closeSidebar">
       <div class="fixed inset-y-0 right-0 max-w-3/5 flex">
         <div class="w-screen max-w-md">
           <div class="h-full flex flex-col py-2 bg-white shadow-xl">
