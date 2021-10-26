@@ -129,7 +129,7 @@ export default {
 }
 .product-card {
   @apply relative;
-  @apply w-1/3 h-50;
+  @apply w-1/2 md:w-1/3 h-50;
   @apply border border-alt;
   @apply no-underline text-right;
   @apply text-white text-2xl font-bold;
