@@ -89,13 +89,6 @@ export default {
           behavior: 'smooth'
         })
       }, 0)
-      // setTimeout(() => {
-      //   sectionEl.scrollIntoView({
-      //     behavior: 'smooth',
-      //     block: 'center',
-      //     inline: 'center'
-      //   })
-      // }, 100)
     }
   }
 }
