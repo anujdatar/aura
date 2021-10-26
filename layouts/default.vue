@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-gray-200">
+  <div class="bg-alt">
     <!-- <div> -->
     <aura-navigation :app-title="appTitle" :app-routes="routes" />
     <aura-sidenav :app-title="appTitle" :app-routes="routes" />
