@@ -1,5 +1,4 @@
 <template>
-  <!-- This example requires Tailwind CSS v2.0+ -->
   <div
     class="aside fixed inset-0 overflow-hidden z-51"
     aria-labelledby="slide-over-title"
@@ -8,7 +7,7 @@
     :class="isSidebarOpen ? onOpen : ''"
   >
     <div class="absolute inset-0 overflow-hidden">
-      <div class="fixed inset-y-0 right-0 pl-10 max-w-full flex">
+      <div class="fixed inset-y-0 right-0 max-w-3/5 flex">
         <div class="w-screen max-w-md">
           <div class="h-full flex flex-col py-2 bg-white shadow-xl">
             <div class="px-2 pb-2 shadow border-b">
