@@ -7,22 +7,22 @@
     <div class="product-card-bg card5" />
     <div class="product-card-bg card6" />
 
-    <a class="product-card" rel="card1">
+    <a class="product-card" rel="card1" href="/industries#construction">
       {{ product1.title }}
     </a>
-    <a class="product-card" rel="card2">
+    <a class="product-card" rel="card2" href="/industries#switchgear">
       {{ product2.title }}
     </a>
-    <a class="product-card" rel="card3">
+    <a class="product-card" rel="card3" href="/industries#mining">
       {{ product3.title }}
     </a>
-    <a class="product-card" rel="card4">
+    <a class="product-card" rel="card4" href="/industries#agriculture">
       {{ product4.title }}
     </a>
-    <a class="product-card" rel="card5">
+    <a class="product-card" rel="card5" href="/industries#handling">
       {{ product5.title }}
     </a>
-    <a class="product-card" rel="card6">
+    <a class="product-card" rel="card6" href="/industries#other">
       {{ product6.title }}
     </a>
   </div>
