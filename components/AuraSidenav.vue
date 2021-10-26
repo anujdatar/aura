@@ -16,7 +16,7 @@
                   <img src="~/assets/images/aura_logo_1.png" alt="brand-logo" class="w-32 mr-2 pt-2 text-justify">
                 </nuxt-link>
                 <div class="ml-3 h-7 flex items-center">
-                  <button class="rounded-md text-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" @click="toggleSidebar">
+                  <button class="rounded-md text-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" @click="closeSidebar">
                     <span class="sr-only">Close panel</span>
                     <!-- Heroicon name: outline/x -->
                     <svg
@@ -41,7 +41,7 @@
                 :data-hover="route.title"
                 tabindex="0"
                 class="uppercase py-4 px-4 flex items-center border-transparent text-sm nav-link text-primary font-semibold"
-                @click.native="toggleSidebar"
+                @click.native="closeSidebar"
               >
                 {{ route.title }}
               </nuxt-link>
@@ -74,7 +74,7 @@ export default {
       return 'is-open'
     }
   },
-  methods: mapMutations(['toggleSidebar'])
+  methods: mapMutations(['closeSidebar'])
 }
 </script>
 
