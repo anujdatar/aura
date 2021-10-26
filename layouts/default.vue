@@ -14,10 +14,10 @@ export default {
       appTitle: 'Aura',
       routes: [
         { title: 'Home', path: '/' },
-        { title: 'Industries', path: 'industries' },
-        { title: 'Services', path: 'services' },
-        { title: 'About', path: 'about' },
-        { title: 'Contact', path: 'contact' }
+        { title: 'Industries', path: '/industries' },
+        { title: 'Services', path: '/services' },
+        { title: 'About', path: '/about' },
+        { title: 'Contact', path: '/contact' }
       ]
     }
   }
