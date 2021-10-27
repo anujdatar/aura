@@ -145,10 +145,10 @@ export default {
   @apply select-none;
 }
 .next {
-  @apply right-0 rounded-l;
+  @apply -right-12 rounded-l;
 }
 .prev {
-  @apply left-0 rounded-r;
+  @apply -left-12 rounded-r;
 }
 .next:hover,
 .prev:hover {
