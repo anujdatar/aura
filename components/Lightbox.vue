@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :id="name">
     <!-- row of images to open lightbox -->
     <div
       class="lightbox-container flex flex-row w-full"
@@ -37,6 +37,10 @@
 <script>
 export default {
   props: {
+    name: {
+      type: String,
+      default: 'default-lightbox'
+    },
     images: {
       type: Array,
       required: true
@@ -50,6 +54,12 @@ export default {
   computed: {
     imageCount () {
       return this.images.length
+    },
+    lightboxModal () {
+      return document.querySelector('#' + this.name + ' #lightbox-modal')
+    },
+    lightboxSlides () {
+      return document.querySelectorAll('#' + this.name + ' .lightbox-slide')
     }
   },
   mounted () {
@@ -60,16 +70,18 @@ export default {
   },
   methods: {
     openLightboxModal () {
-      document.getElementById('lightbox-modal').style.display = 'block'
-      console.log('lightbox open')
+      this.lightboxModal.style.display = 'block'
+      this.lightboxModal.setAttribute('rel', 'open')
+
+      console.log(`opening ${this.name}`)
     },
     closeLightboxModal () {
-      document.getElementById('lightbox-modal').style.display = 'none'
-      document.getElementById('lightbox-modal').setAttribute('rel', 'closed')
-      console.log('closing lightbox')
+      this.lightboxModal.style.display = 'none'
+      this.lightboxModal.setAttribute('rel', 'closed')
+      console.log(`closing ${this.name}`)
     },
     showImage (n) {
-      const images = document.getElementsByClassName('lightbox-slide')
+      const images = this.lightboxSlides
       if (n > this.imageCount - 1) { n = 0 }
       if (n < 0) { n = this.imageCount - 1 }
 
@@ -79,19 +91,15 @@ export default {
       this.currentSlide = n
 
       images[this.currentSlide].style.display = 'block'
-
-      document.getElementById('lightbox-modal').setAttribute('rel', 'open')
-
-      console.log('showing image ', n)
+      console.log(`showing image ${n} from ${this.name}`)
     },
     changeSlide (n) {
       const newSlide = this.currentSlide + n
+      console.log(`changing slide to ${newSlide} of ${this.name}`)
       this.showImage(newSlide)
-      console.log('changing slide', newSlide)
     },
     handleKeypress (e) {
-      const lightbox = document.getElementById('lightbox-modal')
-      const isOpen = lightbox.getAttribute('rel')
+      const isOpen = this.lightboxModal.getAttribute('rel')
       if (isOpen === 'open') {
         if (e.key === 'Escape') {
           this.closeLightboxModal()
