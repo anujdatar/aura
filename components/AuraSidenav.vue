@@ -16,7 +16,7 @@
                   <img src="~/assets/images/aura_logo_1.png" alt="brand-logo" class="w-32 mr-2 pt-2 text-justify">
                 </nuxt-link>
                 <div class="ml-3 h-7 flex items-center">
-                  <button class="rounded-md text-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" @click="closeSidebar">
+                  <button class="rounded-md text-primary hover:text-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bg-accent-alt" @click="closeSidebar">
                     <span class="sr-only">Close panel</span>
                     <!-- Heroicon name: outline/x -->
                     <svg
