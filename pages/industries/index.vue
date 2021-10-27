@@ -2,18 +2,39 @@
   <div class="page-content overflow-hidden flex flex-col min-h-screen">
     <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" image-offset="75%" />
     <div class="container flex-col">
+      <!-- construction and earthmoving section -->
       <div id="construction" class="industry">
         <h2 class="heading block">
-          Construction Equipment
+          Earthmoving &amp; Construction Equipment
         </h2>
+        <p>
+          We supply fabricated assemblies like
+          <b>Loader Arm</b>
+          <b>Boom</b>
+          <b>Lift Arm</b>
+          <b>Frames</b>
+          <b>Tanks</b>
+          <b>Brackets</b>
+          <b>Non-structural Components</b>
+          <b>Precision Cut &amp; Bent Parts </b>
+        </p>
         <lightbox name="earthmoving_lightbox" :images="earthmoving" />
       </div>
+      <!-- electrical switchgear section -->
       <div id="switchgear" class="industry">
         <h2 class="heading block">
-          Electrical Switchgear
+          Electrical Switchgear Products
         </h2>
+        <p>
+          Typical products we supply include -
+          <b>Precision Cut &amp; Bent Parts of Mechanisms</b>
+          <b>Controls</b>
+          <b>Fabricated Tanks in Stainless Steel</b>
+          <b>Welded &amp; Assembled Components</b>
+        </p>
         <lightbox name="switchgear_lightbox" :images="switchgear" />
       </div>
+      <!-- mining equipment section -->
       <div id="mining" class="industry text-justify">
         <h2 class="heading block">
           Mining Equipment
@@ -27,18 +48,33 @@
     <div class="relative bg-white mt-auto">
       <section-separator color="text-white" />
       <div class="container flex-col pt-8">
+        <!-- agriculture and farm equipment section -->
         <div id="agriculture" class="industry">
           <h2 class="heading block">
             Agriculture and Farm Equipment
           </h2>
+          <p>
+            Typical products we supply include -
+            <b>Fabricated Chassis</b>
+            <b>Fabricated tanks in Stainless Steel</b>
+            <b>Fabricated &amp; Painted Assemblies</b>
+          </p>
           <lightbox name="agriculture_lightbox" :images="agriculture" />
         </div>
+        <!-- material handling section -->
         <div id="handling" class="industry">
           <h2 class="heading block">
             Material Handling Equipment
           </h2>
+          <p>
+            Typical products we supply include -
+            <b>Fabricated Assemblies like Apron Feeders</b>
+            <b>Fabricated Conveyors</b>
+            <b>Fabricated and Painted Assemblies &amp; Parts for Conveyors</b>
+          </p>
           <lightbox name="mat_handling_lightbox" :images="material_handling" />
         </div>
+        <!-- other industries section -->
         <div id="other" class="industry">
           <h2 class="heading block">
             Other Industries
@@ -46,38 +82,69 @@
           <div class="flex flex-row flex-wrap other-inner">
             <div>
               <h4 class="text-xl text-primary">
-                Automotive
+                Automotive Components
               </h4>
+              <p>
+                Typical products we supply include -
+                <b>Precision Cut &amp; Bent Parts of Suspension Systems</b>
+                <b>Fabricated &amp; Painted Chassis</b>
+              </p>
               <lightbox name="automotive_lightbox" :images="automotive" />
             </div>
             <div>
               <h4 class="text-xl text-primary">
-                Cement
+                Cement Plant Equipment &amp; Machinery
               </h4>
+              <p>
+                Typical products we supply include -
+                <b>Precision Cut &amp; Bent Parts</b>
+                <b>Fabricated &amp; Painted Assemblies</b>
+              </p>
               <lightbox name="cement_lightbox" :images="cement" />
             </div>
             <div>
               <h4 class="text-xl text-primary">
-                Packaging
+                Packaging &amp; Printing Machinery
               </h4>
+              <p>
+                Typical products we supply include -
+                <b>Structures</b>
+                <b>Fabricated &amp; Powdercoated Frames</b>
+                <b>Precision Cut &amp; Bent Parts</b>
+              </p>
               <lightbox name="packaging_lightbox" :images="packaging" />
             </div>
             <div>
               <h4 class="text-xl text-primary">
-                Parking
+                Automated Parking Systems
               </h4>
+              <p>
+                Typical products we supply include -
+                <b>Welded Assemblies</b>
+                <b>Precision Cut &amp; Bent Parts</b>
+              </p>
               <lightbox name="parking_lightbox" :images="parking" />
             </div>
             <div>
               <h4 class="text-xl text-primary">
-                Pollution
+                Pollution Control Equipment
               </h4>
+              <p>
+                Typical products we supply include -
+                <b>Laser Cut Bag Holding Plates</b>
+                <b>Fabricated Bag Houses</b>
+              </p>
               <lightbox name="pollution_lightbox" :images="pollution" />
             </div>
             <div>
               <h4 class="text-xl text-primary">
-                Process
+                Process Plant &amp; Equipment
               </h4>
+              <p>
+                Typical products we supply include -
+                <b>Fabricated &amp; Painted Assemblies</b>
+                <b>Precision Cut &amp; Bent Parts</b>
+              </p>
               <lightbox name="process_lightbox" :images="process" />
             </div>
           </div>
@@ -253,7 +320,12 @@ export default {
 .industry {
   @apply mb-12;
 }
-.other-inner div {
+.industry b {
+  @apply font-semibold text-sm;
+  @apply
+}
+.other-inner > div {
   @apply w-full md:w-1/2 mb-8;
+  @apply p-4;
 }
 </style>
