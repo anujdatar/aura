@@ -2,7 +2,7 @@
   <div :id="name">
     <!-- row of images to open lightbox -->
     <div
-      class="lightbox-container flex flex-row w-full"
+      class="lightbox-container flex flex-row flex-wrap w-full justify-between"
       @keyup.esc="closeLightboxModal()"
     >
       <img
