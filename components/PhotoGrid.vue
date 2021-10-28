@@ -1,5 +1,5 @@
 <template>
-  <div class="product-grid flex flex-wrap w-full bg-center bg-cover relative" :style="cardImages">
+  <div class="product-grid flex flex-wrap w-full h-full bg-center bg-cover relative" :style="cardImages">
     <div class="product-card-bg card1" />
     <div class="product-card-bg card2" />
     <div class="product-card-bg card3" />
@@ -32,14 +32,14 @@
 export default {
   data () {
     return {
-      mainImage: require('~/assets/images/hero_home.jpeg'),
+      mainImage: require('~/assets/images/grid_images/laser.jpg'),
       product1: {
         title: 'Construction',
-        image: require('~/assets/images/grid_images/earthmoving1.jpg')
+        image: require('~/assets/images/grid_images/earthmoving2.jpg')
       },
       product2: {
         title: 'Electrical Switchgear',
-        image: require('~/assets/images/grid_images/electrical.jpg')
+        image: require('~/assets/images/grid_images/switchgear2.jpg')
       },
       product3: {
         title: 'Mining',
@@ -47,11 +47,11 @@ export default {
       },
       product4: {
         title: 'Agriculture',
-        image: require('~/assets/images/grid_images/agro.jpg')
+        image: require('~/assets/images/grid_images/agro3.jpg')
       },
       product5: {
         title: 'Material Handling',
-        image: require('~/assets/images/grid_images/mat_handling.jpg')
+        image: require('~/assets/images/grid_images/mat_handling3.jpg')
       },
       product6: {
         title: 'Other',
@@ -97,7 +97,7 @@ export default {
 <style scoped>
 .product-grid {
   background-image: var(--main-image);
-  background-position-y: 50%;
+  background-position-y: 70%;
 }
 .product-card-bg {
   @apply w-full h-full;
