@@ -86,6 +86,16 @@ export default {
   },
   head () {
     return { title: 'Home' }
+  },
+  mounted () {
+    const navbar = document.querySelector('nav')
+    navbar.classList.remove('text-white')
+    navbar.classList.add('text-primary')
+  },
+  destroyed () {
+    const navbar = document.querySelector('nav')
+    navbar.classList.add('text-white')
+    navbar.classList.remove('text-primary')
   }
 }
 </script>
