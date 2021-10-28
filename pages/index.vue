@@ -1,18 +1,7 @@
 <template>
-  <div class="page-content overflow-hidden">
-    <div class="bg-primary w-full h-24 absolute top-0" />
-    <div class="home-heading w-full relative mt-26 mb-6 text-center">
-      <h1 class="heading">
-        Pioneer &amp; Leader
-      </h1>
-      <h3 class="sub-heading">
-        in
-      </h3>
-      <p class="sub-heading">
-        Precision Laser Cutting and Sheet Metal Fabrication
-      </p>
-    </div>
-    <div class="relative mb-30">
+  <div class="bg-white page-content overflow-hidden">
+    <div class="w-full h-24 absolute top-0" />
+    <div class="relative mt-24 mb-30 h-150">
       <photo-grid />
     </div>
     <div class="container page-content md:flex-row flex-col relative items-center pt-20">
@@ -32,8 +21,8 @@
         :card-image="card3.image"
       />
     </div>
-    <div class="relative bg-white pb-12">
-      <section-separator />
+    <div class="relative bg-alt pb-12">
+      <section-separator color="text-alt" />
       <div class="container pt-12">
         <div class="container-inner">
           <img
@@ -64,8 +53,8 @@
         </div>
       </div>
     </div>
-    <div class="relative bg-alt mt-auto">
-      <section-separator color="text-alt" />
+    <div class="relative bg-white mt-auto">
+      <section-separator color="text-white" />
       <aura-footer />
     </div>
   </div>
