@@ -84,7 +84,7 @@ export default {
     return {
       heroTitle: 'Complete solution provider in metal processing & fabrication',
       heroContent: 'CNC Laser Cutting, CNC Plasma Cutting, CNC Bending, CNC Rolling, CNC Straightening, Welding',
-      heroImage: require('~/assets/images/hero_services.jpeg'),
+      heroImage: require('~/assets/images/hero_home.jpeg'),
       service1: {
         cardTitle: 'CNC Laser Cutting',
         videoLink: 'https://www.youtube-nocookie.com/embed/9k2hIgwluP4'
