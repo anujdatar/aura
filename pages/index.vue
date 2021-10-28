@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white page-content overflow-hidden">
-    <div class="w-full h-24 absolute top-0" />
+    <div class="w-full h-24 absolute top-0 border-b-6 border-accent" />
     <div class="relative mt-24 mb-30 h-150">
       <photo-grid />
     </div>
