@@ -129,13 +129,13 @@ export default {
 }
 .product-card {
   @apply relative;
-  @apply w-1/2 md:w-1/3 h-50;
+  @apply w-1/2 md:w-1/3 h-1/3 md:h-1/2 p-4;
   @apply border border-alt;
   @apply no-underline text-right;
   @apply text-white text-2xl font-bold;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 .product-card:hover {
-  @apply bg-accent-alt;
+  @apply bg-orange-400 opacity-80;
 }
 </style>
