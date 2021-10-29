@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white page-content overflow-hidden">
     <div class="w-full h-24 absolute top-0 border-b-6 border-accent" />
-    <div class="relative mt-24 mb-30 h-150">
+    <div class="photo-grid-div relative mt-24 mb-30">
       <photo-grid />
     </div>
     <div class="container page-content md:flex-row flex-col relative items-center pt-20">
@@ -138,5 +138,8 @@ export default {
   @apply text-secondary;
   @apply mb-2;
   @apply text-justify;
+}
+.photo-grid-div {
+  height: calc(100vh - 6rem);
 }
 </style>
