@@ -74,7 +74,7 @@ export default {
   },
   mounted () {
     const cardBgElements = document.getElementsByClassName('product-card')
-    cardBgElements.forEach((element) => {
+    Array.prototype.forEach.call(cardBgElements, (element) => {
       element.addEventListener('mouseenter', this.mouseEnter)
       element.addEventListener('mouseleave', this.mouseLeave)
     })
