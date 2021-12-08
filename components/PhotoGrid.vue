@@ -47,7 +47,7 @@ export default {
       },
       product4: {
         title: 'Agriculture',
-        image: require('~/assets/images/grid_images/agro3.jpg')
+        image: require('~/assets/images/grid_images/agro4.jpg')
       },
       product5: {
         title: 'Material Handling',
