@@ -163,91 +163,206 @@
 export default {
   data () {
     return {
-      heroTitle: 'The Largest Setup of Precision Metal Cutting & Fabrication',
-      heroContent: 'CNC Laser Cutting, CNC Plasma Cutting, CNC Bending, CNC Rolling, CNC Straightening, Welding',
-      heroImage: require('~/assets/images/hero_capabilities.jpeg'),
+      heroTitle: 'Catering to major OEMs',
+      heroContent: 'Earthmoving and construction, Electrical Systems, Mining and Agricultural Equipment and many more',
+      heroImage: require('~/assets/images/hero_industries.jpeg'),
       switchgear: [
-        require('~/assets/images/industries/switchgear/switchgear_01.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_02.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_03.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_04.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_05.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_06.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_07.jpg'),
-        require('~/assets/images/industries/switchgear/switchgear_08.jpg')
+        {
+          src: require('~/assets/images/industries/switchgear/1_Switchgear_Housing.jpg'),
+          title: 'Switchgear Housing'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/2_Breaker_Support_Plate.jpg'),
+          title: 'Breaker Support Plate'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/3_Breaker_Main_Plate.jpg'),
+          title: 'Breaker Main Plate'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/4_SS_Welded_MV_Tank.jpg'),
+          title: 'SS Welded MV Tank'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/5_SS_Welded_MV_Tank.jpg'),
+          title: 'SS Welded MV Tank'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/6_SS_Tanks_for_MV_Breakers.jpg'),
+          title: 'SS Tanks for MV Breakers'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/7_GI_275GSM_Components.jpg'),
+          title: 'GI 275GSM Components'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/8_GI_Components.jpg'),
+          title: 'GI Components'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/9_GI_Parts-1.6-2.0_mm.jpg'),
+          title: 'GI Parts -> 1.6-2.0 mm'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/10_SS304_Mechanism_Plate_Other_Mechanism_Components.jpg'),
+          title: 'SS304 Mechanism Plate Other Mechanism Components'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/11_SS_Mechanism_Components.jpg'),
+          title: 'SS_Mechanism_Components'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/12_MS_Tank_Parts.jpg'),
+          title: 'MS_Tank_Parts'
+        },
+        {
+          src: require('~/assets/images/industries/switchgear/13_3CR12_Parts_of_MV_Tanks.jpg'),
+          title: '3CR12 Parts of MV Tanks'
+        }
       ],
       agriculture: [
-        require('~/assets/images/industries/agriculture/agriculture_01.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_02.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_03.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_04.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_05.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_06.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_07.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_08.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_09.jpg'),
-        require('~/assets/images/industries/agriculture/agriculture_10.jpg')
+        {
+          src: require('~/assets/images/industries/agriculture/1_SS_Tanks_Finished_SS_304-2mm.jpg'),
+          title: 'SS Tanks Finished SS304-2mm'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/2_SS_Hydraulic_Tank.jpg'),
+          title: 'SS Hydraulic Tank'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/3_Tractor_Body_Part.jpg'),
+          title: 'Tractor Body Part'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/4_Painted_Tractor_Chasis.jpg'),
+          title: 'Painted Tractor Chassis'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/5_Painted_Assembly.jpg'),
+          title: 'Painted Assembly'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/6_Painted_Chasis_6,8,12,16mm_S235JR.jpg'),
+          title: 'Painted Chassis -> 6, 8, 12, 16 mm S235JR'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/7_Chassis_8,12,16,20mm_S235JR.jpg'),
+          title: 'Chassis -> 8, 12, 16, 20 mm S235JR'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/8_Painted_Cover.jpg'),
+          title: 'Painted Cover'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/9_Painted_Frames.jpg'),
+          title: 'Painted Frames'
+        },
+        {
+          src: require('~/assets/images/industries/agriculture/10_Painted_Tank.jpg'),
+          title: 'Painted Tank'
+        }
       ],
       earthmoving: [
-        require('~/assets/images/industries/earthmoving/earthmoving_01.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_02.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_03.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_04.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_05.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_06.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_07.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_08.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_09.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_10.jpg'),
-        require('~/assets/images/industries/earthmoving/earthmoving_11.jpg')
+        {
+          src: require('~/assets/images/industries/earthmoving/1_Dozer.jpeg'),
+          title: 'Dozer'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/2_Excavator_Platform.jpg'),
+          title: 'Excavator Platform'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/3_Carrier.jpg'),
+          title: 'Carrier'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/4_Slider.jpg'),
+          title: 'Slider'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/5_Compactor_Chasis.jpeg'),
+          title: 'Compactor Chassis'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/6_Compactor_Chasis.jpeg'),
+          title: 'Compactor Chassis'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/7_Compactor_Operator_Platform.jpeg'),
+          title: 'Compactor Operator Platform'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/8_Back_Hoe_Loader_Weld_Assy_QSTE_380-20mm_thick.jpg'),
+          title: 'Back Hoe Loader Weld Assy QSTE380 -> 20mm thick'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/9_BUCKETS-ROLLED-8mmX800mm.jpg'),
+          title: 'Rolled Buckets -> 8mm x 800mm'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/10_CUT_BENT_PARTS_6,8,10,12,20mm_S355.jpg'),
+          title: 'Cut & Bent Parts 6, 8, 10, 12, 20mm S355'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/11_CUT_BENT_PARTS_6,8,10,12,20mm_S355.jpg'),
+          title: 'Cut & Bent Parts 6, 8, 10, 12, 20mm S355'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/12_Weld_Assy_S355-10,12mm_thick.jpg'),
+          title: 'Weld Assy S355 -> 10, 12mm thick'
+        },
+        {
+          src: require('~/assets/images/industries/earthmoving/13_Welded_Loader_Arm-S335-6,8,12mm_thick.jpg'),
+          title: 'Welded Loader Arm S335 -> 6, 8, 12mm thick'
+        }
       ],
       material_handling: [
-        require('~/assets/images/industries/handling/handling_01.jpg'),
-        require('~/assets/images/industries/handling/handling_02.jpg'),
-        require('~/assets/images/industries/handling/handling_03.jpg'),
-        require('~/assets/images/industries/handling/handling_04.jpg'),
-        require('~/assets/images/industries/handling/handling_05.jpg')
+        { src: require('~/assets/images/industries/handling/handling_01.jpg') },
+        { src: require('~/assets/images/industries/handling/handling_02.jpg') },
+        { src: require('~/assets/images/industries/handling/handling_03.jpg') },
+        { src: require('~/assets/images/industries/handling/handling_04.jpg') },
+        { src: require('~/assets/images/industries/handling/handling_05.jpg') }
       ],
       automotive: [
-        require('~/assets/images/industries/automotive/automotive_01.jpg'),
-        require('~/assets/images/industries/automotive/automotive_02.jpg'),
-        require('~/assets/images/industries/automotive/automotive_03.jpg')
+        { src: require('~/assets/images/industries/automotive/automotive_01.jpg') },
+        { src: require('~/assets/images/industries/automotive/automotive_02.jpg') },
+        { src: require('~/assets/images/industries/automotive/automotive_03.jpg') }
       ],
       cement: [
-        require('~/assets/images/industries/cement/cement_01.jpg'),
-        require('~/assets/images/industries/cement/cement_02.jpg'),
-        require('~/assets/images/industries/cement/cement_03.jpg'),
-        require('~/assets/images/industries/cement/cement_04.jpg')
+        { src: require('~/assets/images/industries/cement/cement_01.jpg') },
+        { src: require('~/assets/images/industries/cement/cement_02.jpg') },
+        { src: require('~/assets/images/industries/cement/cement_03.jpg') },
+        { src: require('~/assets/images/industries/cement/cement_04.jpg') }
       ],
       packaging: [
-        require('~/assets/images/industries/packaging/packaging_01.jpg'),
-        require('~/assets/images/industries/packaging/packaging_02.jpg'),
-        require('~/assets/images/industries/packaging/packaging_03.jpg'),
-        require('~/assets/images/industries/packaging/packaging_04.jpg'),
-        require('~/assets/images/industries/packaging/packaging_05.jpg'),
-        require('~/assets/images/industries/packaging/packaging_06.jpg')
+        { src: require('~/assets/images/industries/packaging/packaging_01.jpg') },
+        { src: require('~/assets/images/industries/packaging/packaging_02.jpg') },
+        { src: require('~/assets/images/industries/packaging/packaging_03.jpg') },
+        { src: require('~/assets/images/industries/packaging/packaging_04.jpg') },
+        { src: require('~/assets/images/industries/packaging/packaging_05.jpg') },
+        { src: require('~/assets/images/industries/packaging/packaging_06.jpg') }
       ],
       parking: [
-        require('~/assets/images/industries/parking/parking_01.jpg'),
-        require('~/assets/images/industries/parking/parking_02.jpg'),
-        require('~/assets/images/industries/parking/parking_03.jpg'),
-        require('~/assets/images/industries/parking/parking_04.jpg')
+        { src: require('~/assets/images/industries/parking/parking_01.jpg') },
+        { src: require('~/assets/images/industries/parking/parking_02.jpg') },
+        { src: require('~/assets/images/industries/parking/parking_03.jpg') },
+        { src: require('~/assets/images/industries/parking/parking_04.jpg') }
       ],
       pollution: [
-        require('~/assets/images/industries/pollution/pollution_01.jpg'),
-        require('~/assets/images/industries/pollution/pollution_02.jpg'),
-        require('~/assets/images/industries/pollution/pollution_03.jpg'),
-        require('~/assets/images/industries/pollution/pollution_04.jpg'),
-        require('~/assets/images/industries/pollution/pollution_05.jpg'),
-        require('~/assets/images/industries/pollution/pollution_06.jpg')
+        { src: require('~/assets/images/industries/pollution/pollution_01.jpg') },
+        { src: require('~/assets/images/industries/pollution/pollution_02.jpg') },
+        { src: require('~/assets/images/industries/pollution/pollution_03.jpg') },
+        { src: require('~/assets/images/industries/pollution/pollution_04.jpg') },
+        { src: require('~/assets/images/industries/pollution/pollution_05.jpg') },
+        { src: require('~/assets/images/industries/pollution/pollution_06.jpg') }
       ],
       process: [
-        require('~/assets/images/industries/process/process_01.jpg'),
-        require('~/assets/images/industries/process/process_02.jpg'),
-        require('~/assets/images/industries/process/process_03.jpg'),
-        require('~/assets/images/industries/process/process_04.jpg'),
-        require('~/assets/images/industries/process/process_05.jpg'),
-        require('~/assets/images/industries/process/process_06.jpg')
+        { src: require('~/assets/images/industries/process/process_01.jpg') },
+        { src: require('~/assets/images/industries/process/process_02.jpg') },
+        { src: require('~/assets/images/industries/process/process_03.jpg') },
+        { src: require('~/assets/images/industries/process/process_04.jpg') },
+        { src: require('~/assets/images/industries/process/process_05.jpg') },
+        { src: require('~/assets/images/industries/process/process_06.jpg') }
       ]
     }
   },
