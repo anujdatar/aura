@@ -17,8 +17,8 @@
         />
       </div>
       <!-- contact form -->
-      <div class="px-16 py-24 mx-auto my-10 flex">
-        <form class="w-full md:w-1/2 bg-alt rounded-lg p-8 flex flex-col relative z-10 shadow-md md:ml-auto" @submit.prevent="submitFormButton">
+      <div class="px-16 py-8 mx-auto my-2 flex">
+        <form class="w-full md:w-1/2 lg:w-1/3 bg-alt rounded-lg px-8 py-2 flex flex-col relative z-10 shadow-md md:ml-auto" @submit.prevent="submitFormButton">
           <h2 class="text-primary text-2xl font-semibold mb-4">
             Contact Us
           </h2>
