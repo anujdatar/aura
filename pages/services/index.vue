@@ -83,7 +83,7 @@ export default {
   data () {
     return {
       heroTitle: 'Complete solution provider in metal processing & fabrication',
-      heroContent: 'CNC Laser Cutting, CNC Plasma Cutting, CNC Bending, CNC Rolling, CNC Straightening, Welding',
+      heroContent: 'MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly',
       heroImage: require('~/assets/images/hero_home.jpeg'),
       service1: {
         cardTitle: 'CNC Laser Cutting',
@@ -91,23 +91,23 @@ export default {
       },
       service2: {
         cardTitle: 'CNC Plasma Cutting',
-        videoLink: 'https://www.youtube-nocookie.com/embed/451xMlS69Ho'
+        videoLink: 'https://www.youtube-nocookie.com/embed/FAjDt2CTXCA'
       },
       service3: {
         cardTitle: 'CNC Bending',
-        videoLink: 'https://www.youtube-nocookie.com/embed/jONKl9u27TY'
+        videoLink: 'https://www.youtube-nocookie.com/embed/90prqWQgdBM'
       },
       service4: {
         cardTitle: 'CNC Rolling(4 Rolls System)',
-        videoLink: 'https://www.youtube-nocookie.com/embed/dbspCBzFkZ0'
+        videoLink: 'https://www.youtube-nocookie.com/embed/8U-TV4Y0rPA'
       },
       service5: {
         cardTitle: 'Robotic Metal Fabrication',
-        videoLink: 'https://www.youtube-nocookie.com/embed/iN-45MhK8eg'
+        videoLink: 'https://www.youtube-nocookie.com/embed/rc6JIi8lDDg'
       },
       service6: {
         cardTitle: 'Manual Metal Fabrication',
-        videoLink: 'https://www.youtube-nocookie.com/embed/iN-45MhK8eg'
+        videoLink: 'https://www.youtube-nocookie.com/embed/rc6JIi8lDDg'
       }
     }
   },
