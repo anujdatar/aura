@@ -2,14 +2,14 @@
   <div :id="name">
     <!-- row of images to open lightbox -->
     <div
-      class="lightbox-container flex flex-row flex-wrap w-full justify-between"
+      class="lightbox-container flex flex-row w-full justify-between"
       @keyup.esc="closeLightboxModal()"
     >
       <img
         v-for="(image, i) in images"
         :key="i"
-        :src="image"
-        class="lightbox-image cursor-pointer m-2 w-16 h-16"
+        :src="image.src"
+        class="lightbox-image cursor-pointer m-2 w-36 h-36"
         @click="openLightboxModal();showImage(i)"
       >
     </div>
@@ -25,7 +25,10 @@
           <div class="number-text text-alt p-3 m-2 absolute top-0 rounded bg-black opacity-80">
             {{ i+1 }}/{{ imageCount }}
           </div>
-          <img :src="image">
+          <img :src="image.src">
+          <div v-if="image.title" class="slide-title text-alt text-center">
+            {{ image.title }}
+          </div>
         </div>
         <a class="prev cursor-pointer" @click="changeSlide(-1)">&#10094;</a>
         <a class="next cursor-pointer" @click="changeSlide(1)">&#10095;</a>
