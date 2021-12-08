@@ -157,4 +157,16 @@ export default {
 .prev:hover {
   @apply bg-accent-alt opacity-70 text-white;
 }
+
+.lightbox-container {
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  touch-action: pan-x;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+.lightbox-row::-webkit-scrollbar {
+  display: none;
+}
 </style>
