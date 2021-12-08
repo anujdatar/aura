@@ -34,20 +34,14 @@
             <h2 class="heading text-center md:text-right">
               An ISO 9001:2015 certified company
             </h2>
-            <p class="paragraph hidden lg:block">
-              Situated near Pune, the engineering Capital of India, Aura LaserFab
-              offers both manufacturing and job shopping services in the field of
-              CNC Laser Cutting and Sheet Metal Fabrication.
+            <p class="paragraph md:hidden lg:block">
+              Situated near Pune, the engineering Capital of India, Aura Laserfab offers both manufacturing and job shopping services in the field of Laser Cutting &amp; Sheet Metal Fabrication.
             </p>
             <p class="paragraph">
-              Equipped with the latest machines for CNC Laser Cutting, Bending,
-              and Fabrication, Aura manufactures a large variety of components
-              with a mix of volumes. Using contemporary techniques we deliver
-              components in shorter lead time meeting universally acceptable
-              quality standards. We manufacture products ranging from precise
-              laser cut–bend components to complex welded and painted assemblies
-              using a variety of raw materials like carbon steel, stainless steel,
-              aluminium, and special steels.
+              Equipped with the latest technology in Laser Cutting, Bending and Fabrication, Aura manufactures a large variety of components with a mix of volumes. With the use of contemporary techniques of operations management we can deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from a precise laser cut–bend component to a complex welded, machined and painted assembly using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
+            </p>
+            <p class="paragraph">
+              With a variety of machinery like Laser Cutting, Levelling, Press brakes, Rolling, Robotic Welding, and Vertical Milling Machine (VMC), Aura Laserfab is a one-stop shop for all Sheet Metal Fabrication requirements.
             </p>
           </div>
         </div>
