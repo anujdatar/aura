@@ -104,7 +104,8 @@ export default {
       // this.firstThumbnail = n
       const thumbs = []
       const thumbnails = this.lightboxThumbnails
-      for (let i in [...Array(this.thumbnailCount).keys()]) {
+      const _thumbnailCount = this.imageCount < this.thumbnailCount ? this.imageCount : this.thumbnailCount
+      for (let i in [...Array(_thumbnailCount).keys()]) {
         i = parseInt(i)
         if (n + i > this.imageCount - 1) {
           i = i - this.imageCount
