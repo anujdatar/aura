@@ -1,22 +1,14 @@
 <template>
   <div class="page-content overflow-hidden flex flex-col min-h-screen">
-    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" image-offset="75%" />
-    <div class="container flex-col">
+    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
+    <div class="container flex flex-col">
       <!-- construction and earthmoving section -->
       <div id="construction" class="industry">
         <h2 class="heading block">
           Earthmoving &amp; Construction Equipment
         </h2>
         <p>
-          We supply fabricated assemblies like
-          <b>Loader Arm</b>
-          <b>Boom</b>
-          <b>Lift Arm</b>
-          <b>Frames</b>
-          <b>Tanks</b>
-          <b>Brackets</b>
-          <b>Non-structural Components</b>
-          <b>Precision Cut &amp; Bent Parts </b>
+          We supply fabricated and machined assemblies such as Dozers, Linkages, Platforms, Sliders and Carriers for Excavators, Chassis &amp; Operator Platforms for Compactors and Other Cut, Bend and Fabricated Components Loaders, Skid Steers, Engine mounts etc.
         </p>
         <lightbox name="earthmoving_lightbox" :images="earthmoving" />
       </div>
@@ -26,11 +18,7 @@
           Electrical Switchgear Products
         </h2>
         <p>
-          Typical products we supply include -
-          <b>Precision Cut &amp; Bent Parts of Mechanisms</b>
-          <b>Controls</b>
-          <b>Fabricated Tanks in Stainless Steel</b>
-          <b>Welded &amp; Assembled Components</b>
+          Typical Components we supply include SF6 Stainless Steel Welded Tanks for Medium Voltage Switchgear, Breaker Mechanism Units, Enclosures, and Other Precision Mechanism Components.
         </p>
         <lightbox name="switchgear_lightbox" :images="switchgear" />
       </div>
@@ -40,7 +28,7 @@
           Mining Equipment
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis, tempore possimus dolor obcaecati illo aut inventore id vel odit impedit optio animi consequatur perspiciatis delectus odio voluptatibus dolorum asperiores! Voluptates perspiciatis est quo? Vero magnam praesentium a illo odio ipsum consequatur asperiores repellendus accusamus cumque, vitae saepe expedita in sit architecto libero quasi reprehenderit quisquam provident repellat ea ipsa minus. Dolor, eligendi consequatur sapiente tempora nesciunt ut aspernatur aperiam minima, deserunt nihil cumque ratione nam cupiditate quas excepturi aliquam, repellat possimus et libero a debitis porro! Ipsa voluptas, asperiores iste debitis cum non quisquam amet nisi iusto tenetur dolore voluptates sit officiis itaque eveniet labore fugiat accusantium dolorum veritatis enim nobis vero provident saepe at? Vero dolorem quidem et facere laborum repellendus deleniti debitis quis culpa, nisi soluta sunt! Repudiandae repellendus perferendis rerum labore porro animi quo non eveniet tenetur iure, cumque beatae tempora dolore iste enim aperiam, cum dolor voluptas praesentium consectetur tempore! Eveniet corrupti nobis obcaecati aperiam eos culpa dicta molestias quibusdam necessitatibus, quos ut recusandae consequuntur quam voluptate id. Nostrum recusandae illo architecto non incidunt hic explicabo accusantium suscipit dolorem sint accusamus vero quasi beatae, nobis libero, optio alias rem fugiat? Quae esse blanditiis error asperiores beatae, hic nobis vitae tempora odit. Recusandae quam, unde autem dicta maxime nisi, totam ab perspiciatis alias quibusdam dolore adipisci mollitia neque blanditiis, sapiente ratione quod a quos. Provident voluptatem earum eius, at consequuntur perferendis ad eum eveniet porro vel autem minima dolores est odit consectetur numquam mollitia sit officia blanditiis maiores qui. Ex perferendis culpa dolore suscipit assumenda, placeat minus officia ad, temporibus accusamus aliquid, praesentium sapiente. Quibusdam maiores culpa eveniet quam modi, dolor repudiandae quidem harum quaerat? Nulla neque delectus itaque, eos deleniti amet eius blanditiis, ex fugiat sit quis quibusdam ipsum, sed nam quam dolore maiores nemo.
+          We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
         </p>
       </div>
     </div>
@@ -54,10 +42,7 @@
             Agriculture and Farm Equipment
           </h2>
           <p>
-            Typical products we supply include -
-            <b>Fabricated Chassis</b>
-            <b>Fabricated tanks in Stainless Steel</b>
-            <b>Fabricated &amp; Painted Assemblies</b>
+            Our Products include Painted Tractor Chassis &amp; Body Parts, Hydraulic and Fuel Tanks, Pedals, Stainless Steel Tanks  &amp; Frames
           </p>
           <lightbox name="agriculture_lightbox" :images="agriculture" />
         </div>
@@ -67,10 +52,7 @@
             Material Handling Equipment
           </h2>
           <p>
-            Typical products we supply include -
-            <b>Fabricated Assemblies like Apron Feeders</b>
-            <b>Fabricated Conveyors</b>
-            <b>Fabricated and Painted Assemblies &amp; Parts for Conveyors</b>
+            Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
           </p>
           <lightbox name="mat_handling_lightbox" :images="material_handling" />
         </div>
@@ -85,9 +67,7 @@
                 Automotive Components
               </h4>
               <p>
-                Typical products we supply include -
-                <b>Precision Cut &amp; Bent Parts of Suspension Systems</b>
-                <b>Fabricated &amp; Painted Chassis</b>
+                Products include Trailer Chassis, Landing Gear for Trailers, Parts for Suspension Systems
               </p>
               <lightbox name="automotive_lightbox" :images="automotive" />
             </div>
@@ -437,7 +417,9 @@ export default {
 }
 .industry b {
   @apply font-semibold text-sm;
-  @apply
+}
+.industry p {
+  @apply justify-between text-justify;
 }
 .other-inner > div {
   @apply w-full md:w-1/2 mb-8;
