@@ -1,6 +1,6 @@
 <template>
   <div class="page-content overflow-hidden flex flex-col min-h-screen">
-    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" />
+    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" image-offset="100%" />
     <div class="container">
       <div class="container-inner">
         <div class="text-justify">
