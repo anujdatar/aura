@@ -1,46 +1,56 @@
 <template>
   <div :id="name">
     <!-- lightbox thumbnails -->
-    <div class="lightbox-thumbnails flex flex-row w-full justify-between">
-      <button class="thumb-change prev" @click="changeThumbnails(-1)">
-        <!-- &#10094; -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="currentColor"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z" /></svg>
+    <div
+      class="thumbnail-container"
+      @mouseenter="thumbnailMouseEnter"
+      @mouseleave="thumbnailMouseLeave"
+    >
+      <button class="thumbnail-button prev cursor-pointer" @click="changeThumbnail(-1)">
+        &#10094;
       </button>
-      <div class="lightbox-thumbnail-row flex flex-row w-full gap-8 overflow-hidden">
-        <img
-          v-for="(image, i) in images"
-          :key="i"
-          :src="image.src"
-          :alt="image.title"
-          class="lightbox-thumbnail cursor-pointer"
-          :style="computedStyles"
-          @click="openLightboxModal();showLightboxImage(i)"
-        >
+      <div class="thumbnail-track-container">
+        <div class="thumbnail-track">
+          <img
+            v-for="(image, i) in images"
+            :key="i"
+            :src="image.src"
+            class="thumbnail-image"
+            @click="openLightboxModal(i+1)"
+          >
+        </div>
       </div>
-      <button class="thumb-change next" @click="changeThumbnails(1)">
-        <!-- &#10094; -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="currentColor"><path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z" /></svg>
+      <button class="thumbnail-button next cursor-pointer" @click="changeThumbnail(1)">
+        &#10095;
       </button>
     </div>
     <!-- lightbox modal -->
     <div class="lightbox-modal" rel="closed">
-      <span class="close cursor-pointer" @click="closeLightboxModal">&times;</span>
-      <div class="lightbox-content">
-        <div
-          v-for="(image, i) in images"
-          :key="i"
-          class="lightbox-slide"
-        >
-          <div class="slide-number-text">
-            {{ i+1 }}/{{ imageCount }}
-          </div>
-          <img :src="image.src">
-          <div v-if="image.title" class="slide-title text-alt text-center">
-            {{ image.title }}
+      <div class="lightbox-container">
+        <span class="close cursor-pointer" @click="closeLightboxModal">&times;</span>
+        <button class="slide-change prev cursor-pointer" @click="changeSlide(-1)">
+          &#10094;
+        </button>
+        <button class="slide-change next cursor-pointer" @click="changeSlide(1)">
+          &#10095;
+        </button>
+        <div class="slide-number-text">
+          {{ slideNumber }}/{{ imageCount }}
+        </div>
+        <div class="slides-container">
+          <ul class="slides-track">
+            <li
+              v-for="(image, i) in modalImages"
+              :key="i"
+              class="lightbox-slide"
+            >
+              <img :src="image.src">
+            </li>
+          </ul>
+          <div class="slide-title">
+            {{ imageTitleText }}
           </div>
         </div>
-        <a class="slide-change prev cursor-pointer" @click="changeLightboxSlide(-1)">&#10094;</a>
-        <a class="slide-change next cursor-pointer" @click="changeLightboxSlide(1)">&#10095;</a>
       </div>
     </div>
   </div>
@@ -69,109 +79,139 @@ export default {
   data () {
     return {
       firstThumbnail: 0,
-      currentSlide: 0
+      currentSlide: 0,
+      imageTitleText: '',
+      slideWidth: 0,
+      slideNumber: 1
     }
   },
   computed: {
     imageCount () {
       return this.images.length
     },
-    computedStyles () {
-      return {
-        '--thumb-height': this.thumbHeight
-      }
+    modalImages () {
+      const lastImage = this.images[this.imageCount - 1]
+      const firstImage = this.images[0]
+      return [lastImage, ...this.images, firstImage]
     },
-    lightboxThumbnails () {
-      return document.querySelectorAll('#' + this.name + ' .lightbox-thumbnail')
+    thumbnailTrack () {
+      return document.querySelector('#' + this.name + ' .thumbnail-track')
+    },
+    thumbnails () {
+      return Array.from(this.thumbnailTrack.children)
+    },
+    thumbnailWidth () {
+      return this.thumbnails[0].getBoundingClientRect().width
     },
     lightboxModal () {
       return document.querySelector('#' + this.name + ' .lightbox-modal')
     },
+    lightboxSlideTrack () {
+      return document.querySelector('#' + this.name + ' .slides-track')
+    },
+    lightboxImageTitle () {
+      return document.querySelector('#' + this.name + ' .slide-title')
+    },
     lightboxSlides () {
-      return document.querySelectorAll('#' + this.name + ' .lightbox-slide')
+      return Array.from(this.lightboxSlideTrack.children)
     }
   },
   mounted () {
-    this.showThumbnails(0)
+    this.setThumbnailPosition()
+    this.lightboxSlides[0].setAttribute('id', 'lastClone')
+    this.lightboxSlides[this.imageCount + 1].setAttribute('id', 'firstClone')
+    this.thumbnailTrack.style.transition = 'transform 250ms ease-in'
     window.addEventListener('keyup', this.handleKeypress)
   },
   destroyed () {
     window.removeEventListener('keyup', this.handleKeypress)
   },
   methods: {
-    // thumbnail functions
-    showThumbnails (n) {
-      // this.firstThumbnail = n
-      const thumbs = []
-      const thumbnails = this.lightboxThumbnails
-      const _thumbnailCount = this.imageCount < this.thumbnailCount ? this.imageCount : this.thumbnailCount
-      for (let i in [...Array(_thumbnailCount).keys()]) {
-        i = parseInt(i)
-        if (n + i > this.imageCount - 1) {
-          i = i - this.imageCount
+    setThumbnailPosition () {
+      this.thumbnails.forEach((image, index) => {
+        if (index === 0) {
+          image.style.left = 0 + 'px'
         }
-        if (n + i < 0) {
-          i = this.imageCount
+        if (index > 0) {
+          image.style.left = (this.thumbnailWidth + 32) * index + 'px'
         }
-        thumbs.push(n + i)
-        // console.log(n + i)
-        thumbnails[n + i].style.display = 'flex'
-      }
-      console.log(thumbs)
-      this.firstThumbnail = thumbs[0]
-    },
-    hideThumbnails () {
-      const thumbnails = this.lightboxThumbnails
-      thumbnails.forEach((image) => {
-        // console.log(image)
-        image.style.display = 'none'
       })
     },
-    cycleThumbnails (n) {
-      if (n > this.imageCount) {
-        n = n - this.imageCount
+    changeThumbnail (n) {
+      // const nextButton = document.querySelector('#' + this.name + ' .thumbnail-button.next')
+      // const nextButtonLeft = nextButton.offsetLeft
+
+      // const lastThumbnail = this.thumbnails[this.imageCount - 1].style.left
+      // const end = parseInt(lastThumbnail.split('px')[0])
+      // console.log(nextButtonLeft, end, nextButtonLeft > end)
+      // console.log(this.thumbnailTrack.right)
+
+      const newThumbnail = this.firstThumbnail + n
+      if (newThumbnail >= 0 && newThumbnail < this.imageCount - 1) {
+        const targetThumbnail = this.thumbnails[newThumbnail]
+        this.thumbnailTrack.style.transform = 'translateX(-' + targetThumbnail.style.left + ')'
+        this.firstThumbnail += n
       }
-      if (n < 0) {
-        n = this.imageCount - 1
-      }
-      return n
     },
-    changeThumbnails (n) {
-      // console.log('changing thumbnail by ', n)
-      const first = this.firstThumbnail + n
-      console.log(first, n)
-      this.hideThumbnails()
-      this.showThumbnails(first)
-      console.log(this.firstThumbnail, n)
+    thumbnailMouseEnter () {
+      const buttons = document.querySelectorAll('#' + this.name + ' .thumbnail-button')
+      const buttonArray = Array.from(buttons)
+      buttonArray.forEach((button) => {
+        button.classList.add('hover')
+      })
     },
-    // lightbox modal functions
-    openLightboxModal () {
+    thumbnailMouseLeave () {
+      const buttons = document.querySelectorAll('#' + this.name + ' .thumbnail-button')
+      const buttonArray = Array.from(buttons)
+      buttonArray.forEach((button) => {
+        button.classList.remove('hover')
+      })
+    },
+    openLightboxModal (n) {
       this.lightboxModal.style.display = 'block'
       this.lightboxModal.setAttribute('rel', 'open')
-      console.log(`opening ${this.name}`)
+      this.lightboxSlideTrack.addEventListener('transitionend', this.handleSlideLoop)
+      this.slideWidth = this.lightboxSlides[0].getBoundingClientRect().width
+      this.lightboxSlides.forEach(this.setSlidePosition)
+      this.moveToSlide(n)
+      this.slideNumber = this.currentSlide
     },
     closeLightboxModal () {
       this.lightboxModal.style.display = 'none'
       this.lightboxModal.setAttribute('rel', 'closed')
-      console.log(`closing ${this.name}`)
+      this.lightboxSlideTrack.style.transition = 'none'
+      this.lightboxSlideTrack.removeEventListener('transitionend', this.handleSlideLoop)
     },
-    showLightboxImage (n) {
-      const images = this.lightboxSlides
-      if (n > this.imageCount - 1) { n = 0 }
-      if (n < 0) { n = this.imageCount - 1 }
-
-      images.forEach((image) => {
-        image.style.display = 'none'
-      })
-      this.currentSlide = n
-
-      images[this.currentSlide].style.display = 'block'
-      console.log(`showing image ${n} from ${this.name}`)
+    setSlidePosition (slide, index) {
+      slide.style.left = this.slideWidth * index + 'px'
     },
-    changeLightboxSlide (n) {
-      const newSlide = this.currentSlide + n
-      console.log(`changing slide to ${newSlide} of ${this.name}`)
-      this.showLightboxImage(newSlide)
+    changeSlide (n) {
+      this.lightboxSlideTrack.style.transition = 'transform 250ms ease-in'
+      const targetSlide = this.currentSlide + n
+      if (targetSlide >= 0 && targetSlide < this.imageCount + 2) {
+        this.moveToSlide(targetSlide)
+      }
+    },
+    moveToSlide (targetSlideNumber) {
+      const targetSlide = this.lightboxSlides[targetSlideNumber]
+      this.lightboxSlides[this.currentSlide].classList.remove('z-1002')
+      targetSlide.classList.add('z-1002')
+      this.lightboxSlideTrack.style.transform = 'translateX(-' + targetSlide.style.left + ')'
+      this.currentSlide = targetSlideNumber
+      this.lightboxImageTitle.innerHTML = this.modalImages[targetSlideNumber].title
+    },
+    handleSlideLoop () {
+      if (this.lightboxSlides[this.currentSlide].id === 'lastClone') {
+        this.lightboxSlideTrack.style.transition = 'none'
+        this.currentSlide = this.imageCount
+        this.moveToSlide(this.currentSlide)
+      }
+      if (this.lightboxSlides[this.currentSlide].id === 'firstClone') {
+        this.lightboxSlideTrack.style.transition = 'none'
+        this.currentSlide = 1
+        this.moveToSlide(this.currentSlide)
+      }
+      this.slideNumber = this.currentSlide
     },
     handleKeypress (e) {
       const isOpen = this.lightboxModal.getAttribute('rel')
@@ -180,10 +220,10 @@ export default {
           this.closeLightboxModal()
         }
         if (e.key === 'ArrowLeft') {
-          this.changeLightboxSlide(-1)
+          this.changeSlide(-1)
         }
         if (e.key === 'ArrowRight') {
-          this.changeLightboxSlide(1)
+          this.changeSlide(1)
         }
       }
     }
@@ -192,69 +232,85 @@ export default {
 </script>
 
 <style scoped>
-/* styling for thumbnails */
-.thumb-change {
-  @apply flex text-center align-middle justify-center leading-8 cursor-pointer;
-  @apply h-6 w-7 my-auto mx-2 p-0 rounded-full;
-  @apply  bg-black text-alt text-xl opacity-50;
+.thumbnail-container {
+  @apply w-full h-full flex flex-row relative;
 }
-.thumb-change svg {
-  @apply w-4 h-4 m-auto;
+.thumbnail-track-container {
+  @apply relative h-full w-full overflow-hidden;
 }
-.thumb-change.prev svg {
-  transform: scaleX(-1);
+.thumbnail-track {
+  @apply relative w-full h-36;
 }
-.thumb-change:hover {
-  @apply bg-accent-alt opacity-70 text-white;
+.thumbnail-image {
+  @apply w-36 h-36 object-cover;
+  @apply absolute top-0 bottom-0;
 }
-.lightbox-thumbnail {
-  height: var(--thumb-height);
-  width: var(--thumb-height);
-  display: none;
+
+.thumbnail-button {
+  @apply px-2 mx-2 hover:bg-black text-black hover:text-alt opacity-60;
 }
-/* ************************************************************************* */
-/* styling for the lightbox image popup */
+.thumbnail-button.hover {
+  @apply bg-black text-alt;
+}
+
+/* **************************************************************** */
 .lightbox-modal {
+  @apply text-alt p-0 m-0;
+  @apply bg-transparent z-1000 w-full h-full;
+  @apply fixed top-0 left-0 overflow-hidden;
   display: none;
-  @apply fixed z-100 pt-24 left-0 top-0 w-full h-full overflow-auto;
-  @apply bg-black;
+}
+
+.lightbox-modal::before {
+  @apply bg-black opacity-95 fixed top-0 left-0 w-full h-full;
+  content: "";
+}
+
+.lightbox-container {
+  @apply relative z-1001 h-full w-full m-auto;
+  @apply flex flex-col align-middle items-center justify-center;
+}
+
+.lightbox-modal .slide-number-text {
+  @apply text-alt p-3 m-2 absolute top-5 left-8 rounded bg-black opacity-80;
 }
 
 .lightbox-modal .close {
-  @apply text-alt font-bold text-3xl text-left;
-  @apply absolute top-10 right-8;
+  @apply z-1002;
+  @apply font-bold text-4xl text-left;
+  @apply absolute top-8 right-8;
 }
-.lightbox-content {
-  @apply relative flex m-auto p-0 w-3/4 h-3/4 align-middle items-center justify-center;
-}
-.lightbox-slide {
-  display: none;
-}
-.lightbox-slide .slide-number-text {
-  @apply text-alt p-3 m-2 absolute -top-16 left-0 rounded bg-black opacity-80;
-}
-.lightbox-slide img {
-  @apply opacity-100;
-  @apply max-h-lg w-auto;
-}
-.lightbox-slide .slide-title {
-  @apply pt-4;
-}
-
 .slide-change {
+  @apply z-1002;
   @apply cursor-pointer absolute top-1/2;
-  @apply text-alt font-bold text-xl p-4;
+  @apply font-bold text-2xl py-4 px-8 ;
   @apply transition-all duration-500;
   @apply select-none;
-}
-.slide-change.next {
-  @apply -right-12 rounded-l;
+  transform: translateY(-50%)
 }
 .slide-change.prev {
-  @apply -left-12 rounded-r;
+  @apply -left-2;
 }
-.slide-change.next:hover,
-.slide-change.prev:hover {
-  @apply bg-accent-alt opacity-70 text-white;
+.slide-change.next {
+  @apply -right-2;
+}
+
+.slides-container {
+  @apply z-1001 h-1/2 w-3/5 m-auto overflow-hidden;
+  @apply flex flex-col align-middle items-center justify-center;
+}
+.slides-track {
+  @apply p-0 m-0 list-none w-full h-full relative;
+}
+.lightbox-slide {
+  @apply absolute top-0 bottom-0 overflow-hidden w-full;
+}
+.lightbox-slide img {
+  @apply object-cover w-full h-full;
+}
+.slide-title {
+  @apply z-1001 absolute right-1/2 md:bottom-24 bottom-32;
+  @apply text-xl;
+  transform: translateX(50%)
 }
 </style>
