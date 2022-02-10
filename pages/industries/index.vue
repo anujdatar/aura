@@ -443,23 +443,23 @@ export default {
       ],
       switchgear: [
         {
-          src: require('~/assets/images/industries/switchgear/1_Switchgear_Housing.jpg'),
+          src: require('~/assets/images/industries/switchgear/1_Switchgear_Housing.webp'),
           title: 'Switchgear Housing'
         },
         {
-          src: require('~/assets/images/industries/switchgear/2_Breaker_Support_Plate.jpg'),
+          src: require('~/assets/images/industries/switchgear/2_Breaker_Support_Plate.webp'),
           title: 'Breaker Support Plate'
         },
         {
-          src: require('~/assets/images/industries/switchgear/3_Breaker_Main_Plate.jpg'),
+          src: require('~/assets/images/industries/switchgear/3_Breaker_Main_Plate.webp'),
           title: 'Breaker Main Plate'
         },
         {
-          src: require('~/assets/images/industries/switchgear/4_SS_Welded_MV_Tank.jpg'),
+          src: require('~/assets/images/industries/switchgear/4_SS_Welded_MV_Tank.webp'),
           title: 'SS Welded MV Tank'
         },
         {
-          src: require('~/assets/images/industries/switchgear/5_SS_Welded_MV_Tank.jpg'),
+          src: require('~/assets/images/industries/switchgear/5_SS_Welded_MV_Tank.webp'),
           title: 'SS Welded MV Tank'
         },
         {
