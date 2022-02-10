@@ -73,7 +73,7 @@
             </p>
           </div>
           <img
-            src="~/assets/images/team.jpg"
+            src="~/assets/images/team.webp"
             alt="team-image"
             class="md:max-w-1/2 rounded-xl mx-auto md:ml-6"
           >
