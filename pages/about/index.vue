@@ -112,7 +112,7 @@ export default {
       heroContent: 'The largest setup for CNC laser cutting, bending, rolling, straightening and welding',
       heroImage: require('~/assets/images/hero_about.jpeg'),
       card1: {
-        imageSrc: require('~/assets/images/card_images/sheet.jpeg'),
+        imageSrc: require('~/assets/images/card_images/sheet.webp'),
         content: 'Versatile resource pool to handle variety and complexity'
       },
       card2: {
@@ -120,15 +120,15 @@ export default {
         content: 'Ability to handle low to high production quantities'
       },
       card3: {
-        imageSrc: require('~/assets/images/card_images/team2.jpg'),
+        imageSrc: require('~/assets/images/card_images/team2.webp'),
         content: 'Competent and experienced teams'
       },
       card4: {
-        imageSrc: require('~/assets/images/card_images/plasma.jpeg'),
+        imageSrc: require('~/assets/images/card_images/plasma.webp'),
         content: 'Advanced technology with CNC Laser, Plasma, Bending, and Rolling machines'
       },
       card5: {
-        imageSrc: require('~/assets/images/card_images/plant2.png'),
+        imageSrc: require('~/assets/images/card_images/plant2.webp'),
         content: 'Capacity to augment machinary and plant setup'
       },
       card6: {

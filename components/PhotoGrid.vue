@@ -35,27 +35,27 @@ export default {
       mainImage: require('~/assets/images/grid_images/laser.jpg'),
       product1: {
         title: 'Construction',
-        image: require('~/assets/images/grid_images/earthmoving2.jpg')
+        image: require('~/assets/images/grid_images/earthmoving2.webp')
       },
       product2: {
         title: 'Electrical Switchgear',
-        image: require('~/assets/images/grid_images/switchgear2.jpg')
+        image: require('~/assets/images/grid_images/switchgear2.webp')
       },
       product3: {
         title: 'Mining',
-        image: require('~/assets/images/grid_images/mining.jpg')
+        image: require('~/assets/images/grid_images/mining.webp')
       },
       product4: {
         title: 'Agriculture',
-        image: require('~/assets/images/grid_images/agro4.jpg')
+        image: require('~/assets/images/grid_images/agro4.webp')
       },
       product5: {
         title: 'Material Handling',
-        image: require('~/assets/images/grid_images/mat_handling3.jpg')
+        image: require('~/assets/images/grid_images/mat_handling3.webp')
       },
       product6: {
         title: 'Other',
-        image: require('~/assets/images/grid_images/process_plant.jpg')
+        image: require('~/assets/images/grid_images/process_plant.webp')
       }
     }
   },
