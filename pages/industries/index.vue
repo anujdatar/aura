@@ -30,6 +30,7 @@
         <p>
           We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
         </p>
+        <lightbox name="mining_lightbox" :images="mining" />
       </div>
     </div>
     <!--  -->
@@ -73,14 +74,14 @@
             </div>
             <div>
               <h4 class="text-xl text-primary">
-                Cement Plant Equipment &amp; Machinery
+                Textile Machinery
               </h4>
               <p>
                 Typical products we supply include -
                 <b>Precision Cut &amp; Bent Parts</b>
                 <b>Fabricated &amp; Painted Assemblies</b>
               </p>
-              <lightbox name="cement_lightbox" :images="cement" />
+              <lightbox name="textile_lightbox" :images="textile" />
             </div>
             <div>
               <h4 class="text-xl text-primary">
