@@ -146,7 +146,7 @@ export default {
     return {
       heroTitle: 'Catering to major OEMs',
       heroContent: 'Earthmoving and construction, Electrical Systems, Mining and Agricultural Equipment and many more',
-      heroImage: require('~/assets/images/hero_industries.jpeg'),
+      heroImage: require('~/assets/images/hero_industries.webp'),
       agriculture: [
         {
           src: require('~/assets/images/industries/agriculture/1_SS_Tanks_Finished_SS_304-2mm.jpg'),

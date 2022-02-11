@@ -58,9 +58,9 @@
 export default {
   data () {
     return {
-      heroTitle: 'Pioneer & Leader',
-      heroContent: 'Precision Laser Cutting and Sheet Metal Fabrication',
-      heroImage: require('~/assets/images/hero_home.jpeg'),
+      // heroTitle: 'Pioneer & Leader',
+      // heroContent: 'Precision Laser Cutting and Sheet Metal Fabrication',
+      // heroImage: require('~/assets/images/hero_home.jpeg'),
       card1: {
         title: 'Latest Technology in Metal Cutting and Fabrication',
         content: 'Nimble Manufacturing Processes to Cater to Variety and Complexity',

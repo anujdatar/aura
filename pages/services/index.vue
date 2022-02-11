@@ -84,30 +84,30 @@ export default {
     return {
       heroTitle: 'Complete solution provider in metal processing & fabrication',
       heroContent: 'MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly',
-      heroImage: require('~/assets/images/hero_home.jpeg'),
+      heroImage: require('~/assets/images/hero_services.webp'),
       service1: {
         cardTitle: 'CNC Laser Cutting',
-        videoLink: 'https://www.youtube-nocookie.com/embed/9k2hIgwluP4'
+        videoLink: 'https://www.youtube-nocookie.com/embed/-3EX9fV5uHg'
       },
       service2: {
-        cardTitle: 'CNC Plasma Cutting',
-        videoLink: 'https://www.youtube-nocookie.com/embed/FAjDt2CTXCA'
-      },
-      service3: {
         cardTitle: 'CNC Bending',
         videoLink: 'https://www.youtube-nocookie.com/embed/90prqWQgdBM'
       },
-      service4: {
-        cardTitle: 'CNC Rolling(4 Rolls System)',
+      service3: {
+        cardTitle: 'CNC Rolling',
         videoLink: 'https://www.youtube-nocookie.com/embed/8U-TV4Y0rPA'
       },
+      service4: {
+        cardTitle: 'Robotic Fabrication',
+        videoLink: 'https://www.youtube-nocookie.com/embed/HYMsvFHjY6M'
+      },
       service5: {
-        cardTitle: 'Robotic Metal Fabrication',
+        cardTitle: 'Manual Fabrication',
         videoLink: 'https://www.youtube-nocookie.com/embed/rc6JIi8lDDg'
       },
       service6: {
-        cardTitle: 'Manual Metal Fabrication',
-        videoLink: 'https://www.youtube-nocookie.com/embed/rc6JIi8lDDg'
+        cardTitle: 'Vertical Machining',
+        videoLink: 'https://www.youtube-nocookie.com/embed/FAjDt2CTXCA'
       }
     }
   },

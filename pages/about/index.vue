@@ -110,7 +110,7 @@ export default {
     return {
       heroTitle: 'The Largest Setup of Precision Metal Cutting & Fabrication',
       heroContent: 'The largest setup for CNC laser cutting, bending, rolling, straightening and welding',
-      heroImage: require('~/assets/images/hero_about.jpeg'),
+      heroImage: require('~/assets/images/hero_about.webp'),
       card1: {
         imageSrc: require('~/assets/images/card_images/sheet.webp'),
         content: 'Versatile resource pool to handle variety and complexity'
