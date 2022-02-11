@@ -296,7 +296,7 @@ export default {
 }
 
 .slides-container {
-  @apply z-1001 h-1/2 w-3/5 m-auto overflow-hidden;
+  @apply z-1001 max-h-2/3 h-full w-full max-w-3/5 m-auto overflow-hidden;
   @apply flex flex-col align-middle items-center justify-center;
 }
 .slides-track {
@@ -306,7 +306,7 @@ export default {
   @apply absolute top-0 bottom-0 overflow-hidden w-full;
 }
 .lightbox-slide img {
-  @apply object-cover w-full h-full;
+  @apply w-full h-full object-contain;
 }
 .slide-title {
   @apply z-1001 absolute right-1/2 md:bottom-24 bottom-32;
