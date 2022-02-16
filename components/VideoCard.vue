@@ -11,7 +11,8 @@
         {{ cardTitle }}
       </div>
       <div class="text-sm paragraph">
-        {{ cardContent }}
+        <!-- {{ cardContent }} -->
+        <!-- <slot /> -->
       </div>
       <slot />
     </div>
