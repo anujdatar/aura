@@ -37,8 +37,9 @@ release-builds/
 
 # temporary/test components, code, pages, etc
 tmp/
-pages/test/*.vue
+pages/test/
 components/TestComponent.vue
+components/LightboxTest.vue
 
 # Dependency directories
 node_modules/
