@@ -515,25 +515,25 @@ export default {
     return { title: 'Industries' }
   },
   mounted () {
-    const pageUrl = window.location.href
-    const sectionName = pageUrl.split('#')
-    const sectionEl = document.getElementById(sectionName[1])
+    // const pageUrl = window.location.href
+    // const sectionName = pageUrl.split('#')
+    // const sectionEl = document.getElementById(sectionName[1])
 
-    if (sectionEl) {
-      const sectionTop = sectionEl.offsetTop
-      const windowHeight = window.innerHeight
+    // if (sectionEl) {
+    //   const sectionTop = sectionEl.offsetTop
+    //   const windowHeight = window.innerHeight
 
-      const offsetY = Math.round(sectionTop - windowHeight / 2)
+    //   const offsetY = Math.round(sectionTop - windowHeight / 2)
 
-      // scroll to does not work in chrome without a timeout, it fires too early
-      setTimeout(() => {
-        window.scrollTo({
-          top: offsetY,
-          left: 0,
-          behavior: 'smooth'
-        })
-      }, 0)
-    }
+    //   // scroll to does not work in chrome without a timeout, it fires too early
+    //   setTimeout(() => {
+    //     window.scrollTo({
+    //       top: offsetY,
+    //       left: 0,
+    //       behavior: 'smooth'
+    //     })
+    //   }, 0)
+    // }
   }
 }
 </script>
