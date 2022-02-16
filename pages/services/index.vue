@@ -63,15 +63,85 @@
     <div class="relative bg-white">
       <section-separator />
       <div class="container flex-col">
-        <video-card :card-title="service1.cardTitle" :video-link="service1.videoLink" />
-        <video-card :card-title="service2.cardTitle" :video-link="service2.videoLink" text-right />
-        <video-card :card-title="service3.cardTitle" :video-link="service3.videoLink" />
-        <video-card :card-title="service4.cardTitle" :video-link="service4.videoLink" text-right />
-        <video-card :card-title="service5.cardTitle" :video-link="service5.videoLink" />
-        <video-card :card-title="service6.cardTitle" :video-link="service6.videoLink" text-right />
+        <video-card :card-title="service1.cardTitle" :video-link="service1.videoLink">
+          <div class="paragraph">
+            <p>Equipped with the latest technology in laser cutting.</p>
+            <p class="text-sm">
+              No. of machines: 7
+            </p>
+            <p class="text-sm">
+              Bed Size: 2m x 6m
+            </p>
+            <p>Cutting Capacity:</p>
+            <p class="text-sm">
+              Mild Steel: 25mm | Stainless Steel: 20mm
+            </p>
+            <p class="text-sm">
+              Aluminium: 20mm | Brass: 12mm
+            </p>
+          </div>
+        </video-card>
+        <video-card :card-title="service2.cardTitle" :video-link="service2.videoLink" text-right>
+          <div class="paragraph">
+            <p>CNC Press Brake line complementing our Cutting Capacity</p>
+            <p class="text-sm">
+              No. od Machines: 6
+            </p>
+            <p class="text-sm">
+              Bed Size: 6m
+            </p>
+            <p class="text-sm">
+              Tonnage Capacity: 520T
+            </p>
+          </div>
+        </video-card>
+        <video-card :card-title="service3.cardTitle" :video-link="service3.videoLink">
+          <div class="paragraph">
+            <p>CNC 4 Roll System Rolling Machine for Cylindrical &amp; Conical components</p>
+            <p class="text-sm">
+              Length: 2.5m
+            </p>
+            <p class="text-sm">
+              Thickness Capacity: 8mm over 2.5m
+            </p>
+          </div>
+        </video-card>
+        <video-card :card-title="service4.cardTitle" :video-link="service4.videoLink" text-right>
+          <div class="paragraph">
+            <p>Automated Robot Welding for consistency and productivity</p>
+            <p class="text-sm">
+              No. of Cells: 2
+            </p>
+            <p class="text-sm">
+              Robot Reach: 2m Radial
+            </p>
+          </div>
+        </video-card>
+        <video-card :card-title="service5.cardTitle" :video-link="service5.videoLink">
+          <div class="paragraph">
+            <p>Manual Welding for Mild and Stainless Steels</p>
+            <p class="text-sm">
+              No. of Machines: 45
+            </p>
+            <p class="text-sm">
+              Make: Essab
+            </p>
+          </div>
+        </video-card>
+        <video-card :card-title="service6.cardTitle" :video-link="service6.videoLink" text-right>
+          <div class="paragraph">
+            <p>Vertical Machining Centers for Post Fabrication Machining</p>
+            <p class="text-sm">
+              No. of Machines: 2
+            </p>
+            <p class="text-sm">
+              1000x500 mm
+            </p>
+          </div>
+        </video-card>
       </div>
     </div>
-    <div class="relative bg-alt mt-auto">
+    <div class="bg-alt mt-auto">
       <section-separator color="text-alt" />
       <aura-footer />
     </div>
