@@ -239,10 +239,10 @@ export default {
   @apply relative h-full w-full overflow-hidden;
 }
 .thumbnail-track {
-  @apply relative w-full h-36;
+  @apply relative w-full min-h-24 max-h-36 h-full;
 }
 .thumbnail-image {
-  @apply w-36 h-36 object-cover;
+  @apply min-w-24 max-w-36 w-full min-h-24 max-h-36 h-full object-cover;
   @apply absolute top-0 bottom-0;
 }
 
