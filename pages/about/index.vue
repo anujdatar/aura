@@ -97,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="relative bg-white mt-auto">
+    <div class="bg-white mt-auto">
       <section-separator color="text-white" />
       <aura-footer />
     </div>

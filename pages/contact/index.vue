@@ -46,7 +46,7 @@
         </form>
       </div>
     </div>
-    <div class="relative bg-alt mt-auto">
+    <div class="bg-alt mt-auto">
       <section-separator color="text-alt" />
       <aura-footer />
     </div>
