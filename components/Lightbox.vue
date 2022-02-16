@@ -138,14 +138,6 @@ export default {
       })
     },
     changeThumbnail (n) {
-      // const nextButton = document.querySelector('#' + this.name + ' .thumbnail-button.next')
-      // const nextButtonLeft = nextButton.offsetLeft
-
-      // const lastThumbnail = this.thumbnails[this.imageCount - 1].style.left
-      // const end = parseInt(lastThumbnail.split('px')[0])
-      // console.log(nextButtonLeft, end, nextButtonLeft > end)
-      // console.log(this.thumbnailTrack.right)
-
       const newThumbnail = this.firstThumbnail + n
       if (newThumbnail >= 0 && newThumbnail < this.imageCount - 1) {
         const targetThumbnail = this.thumbnails[newThumbnail]
