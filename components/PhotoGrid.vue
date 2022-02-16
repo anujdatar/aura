@@ -56,10 +56,18 @@ export default {
       product6: {
         title: 'Other',
         image: require('~/assets/images/grid_images/process_plant.webp')
-      }
+      },
+      startImage: 0,
+      gridImageCount: 6
     }
   },
   computed: {
+    gridElement () {
+      return document.querySelector('.product-grid')
+    },
+    productCards () {
+      return document.getElementsByClassName('product-card')
+    },
     cardImages () {
       return {
         '--main-image': 'url(' + this.mainImage + ')',
@@ -70,25 +78,53 @@ export default {
         '--card-image-5': 'url(' + this.product5.image + ')',
         '--card-image-6': 'url(' + this.product6.image + ')'
       }
+    },
+    gridImages () {
+      return [
+        this.mainImage,
+        this.product1.image,
+        this.product2.image,
+        this.product3.image,
+        this.product4.image,
+        this.product5.image,
+        this.product6.image
+      ]
     }
   },
   mounted () {
-    const cardBgElements = document.getElementsByClassName('product-card')
-    Array.prototype.forEach.call(cardBgElements, (element) => {
+    Array.prototype.forEach.call(this.productCards, (element) => {
       element.addEventListener('mouseenter', this.mouseEnter)
       element.addEventListener('mouseleave', this.mouseLeave)
     })
+    this.cycler = setInterval(this.cycleImages, 2000)
+  },
+  destroyed () {
+    Array.prototype.forEach.call(this.productCards, (element) => {
+      element.removeEventListener('mouseenter', this.mouseEnter)
+      element.removeEventListener('mouseleave', this.mouseLeave)
+    })
+    clearInterval(this.cycler)
   },
   methods: {
     mouseEnter (e) {
       const targetRel = e.target.getAttribute('rel')
       const targetBgElement = document.querySelector('.product-card-bg.' + targetRel)
       targetBgElement.classList.add('active')
+      clearInterval(this.cycler)
     },
     mouseLeave (e) {
       const targetRel = e.target.getAttribute('rel')
       const targetBgElement = document.querySelector('.product-card-bg.' + targetRel)
       targetBgElement.classList.remove('active')
+      this.cycler = setInterval(this.cycleImages, 2000)
+    },
+    cycleImages () {
+      this.gridElement.style.backgroundImage = 'url(' + this.gridImages[this.startImage] + ')'
+      this.startImage += 1
+      if (this.startImage > this.gridImageCount) {
+        this.startImage = 0
+      }
+      console.log(this.startImage)
     }
   }
 }
