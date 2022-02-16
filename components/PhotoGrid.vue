@@ -124,7 +124,6 @@ export default {
       if (this.startImage > this.gridImageCount) {
         this.startImage = 0
       }
-      console.log(this.startImage)
     }
   }
 }
