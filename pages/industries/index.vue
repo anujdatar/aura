@@ -23,7 +23,7 @@
         <lightbox name="switchgear_lightbox" :images="switchgear" />
       </div>
       <!-- mining equipment section -->
-      <div id="mining" class="industry text-justify">
+      <div id="mining" class="industry">
         <h2 class="heading block">
           Mining Equipment
         </h2>
