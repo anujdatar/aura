@@ -10,7 +10,7 @@
     <div rel="closed" class="absolute top-0 left-0 w-full h-screen z-1000 m-auto overflow-hidden iso-modal">
       <div class="relative mx-auto w-full h-full py-4 z-1001">
         <span class="close cursor-pointer z-1001" @click="closeIsoModal">&times;</span>
-        <embed src="~/static/aura_iso_certificate.pdf" type="application/pdf" class="mx-auto z-1001 w-3/4 h-full">
+        <embed src="aura_iso_certificate.pdf" type="application/pdf" class="mx-auto z-1001 w-3/4 h-full">
       </div>
     </div>
   </div>
