@@ -133,7 +133,6 @@ export default {
       if (this.startImage > this.gridImageCount) {
         this.startImage = 0
       }
-      console.log(this.startImage)
     },
     clearHoveredClass () {
       Array.prototype.forEach.call(this.productCards, (element) => {
