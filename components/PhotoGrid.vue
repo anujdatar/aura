@@ -9,21 +9,27 @@
 
     <a class="product-card" rel="card1" href="/industries#construction">
       {{ product1.title }}
+      <span class="more">More ></span>
     </a>
     <a class="product-card" rel="card2" href="/industries#switchgear">
       {{ product2.title }}
+      <span class="more">More ></span>
     </a>
     <a class="product-card" rel="card3" href="/industries#mining">
       {{ product3.title }}
+      <span class="more">More ></span>
     </a>
     <a class="product-card" rel="card4" href="/industries#agriculture">
       {{ product4.title }}
+      <span class="more">More ></span>
     </a>
     <a class="product-card" rel="card5" href="/industries#handling">
       {{ product5.title }}
+      <span class="more">More ></span>
     </a>
     <a class="product-card" rel="card6" href="/industries#other">
       {{ product6.title }}
+      <span class="more">More ></span>
     </a>
   </div>
 </template>
@@ -170,7 +176,15 @@ export default {
   @apply text-white text-2xl font-bold;
   text-shadow: 2px 2px 2px black;
 }
-.product-card:hover {
+.product-card:hover,
+.product-card.hovered {
   @apply bg-orange-400 opacity-80;
+}
+.product-card .more {
+  @apply absolute bottom-0 right-0 mb-3 mr-3 hidden text-lg;
+}
+.product-card:hover .more,
+.product-card.hovered .more {
+  @apply block;
 }
 </style>
