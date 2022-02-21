@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations } from 'vuex'
 import IsoLogo from '@/assets/icons/iso-logo.svg?inline'
 export default {
   components: { IsoLogo },
@@ -26,12 +27,17 @@ export default {
     }
   },
   methods: {
+    ...mapMutations(['setPageYPos']),
+    ...mapGetters(['getPageYPos']),
     openIsoModal () {
       this.isoModal.style.display = 'block'
       this.isoModal.setAttribute('rel', 'open')
       window.addEventListener('keyup', this.handleEscKey)
+      this.setPageYPos()
+      window.scroll(0, 0)
     },
     closeIsoModal () {
+      window.scroll(0, this.getPageYPos())
       this.isoModal.style.display = 'none'
       this.isoModal.setAttribute('rel', 'closed')
       window.removeEventListener('keyup', this.handleEscKey)
