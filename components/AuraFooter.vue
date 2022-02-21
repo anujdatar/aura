@@ -3,9 +3,9 @@
     class="text-sm flex flex-col items-center justify-center text-center mt-auto pt-10"
     :class="textColor"
   >
-    <div class="flex flex-row w-full max-w-1200px justify-between">
-      <div class="text-left ml-4">
-        <h2 class="text-lg text-primary">
+    <div class="flex flex-col flex-col-reverse md:flex-row w-full max-w-1200px justify-between">
+      <div class="text-center md:text-left ml-4">
+        <h2 class="text-lg font-semibold text-primary">
           Aura Laserfab Pvt. Ltd.
         </h2>
         <p class="text-sm leading-6">
@@ -16,13 +16,13 @@
         </p>
       </div>
       <div class="flex flex-col justify-between">
-        <iso-cert-display />
-        <div class="flex items-end ml-auto">
+        <iso-cert-display class="md:mr-2" />
+        <div class="flex items-end mx-auto md:ml-auto md:mr-2 mb-8 md:mb-2 mt-2">
           <a href="https://www.youtube.com/channel/UCM-qRH75zRIPxla2Ty-2MYQ" target="_blank" rel="noopener noreferrer">
-            <youtube-icon class="w-8 text-primary hover:text-red-600 mr-1" />
+            <youtube-icon class="w-12 md:w-8 text-primary hover:text-red-600 mr-1" />
           </a>
           <a href="https://linkedin.com/company/aura-laserfab-private-limited-pune" target="_blank" rel="noopener noreferrer">
-            <linkedin-icon class="w-8 text-primary hover:text-blue-800 mr-2" />
+            <linkedin-icon class="w-12 md:w-8 text-primary hover:text-blue-800" />
           </a>
         </div>
       </div>
