@@ -1,10 +1,10 @@
 <template>
-  <div class="iso-modal-div">
-    <div class="flex cursor-pointer hover:text-accent font-bold items-center hover:underline" @click="openIsoModal">
-      <p class="mr-2">
+  <div class="iso-modal-div mx-auto">
+    <div class="iso-text flex cursor-pointer font-bold hover:text-accent hover:underline items-center mx-auto" @click="openIsoModal">
+      <p class="mr-2 text-xl md:text-base">
         ISO 9001:2015
       </p>
-      <iso-logo class="w-8" />
+      <iso-logo class="w-12 md:w-8" />
     </div>
     <!-- iso modal -->
     <div rel="closed" class="absolute top-0 left-0 w-full h-screen z-1000 m-auto overflow-hidden iso-modal">
