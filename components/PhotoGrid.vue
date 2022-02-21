@@ -113,6 +113,7 @@ export default {
   },
   methods: {
     mouseEnter (e) {
+      this.clearHoveredClass()
       const targetRel = e.target.getAttribute('rel')
       const targetBgElement = document.querySelector('.product-card-bg.' + targetRel)
       targetBgElement.classList.add('active')
@@ -122,13 +123,33 @@ export default {
       const targetRel = e.target.getAttribute('rel')
       const targetBgElement = document.querySelector('.product-card-bg.' + targetRel)
       targetBgElement.classList.remove('active')
+      this.addHoveredClass(this.startImage - 1)
       this.cycler = setInterval(this.cycleImages, 2000)
     },
     cycleImages () {
+      this.addHoveredClass(this.startImage)
       this.gridElement.style.backgroundImage = 'url(' + this.gridImages[this.startImage] + ')'
       this.startImage += 1
       if (this.startImage > this.gridImageCount) {
         this.startImage = 0
+      }
+      console.log(this.startImage)
+    },
+    clearHoveredClass () {
+      Array.prototype.forEach.call(this.productCards, (element) => {
+        element.classList.remove('hovered')
+      })
+    },
+    addHoveredClass (n) {
+      if (n === 0) {
+        this.productCards[this.productCards.length - 1].classList.remove('hovered')
+      }
+      if (n === 1) {
+        this.productCards[n - 1].classList.add('hovered')
+      }
+      if (n > 1) {
+        this.productCards[n - 2].classList.remove('hovered')
+        this.productCards[n - 1].classList.add('hovered')
       }
     }
   }
