@@ -7,7 +7,7 @@
       <!-- <strong class="text-3xl text-green-600 font-serif items-center flex">{{ appTitle }}</strong> -->
       </nuxt-link>
       <!-- site navigation links -->
-      <div class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
+      <div id="nav-links" class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
         <div class="flex flex-row w-full contact-info items-center justify-between px-2 mt-1">
           <iso-cert-display />
           <span class="flex flex-row justify-center items-center align-middle ml-3">
