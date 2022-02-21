@@ -24,12 +24,16 @@ export default {
   computed: {
     isoModal () {
       return document.querySelector('.iso-modal')
+    },
+    navLinksDiv () {
+      return document.querySelector('#nav-links')
     }
   },
   methods: {
     ...mapMutations(['setPageYPos']),
     ...mapGetters(['getPageYPos']),
     openIsoModal () {
+      this.navLinksDiv.classList.remove('hidden')
       this.isoModal.style.display = 'block'
       this.isoModal.setAttribute('rel', 'open')
       window.addEventListener('keyup', this.handleEscKey)
@@ -38,6 +42,7 @@ export default {
     },
     closeIsoModal () {
       window.scroll(0, this.getPageYPos())
+      this.navLinksDiv.classList.add('hidden')
       this.isoModal.style.display = 'none'
       this.isoModal.setAttribute('rel', 'closed')
       window.removeEventListener('keyup', this.handleEscKey)
