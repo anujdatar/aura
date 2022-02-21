@@ -567,7 +567,7 @@ export default {
   @apply mb-2;
   /* @apply text-center; */
 }
-.sub-heading {
+/* .sub-heading {
   @apply font-semibold;
   @apply text-xl;
   @apply text-primary;
@@ -576,9 +576,9 @@ export default {
   @apply text-secondary;
   @apply mb-2;
   @apply text-justify;
-}
+} */
 .industry {
-  @apply mb-12;
+  @apply mb-12 text-primary;
 }
 .industry b {
   @apply font-semibold text-sm;
