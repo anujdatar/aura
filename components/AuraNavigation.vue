@@ -21,7 +21,7 @@
             +91-9881727472
           </span>
         </div>
-        <div class="flex flex-row w-full h-5/8">
+        <div class="flex flex-row w-full h-5/8 justify-between">
           <nuxt-link
             v-for="(route, i) in appRoutes"
             :key="i"
