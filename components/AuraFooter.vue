@@ -19,10 +19,10 @@
         <iso-cert-display />
         <div class="flex items-end ml-auto">
           <a href="https://www.youtube.com/channel/UCM-qRH75zRIPxla2Ty-2MYQ" target="_blank" rel="noopener noreferrer">
-            <youtube-icon class="w-8 text-primary mr-1" />
+            <youtube-icon class="w-8 text-primary hover:text-red-600 mr-1" />
           </a>
           <a href="https://linkedin.com/company/aura-laserfab-private-limited-pune" target="_blank" rel="noopener noreferrer">
-            <linkedin-icon class="w-8 text-primary mr-2" />
+            <linkedin-icon class="w-8 text-primary hover:text-blue-800 mr-2" />
           </a>
         </div>
       </div>
