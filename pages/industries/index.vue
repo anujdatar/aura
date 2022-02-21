@@ -515,25 +515,30 @@ export default {
     return { title: 'Industries' }
   },
   mounted () {
-    // const pageUrl = window.location.href
-    // const sectionName = pageUrl.split('#')
-    // const sectionEl = document.getElementById(sectionName[1])
+    // scroll to does not work in chrome without a timeout, it fires too early
+    setTimeout(() => {
+      window.scrollTo({
+        top: this.getElementTopOffset(),
+        left: 0,
+        behavior: 'smooth'
+      })
+    }, 100)
+  },
+  methods: {
+    getElementTopOffset () {
+      const pageUrl = window.location.href
+      const urlBreakdown = pageUrl.split('#')
+      const sectionEl = document.getElementById(urlBreakdown[1])
 
-    // if (sectionEl) {
-    //   const sectionTop = sectionEl.offsetTop
-    //   const windowHeight = window.innerHeight
-
-    //   const offsetY = Math.round(sectionTop - windowHeight / 2)
-
-    //   // scroll to does not work in chrome without a timeout, it fires too early
-    //   setTimeout(() => {
-    //     window.scrollTo({
-    //       top: offsetY,
-    //       left: 0,
-    //       behavior: 'smooth'
-    //     })
-    //   }, 0)
-    // }
+      if (sectionEl) {
+        const navEl = window.document.querySelector('nav')
+        const navHeight = navEl.clientHeight
+        const sectionTop = window.scrollY
+        const offsetY = sectionTop - navHeight
+        return offsetY
+      }
+      return 0
+    }
   }
 }
 </script>
