@@ -8,15 +8,16 @@
       </nuxt-link>
       <!-- site navigation links -->
       <div class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
-        <div class="flex flex-row w-full contact-info items-center justify-between px-2">
-          <span class="flex flex-row justify-center items-center align-middle text-lg">
-            <mail-icon class="w-4 h-full mr-1 pt-1" />
+        <div class="flex flex-row w-full contact-info items-center justify-between px-2 mt-1">
+          <iso-cert-display />
+          <span class="flex flex-row justify-center items-center align-middle ml-3">
+            <mail-icon class="w-4 h-full pt-1" />
             <span class="h-full flex justify-center items-center text-center align-middle">
               sales@auralaser.in
             </span>
           </span>
-          <span class="flex flex-row justify-center items-center text-lg ml-4">
-            <phone-icon class="w-4 h-full mr-1 pt-1" />
+          <span class="flex flex-row justify-center items-center ml-1">
+            <phone-icon class="w-4 h-full pt-1" />
             +91-9881727472
           </span>
         </div>
