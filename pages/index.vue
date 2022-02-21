@@ -28,7 +28,7 @@
           <img
             src="~/assets/images/factory.jpg"
             alt="factory-image"
-            class="md:max-w-1/2 rounded-xl mx-auto md:mr-6"
+            class="md:max-w-1/2 rounded-xl mx-auto md:mr-6 shadow-black shadow-xl"
           >
           <div class="flex flex-col">
             <h2 class="heading text-center md:text-right">

@@ -23,7 +23,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        class="w-full min-h-52 rounded-lg"
+        class="w-full min-h-52 rounded-lg shadow-black shadow-xl"
       />
     </div>
   </div>

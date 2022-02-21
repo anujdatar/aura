@@ -1,6 +1,6 @@
 <template>
   <div class="relative flex flex-col justify-center items-center border shadow-xl rounded-xl md:w-1/4 w-full md:min-h-84 lg:h-auto ml-10 mr-10 mb-12 p-5 bg-alt">
-    <div class="flex rounded-full shadow-black shadow-md justify-center items-center text-center mb-8">
+    <div class="flex rounded-full shadow-black shadow-xl justify-center items-center text-center mb-8">
       <div class="absolute -top-5">
         <img :src="cardImage" alt="homeCardImage" class="w-20 h-20 rounded-lg">
       </div>
