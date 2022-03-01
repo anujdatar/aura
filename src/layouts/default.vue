@@ -1,6 +1,6 @@
 <template>
   <main class="">
     <router-view />
-    <Footer />
+    <aura-footer />
   </main>
 </template>
