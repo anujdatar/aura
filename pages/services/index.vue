@@ -35,15 +35,15 @@
             raw material of various grades confirming to European and Indian
             Standards of -
             <ul class="list-disc ml-10">
-              <li>Carbon Steel - IS2062 E250, 1079D, 513D etc.</li>
+              <li>Carbon Steel - IS2062 E250, S235JR, S275JR, 1079D, 513D etc.</li>
               <li>
                 High Tensile Carbon Steel - E350, S355J2, S355MC, S550MC,
                 S690QL, S700MC, QSTE380 etc.
               </li>
               <li>Galvanized Steel - GSM 120, GSM 275 etc.</li>
               <li>Stainless Steel - SS304, SS316, SS410, SS202 etc.</li>
-              <li>Aluminium</li>
-              <li>Special Steels like HARDOX, 16Mo3</li>
+              <li>Aluminium - 8011, 3105, Chequered.</li>
+              <li>Special Steels like HARDOX, 16Mo3.</li>
             </ul>
           </p>
           <h2 class="heading text-center md:text-left pt-8">
@@ -52,8 +52,7 @@
           <p class="paragraph">
             A dedicated Product Development Team ensures the development of
             components in the shortest possible time. With the use of advanced
-            design softwares like AutoCAD and Sigma Nest - we offer quick
-            support during product development.
+            design softwares, we offer quick support during product development.
           </p>
           <p class="paragraph">
             Aura Laser offers innovative Value Analysis &amp; Value Engineering
