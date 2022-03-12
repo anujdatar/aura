@@ -77,9 +77,7 @@
                 Textile Machinery
               </h4>
               <p>
-                Typical products we supply include -
-                <b>Precision Cut &amp; Bent Parts</b>
-                <b>Fabricated &amp; Painted Assemblies</b>
+                We supply Precision Cut &amp; Bent Components like Ring Frames, Suction Ducts, etc
               </p>
               <lightbox name="textile_lightbox" :images="textile" />
             </div>
@@ -88,10 +86,7 @@
                 Packaging &amp; Printing Machinery
               </h4>
               <p>
-                Typical products we supply include -
-                <b>Structures</b>
-                <b>Fabricated &amp; Powdercoated Frames</b>
-                <b>Precision Cut &amp; Bent Parts</b>
+                Typical products we supply include Fabricated &amp; Powder Coated Frames, Laser Cut &amp; Bent Parts
               </p>
               <lightbox name="packaging_lightbox" :images="packaging" />
             </div>
@@ -100,9 +95,7 @@
                 Automated Parking Systems
               </h4>
               <p>
-                Typical products we supply include -
-                <b>Welded Assemblies</b>
-                <b>Precision Cut &amp; Bent Parts</b>
+                Typical products we supply include Welded Platforms, Pillars &amp; slides.
               </p>
               <lightbox name="parking_lightbox" :images="parking" />
             </div>
@@ -111,9 +104,7 @@
                 Pollution Control Equipment
               </h4>
               <p>
-                Typical products we supply include -
-                <b>Laser Cut Bag Holding Plates</b>
-                <b>Fabricated Bag Houses</b>
+                We supply Laser Cut Bag Holding Plates Fabricated Bag Houses &amp; other Assemblies
               </p>
               <lightbox name="pollution_lightbox" :images="pollution" />
             </div>
@@ -123,8 +114,8 @@
               </h4>
               <p>
                 Typical products we supply include -
-                <b>Fabricated &amp; Painted Assemblies</b>
-                <b>Precision Cut &amp; Bent Parts</b>
+                Fabricated &amp; Painted Assemblies
+                Precision Cut &amp; Bent Parts
               </p>
               <lightbox name="process_lightbox" :images="process" />
             </div>
