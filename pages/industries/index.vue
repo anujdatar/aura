@@ -240,10 +240,6 @@ export default {
           title: 'Cut & Bent Parts 6, 8, 10, 12, 20mm S355'
         },
         {
-          src: require('~/assets/images/industries/earthmoving/12_Weld_Assy_S355-10,12mm_thick.webp'),
-          title: 'Weld Assy S355 -> 10, 12mm thick'
-        },
-        {
           src: require('~/assets/images/industries/earthmoving/13_Welded_Loader_Arm-S335-6,8,12mm_thick.webp'),
           title: 'Welded Loader Arm S335 -> 6, 8, 12mm thick'
         }
@@ -251,10 +247,6 @@ export default {
       material_handling: [
         {
           src: require('~/assets/images/industries/handling/1_conveyor_bucket_for_cement_plants.jpg'),
-          title: 'Conveyor Bucket for Cement Plants'
-        },
-        {
-          src: require('~/assets/images/industries/handling/2_conveyor_bucket_for_cement_plants.jpg'),
           title: 'Conveyor Bucket for Cement Plants'
         },
         {
@@ -313,7 +305,7 @@ export default {
         },
         {
           src: require('~/assets/images/industries/mining/10_towbar_weldment.webp'),
-          title: 'Towbar Reldment'
+          title: 'Towbar Weldment'
         }
       ],
       packaging: [
@@ -322,15 +314,7 @@ export default {
           title: 'Frame Assembly - Powder Coated'
         },
         {
-          src: require('~/assets/images/industries/packaging/2_frame_assy_powder_coated.jpg'),
-          title: 'Frame Assembly - Powder Coated'
-        },
-        {
           src: require('~/assets/images/industries/packaging/3_fabricated_assy.jpg'),
-          title: 'Fabricated Assembly'
-        },
-        {
-          src: require('~/assets/images/industries/packaging/4_fabricated_assy.jpg'),
           title: 'Fabricated Assembly'
         },
         {
@@ -364,7 +348,7 @@ export default {
           title: 'Slides for Parking Systems - 6 to 12 mm thick'
         },
         {
-          src: require('~/assets/images/industries/parking/3_slides_for_parking_systems_6-12mm.jpg'),
+          src: require('~/assets/images/industries/parking/4_slides_for_parking_systems_6-12mm.jpg'),
           title: 'Slides for Parking Systems - 6 to 12 mm thick'
         }
       ],
@@ -426,10 +410,6 @@ export default {
         {
           src: require('~/assets/images/industries/process/8_cement_plant_equipment.jpg'),
           title: 'Cement Plant Equipment'
-        },
-        {
-          src: require('~/assets/images/industries/process/9_welded_assy__1.5-3_mm.webp'),
-          title: 'Welded Assembly - 1.5 to 3_mm thick'
         }
       ],
       switchgear: [
@@ -454,10 +434,6 @@ export default {
           title: 'SS Welded MV Tank'
         },
         {
-          src: require('~/assets/images/industries/switchgear/6_SS_Tanks_for_MV_Breakers.jpg'),
-          title: 'SS Tanks for MV Breakers'
-        },
-        {
           src: require('~/assets/images/industries/switchgear/7_GI_275GSM_Components.jpg'),
           title: 'GI 275GSM Components'
         },
@@ -475,15 +451,11 @@ export default {
         },
         {
           src: require('~/assets/images/industries/switchgear/11_SS_Mechanism_Components.jpg'),
-          title: 'SS_Mechanism_Components'
+          title: 'SS Mechanism Components'
         },
         {
           src: require('~/assets/images/industries/switchgear/12_MS_Tank_Parts.jpg'),
-          title: 'MS_Tank_Parts'
-        },
-        {
-          src: require('~/assets/images/industries/switchgear/13_3CR12_Parts_of_MV_Tanks.jpg'),
-          title: '3CR12 Parts of MV Tanks'
+          title: 'MS Tank Parts'
         }
       ],
       textile: [
