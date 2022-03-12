@@ -9,7 +9,7 @@
           Aura Laserfab Pvt. Ltd.
         </h2>
         <p class="text-sm leading-6">
-          Gat No. 1021, Pune-Bangalore Highway, Near Pune,
+          Gat No. 1021, Pune-Bangalore Highway,
         </p>
         <p class="text-sm leading-6">
           Shirwal, Dist. Satara - 412801
