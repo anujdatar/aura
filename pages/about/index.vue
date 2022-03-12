@@ -1,6 +1,8 @@
 <template>
   <div class="page-content overflow-hidden flex flex-col min-h-screen">
-    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" image-offset="100%" />
+    <aura-hero :title="heroTitle" :content="heroContent" :image-src="heroImage" image-offset="100%">
+      in
+    </aura-hero>
     <div class="container">
       <div class="container-inner">
         <div class="text-justify">
@@ -8,27 +10,27 @@
             About Aura
           </h2>
           <p class="paragraph">
-            With more than twenty five years of experience each in CNC laser
-            cutting, bending and metal fabrication, the leadership of the company
-            is with the dynamic duo, the founder-directors, Mr. Unmesh Mahajani,
-            B.E. (Mech) from NIT Durgapur and Mr. Abhay Paranjpe, a chartered
-            accountant.
+            Since its inception in 2006, Aura Laser has grown from a laser
+            cutting services provider to a complete solutions provider in the
+            field of sheet metal fabrication and assembly. With more than thirty
+            years of experience each in laser cutting, bending and metal
+            fabrication, the leadership of the company is with the dynamic duo
+            of the founder-directors, Mr. Unmesh Mahajani who is a B.E. (Mech)
+            from NIT Durgapur and Mr. Abhay Paranjpe who is Chartered Accountant.
           </p>
           <p class="paragraph">
-            Both the Directors possess the capability of understanding diverse
-            product requirements and having dealt with a diverse set of clients,
+            Both the Directors possess the capability of understanding varied
+            product requirements. Having dealt with a diverse set of clients,
             they can offer valuable feedbacks and suggestions to customers to
-            improve their products and bottom line.Our vision is to capture a
-            significant market share in the business of metal fabrication and
-            assembly.
+            improve their products and bottom line.
           </p>
           <p class="paragraph">
-            A team of around 100 + Qualified Employees, highly competent
-            technicians and engineers are the strong pillars of this organization.
-            The employees possess requisite domain experience in CNC Technology,
-            Engineering, Sheet Metal Processing – Laser Cutting, Plasma Cutting,
-            Bending, Rolling, Machining, Precision Fabrication, Assembly and
-            Quality Assurance.
+            A team of around 75 + Qualified Employees, highly competent
+            technicians and engineers are the strong pillars of this
+            organization. The employees possess requisite domain experience in
+            CNC Technology, Engineering, and Sheet Metal Processing including
+            Laser Cutting, Plasma Cutting, Bending, Rolling, Machining,
+            Precision Fabrication, Assembly and Quality Assurance.
           </p>
         </div>
       </div>
@@ -42,9 +44,10 @@
               Our Mission
             </h2>
             <p class="paragraph">
-              Our mission is to provide a complete solution to customer requirements,
-              nurture and maintain ethical values, focus on quality in ever business
-              process while fostering Continuous Improvement in our in house systems.
+              Our mission is to provide a complete solution to customer
+              requirements, nurture and maintain ethical values, focus on
+              quality in every business process while fostering Continuous
+              Improvement in our in-house systems.
             </p>
             <h2 class="heading text-center md:text-left pt-8">
               Our Vision
@@ -62,14 +65,8 @@
             </h2>
             <p class="paragraph">
               The Core Team of over 75 qualified engineers and technicians, have a
-              strong and diverse experience in of design & development, engineering,
-              operations, project management and quality assurance.
-            </p>
-            <p class="paragraph">
-              Aura Laser has presently spearheaded a major up scaling of its
-              capacity in Metal Cutting &amp; fabrication with addition of workspace
-              area, machineries like CNC Plasma Cutting, CNC Straightening, CNC
-              Rolling and Robotic Welding to support its multi segmental growth.
+              strong and diverse experience in of design &amp; development,
+              engineering, operations, project management and quality assurance.
             </p>
           </div>
           <img
@@ -108,8 +105,8 @@
 export default {
   data () {
     return {
-      heroTitle: 'The Largest Setup of Precision Metal Cutting & Fabrication',
-      heroContent: 'The largest setup for CNC laser cutting, bending, rolling, straightening and welding',
+      heroTitle: 'Pioneer & Leader',
+      heroContent: 'Precision Laser Cutting & Sheet Metal Fabrication',
       heroImage: require('~/assets/images/hero_about.webp'),
       card1: {
         imageSrc: require('~/assets/images/card_images/sheet.webp'),
@@ -129,7 +126,7 @@ export default {
       },
       card5: {
         imageSrc: require('~/assets/images/card_images/plant2.webp'),
-        content: 'Capacity to augment machinary and plant setup'
+        content: 'Capacity to augment machinery and plant setup'
       },
       card6: {
         imageSrc: require('~/assets/images/card_images/highway.jpg'),
