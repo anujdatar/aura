@@ -16,7 +16,12 @@
         </p>
       </div>
       <div class="flex flex-col justify-between">
-        <iso-cert-display class="md:mr-2" />
+        <nuxt-link to="/about/#isoCert" class="iso flex flex-row w-full mx-auto mt-2 text-center justify-center">
+          <p class="mr-2 text-xl md:text-base">
+            ISO 9001:2015
+          </p>
+          <iso-logo class="w-12 md:w-8" />
+        </nuxt-link>
         <div class="flex items-end mx-auto md:ml-auto md:mr-2 mb-8 md:mb-2 mt-2">
           <a href="https://www.youtube.com/channel/UCM-qRH75zRIPxla2Ty-2MYQ" target="_blank" rel="noopener noreferrer">
             <youtube-icon class="w-12 md:w-8 text-primary hover:text-red-600 mr-1" />

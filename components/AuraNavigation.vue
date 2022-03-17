@@ -9,7 +9,12 @@
       <!-- site navigation links -->
       <div id="nav-links" class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
         <div class="flex flex-row w-full contact-info items-center justify-between px-2 mt-1">
-          <iso-cert-display />
+          <nuxt-link to="/about/#isoCert" class="iso flex flex-row w-full mx-auto mt-2 text-center justify-center">
+            <p class="mr-2 text-xl md:text-base">
+              ISO 9001:2015
+            </p>
+            <iso-logo class="w-12 md:w-8" />
+          </nuxt-link>
           <span class="flex flex-row justify-center items-center align-middle ml-3">
             <mail-icon class="w-4 h-full pt-1" />
             <span class="h-full flex justify-center items-center text-center align-middle">
@@ -48,8 +53,10 @@
 import { mapMutations } from 'vuex'
 import PhoneIcon from '@/assets/icons/phone_icon.svg?inline'
 import MailIcon from '@/assets/icons/mail_icon.svg?inline'
+import IsoLogo from '@/assets/icons/iso-logo.svg?inline'
+
 export default {
-  components: { PhoneIcon, MailIcon },
+  components: { PhoneIcon, MailIcon, IsoLogo },
   props: {
     appTitle: {
       type: String,
