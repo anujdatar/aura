@@ -94,7 +94,7 @@ nav {
   /* transition-timing-function: ease; */
   transition-duration: 1s;
 }
-.nuxt-link-exact-active {
+.nuxt-link-exact-active:not(.iso) {
   @apply border-accent !important;
   @apply text-accent !important;
 }
