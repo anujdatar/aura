@@ -46,6 +46,12 @@
           </div>
         </div>
       </div>
+      <div class="container flex flex-col pb-8">
+        <h2 class="text-2xl block text-blue-gray-700 font-semibold text-center">
+          Our Clients
+        </h2>
+        <client-logos :images="clients" />
+      </div>
     </div>
     <div class="bg-white mt-auto">
       <section-separator color="text-white" />
@@ -75,7 +81,15 @@ export default {
         title: 'Partnering in Customer\'s progress',
         content: 'Customer centric and system dependant method of working',
         image: require('~/assets/images/card_images/tractor.jpg')
-      }
+      },
+      clients: [
+        require('~/assets/images/clients/crompton.jpg'),
+        require('~/assets/images/clients/jcb.webp'),
+        require('~/assets/images/clients/l_and_t.jpg'),
+        require('~/assets/images/clients/mahindra.jpg'),
+        require('~/assets/images/clients/metso.webp'),
+        require('~/assets/images/clients/siemens.webp')
+      ]
     }
   },
   head () {
