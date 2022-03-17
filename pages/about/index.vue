@@ -38,6 +38,14 @@
     <div class="relative bg-white">
       <section-separator />
       <div class="container flex-col">
+        <h2 id="isoCert" class="heading text-center md:text-left">
+          Management Systems
+        </h2>
+        <div class="relative mt-4 mb-8 flex flex-col md:flex-row">
+          <iso-9001 />
+          <iso-3834 />
+        </div>
+        <!-- <iso-cert-display-alt class="mt-4 mb-8" /> -->
         <div class="container-inner">
           <div class="text-justify">
             <h2 class="heading text-center md:text-left">
