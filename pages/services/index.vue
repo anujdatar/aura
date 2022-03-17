@@ -65,20 +65,52 @@
     <div class="relative bg-white">
       <section-separator />
       <div class="container flex-col">
+        <h2 class="heading text-center md:text-left">
+          Manufacturing Facilities
+        </h2>
+        <p class="paragraph">
+          Aura Laser has three manufacturing facilities. Two facilities are at
+          Shirwal with covered area of 75,000 sq. ft. and one in Nashik
+          With 15,000 sq.ft.
+        </p>
+        <div class="flex flex-col md:flex-row mt-4 mb-24 gap-4 min-w-full">
+          <div class="md:max-w-1/2 w-full min-h-full flex flex-col">
+            <img
+              src="~/assets/images/factory.jpg"
+              alt="factory-image"
+              class="w-full h-full rounded-xl shadow-black shadow-xl"
+            >
+            <p class="text-secondary text-center">
+              Shirwal Plant
+            </p>
+          </div>
+          <div class="md:max-w-1/2 w-full h-full flex flex-col">
+            <img
+              src="~/assets/images/card_images/plant2.webp"
+              alt="factory-image"
+              class="w-full rounded-xl shadow-black shadow-xl"
+            >
+            <p class="text-secondary text-center">
+              Nashik Plant
+            </p>
+          </div>
+        </div>
         <video-card :card-title="service1.cardTitle" :video-link="service1.videoLink">
           <div class="paragraph">
-            <p>Equipped with the latest technology in laser cutting.</p>
-            <p class="text-sm">
+            <p>Equipped with the latest technology in Laser Cutting.</p>
+            <p>
               No. of machines: 7
             </p>
-            <p class="text-sm">
+            <p>
               Bed Size: 2m x 6m
             </p>
-            <p>Cutting Capacity:</p>
-            <p class="text-sm">
+            <p>
+              Cutting Capacity:
+            </p>
+            <p>
               Mild Steel: 25mm | Stainless Steel: 20mm
             </p>
-            <p class="text-sm">
+            <p>
               Aluminium: 20mm | Brass: 12mm
             </p>
           </div>
@@ -86,13 +118,13 @@
         <video-card :card-title="service2.cardTitle" :video-link="service2.videoLink" text-right>
           <div class="paragraph">
             <p>CNC Press Brake line complementing our Cutting Capacity</p>
-            <p class="text-sm">
-              No. od Machines: 6
+            <p>
+              No. of Machines: 6
             </p>
-            <p class="text-sm">
+            <p>
               Bed Size: 6m
             </p>
-            <p class="text-sm">
+            <p>
               Tonnage Capacity: 520T
             </p>
           </div>
@@ -100,10 +132,10 @@
         <video-card :card-title="service3.cardTitle" :video-link="service3.videoLink">
           <div class="paragraph">
             <p>CNC 4 Roll System Rolling Machine for Cylindrical &amp; Conical components</p>
-            <p class="text-sm">
+            <p>
               Length: 2.5m
             </p>
-            <p class="text-sm">
+            <p>
               Thickness Capacity: 8mm over 2.5m
             </p>
           </div>
@@ -111,10 +143,10 @@
         <video-card :card-title="service4.cardTitle" :video-link="service4.videoLink" text-right>
           <div class="paragraph">
             <p>Automated Robot Welding for consistency and productivity</p>
-            <p class="text-sm">
+            <p>
               No. of Cells: 2
             </p>
-            <p class="text-sm">
+            <p>
               Robot Reach: 2m Radial
             </p>
           </div>
@@ -122,10 +154,10 @@
         <video-card :card-title="service5.cardTitle" :video-link="service5.videoLink">
           <div class="paragraph">
             <p>Manual Welding for Mild and Stainless Steels</p>
-            <p class="text-sm">
+            <p>
               No. of Machines: 45
             </p>
-            <p class="text-sm">
+            <p>
               Make: Esab
             </p>
           </div>
@@ -133,10 +165,10 @@
         <video-card :card-title="service6.cardTitle" :video-link="service6.videoLink" text-right>
           <div class="paragraph">
             <p>Vertical Machining Centers for Post Fabrication Machining</p>
-            <p class="text-sm">
+            <p>
               No. of Machines: 2
             </p>
-            <p class="text-sm">
+            <p>
               1000x500 mm
             </p>
           </div>
