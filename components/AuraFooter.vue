@@ -41,8 +41,10 @@
 <script>
 import YoutubeIcon from '@/assets/icons/youtube_icon.svg?inline'
 import LinkedinIcon from '@/assets/icons/linkedin_icon.svg?inline'
+import IsoLogo from '@/assets/icons/iso-logo.svg?inline'
+
 export default {
-  components: { YoutubeIcon, LinkedinIcon },
+  components: { YoutubeIcon, LinkedinIcon, IsoLogo },
   props: {
     textColor: {
       type: String,
