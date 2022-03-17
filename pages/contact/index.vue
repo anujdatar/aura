@@ -3,7 +3,7 @@
     <!-- map and contact form div -->
     <div class="relative mt-24 min-h-screen-sm md:min-h-screen-md mb-30">
       <!-- map -->
-      <div id="map" class="absolute inset-0 bg-alt">
+      <div id="map" class="flex flex-col md:absolute md:inset-0 bg-alt min-h-7/10 md:min-h-max">
         <iframe
           style="filter: grayscale(.2) contrast(1.2) opacity(.75);"
           marginheight="0"
@@ -14,6 +14,7 @@
           width="100%"
           height="100%"
           frameborder="0"
+          class="h-screen max-h-3/4 md:h-full md:max-h-full"
         />
       </div>
       <!-- contact form -->
