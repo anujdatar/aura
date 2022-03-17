@@ -133,7 +133,7 @@ export default {
         content: 'Advanced technology with CNC Laser, Plasma, Bending, and Rolling machines'
       },
       card5: {
-        imageSrc: require('~/assets/images/card_images/plant2.webp'),
+        imageSrc: require('~/assets/images/card_images/facility.jpg'),
         content: 'Capacity to augment machinery and plant setup'
       },
       card6: {
