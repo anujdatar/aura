@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col mb-20 md:mb-40 justify-center w-full mx-auto rounded-lg"
+    class="flex flex-col mb-20 md:mb-24 justify-center w-full mx-auto rounded-lg"
     :class="textRight ? 'md:flex-row-reverse' : 'md:flex-row'"
   >
     <div
