@@ -148,6 +148,32 @@ export default {
   },
   head () {
     return { title: 'About' }
+  },
+  mounted () {
+    // scroll to does not work in chrome without a timeout, it fires too early
+    setTimeout(() => {
+      window.scrollTo({
+        top: this.getElementTopOffset(),
+        left: 0,
+        behavior: 'smooth'
+      })
+    }, 100)
+  },
+  methods: {
+    getElementTopOffset () {
+      const pageUrl = window.location.href
+      const urlBreakdown = pageUrl.split('#')
+      const sectionEl = document.getElementById(urlBreakdown[1])
+
+      if (sectionEl) {
+        const navEl = window.document.querySelector('nav')
+        const navHeight = navEl.clientHeight
+        const sectionTop = window.scrollY
+        const offsetY = sectionTop - navHeight
+        return offsetY
+      }
+      return 0
+    }
   }
 }
 </script>
