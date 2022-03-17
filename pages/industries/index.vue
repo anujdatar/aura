@@ -141,7 +141,7 @@ export default {
       agriculture: [
         {
           src: require('~/assets/images/industries/agriculture/1_SS_Tanks_Finished_SS_304-2mm.jpg'),
-          title: 'SS Tanks Finished SS304-2mm'
+          title: 'SS Tanks Finished SS304 &#10142; 2mm'
         },
         {
           src: require('~/assets/images/industries/agriculture/2_SS_Hydraulic_Tank.jpg'),
@@ -161,11 +161,11 @@ export default {
         },
         {
           src: require('~/assets/images/industries/agriculture/6_Painted_Chassis_6,8,12,16mm_S235JR.webp'),
-          title: 'Painted Chassis -> 6, 8, 12, 16 mm S235JR'
+          title: 'Painted Chassis &#10142; 6, 8, 12, 16 mm S235JR'
         },
         {
           src: require('~/assets/images/industries/agriculture/7_Chassis_8,12,16,20mm_S235JR.webp'),
-          title: 'Chassis -> 8, 12, 16, 20 mm S235JR'
+          title: 'Chassis &#10142; 8, 12, 16, 20 mm S235JR'
         },
         {
           src: require('~/assets/images/industries/agriculture/8_Painted_Cover.webp'),
@@ -225,23 +225,23 @@ export default {
         },
         {
           src: require('~/assets/images/industries/earthmoving/8_Back_Hoe_Loader_Weld_Assy_QSTE_380-20mm_thick.webp'),
-          title: 'Back Hoe Loader Weld Assy QSTE380 -> 20mm thick'
+          title: 'Back Hoe Loader Weld Assy QSTE380 &#10142; 20mm thick'
         },
         {
           src: require('~/assets/images/industries/earthmoving/9_BUCKETS-ROLLED-8mmX800mm.webp'),
-          title: 'Rolled Buckets -> 8mm x 800mm'
+          title: 'Rolled Buckets &#10142; 8mm x 800mm'
         },
         {
           src: require('~/assets/images/industries/earthmoving/10_CUT_BENT_PARTS_6,8,10,12,20mm_S355.webp'),
-          title: 'Cut & Bent Parts 6, 8, 10, 12, 20mm S355'
+          title: 'Cut & Bent Parts &#10142; 6, 8, 10, 12, 20mm S355'
         },
         {
           src: require('~/assets/images/industries/earthmoving/11_CUT_BENT_PARTS_6,8,10,12,20mm_S355.webp'),
-          title: 'Cut & Bent Parts 6, 8, 10, 12, 20mm S355'
+          title: 'Cut & Bent Parts &#10142; 6, 8, 10, 12, 20mm S355'
         },
         {
           src: require('~/assets/images/industries/earthmoving/13_Welded_Loader_Arm-S335-6,8,12mm_thick.webp'),
-          title: 'Welded Loader Arm S335 -> 6, 8, 12mm thick'
+          title: 'Welded Loader Arm S335 &#10142; 6, 8, 12mm thick'
         }
       ],
       material_handling: [
@@ -327,29 +327,29 @@ export default {
         },
         {
           src: require('~/assets/images/industries/packaging/7_welded_assy__1.5-3_mm.webp'),
-          title: 'Welded Assembly - 1.5 to 3 mm thick'
+          title: 'Welded Assembly &#10142; 1.5 to 3 mm thick'
         },
         {
           src: require('~/assets/images/industries/packaging/8_welded_assy__2-4_mm.webp'),
-          title: 'Welded Assembly - 2 to 4 mm thick'
+          title: 'Welded Assembly &#10142; 2 to 4 mm thick'
         }
       ],
       parking: [
         {
           src: require('~/assets/images/industries/parking/1_pillars_for_parking_systems_6-12mm.jpg'),
-          title: 'Pillars for Parking Systems - 6 to 12 mm thick'
+          title: 'Pillars for Parking Systems &#10142; 6 to 12 mm thick'
         },
         {
           src: require('~/assets/images/industries/parking/2_pillars_for_parking_systems_4-6mm.jpg'),
-          title: 'Pillars for Parking Systems - 4 to 6 mm thick'
+          title: 'Pillars for Parking Systems &#10142; 4 to 6 mm thick'
         },
         {
           src: require('~/assets/images/industries/parking/3_slides_for_parking_systems_6-12mm.jpg'),
-          title: 'Slides for Parking Systems - 6 to 12 mm thick'
+          title: 'Slides for Parking Systems &#10142; 6 to 12 mm thick'
         },
         {
           src: require('~/assets/images/industries/parking/4_slides_for_parking_systems_6-12mm.jpg'),
-          title: 'Slides for Parking Systems - 6 to 12 mm thick'
+          title: 'Slides for Parking Systems &#10142; 6 to 12 mm thick'
         }
       ],
       pollution: [
@@ -443,7 +443,7 @@ export default {
         },
         {
           src: require('~/assets/images/industries/switchgear/9_GI_Parts-1.6-2.0_mm.jpg'),
-          title: 'GI Parts -> 1.6-2.0 mm'
+          title: 'GI Parts &#10142; 1.6-2.0 mm'
         },
         {
           src: require('~/assets/images/industries/switchgear/10_SS304_Mechanism_Plate_Other_Mechanism_Components.jpg'),
