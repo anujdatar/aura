@@ -211,7 +211,7 @@ export default {
       },
       service6: {
         cardTitle: 'Vertical Machining',
-        videoLink: 'https://www.youtube-nocookie.com/embed/FAjDt2CTXCA'
+        videoLink: 'https://www.youtube-nocookie.com/embed/0cWrkbWjUuA'
       }
     }
   },
