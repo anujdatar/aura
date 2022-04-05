@@ -6,7 +6,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Inspect from 'vite-plugin-inspect'
-import Unocss from 'unocss/vite'
+// import Unocss from 'unocss/vite'
 
 export default defineConfig({
   resolve: {
@@ -50,7 +50,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
-    Unocss({}),
+    // Unocss(),
 
     // https://github.com/antfu/vite-plugin-inspect
     Inspect({
