@@ -20,7 +20,7 @@ const card4 = {
   content: 'Advanced technology with CNC Laser, Plasma, Bending, and Rolling machines',
 }
 const card5 = {
-  imageSrc: 'assets/images/card_images/facility.jpg',
+  imageSrc: 'assets/images/card_images/facility.webp',
   content: 'Capacity to augment machinery and plant setup',
 }
 const card6 = {
