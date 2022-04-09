@@ -206,7 +206,6 @@ const service6 = {
       </section>
     </div>
   </div>
-  <section-separator color="text-alt" />
 </template>
 
 <style>
