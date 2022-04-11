@@ -7,12 +7,25 @@ interface properties {
 }
 
 const props = defineProps<properties>()
-
 const sidebar = useSidebarState()
+const navbar = ref<HTMLElement>()
+
+function onScroll(_?: Event) {
+  if (window.pageYOffset > 0)
+    navbar.value?.classList.add('is-scrolled')
+
+  else
+    navbar.value?.classList.remove('is-scrolled')
+}
+
+onMounted (() => {
+  onScroll()
+  window.addEventListener('scroll', onScroll)
+})
 </script>
 
 <template>
-  <nav class="navbar flex flex-row h-navbar items-center justify-center text-white">
+  <nav ref="navbar" class="navbar flex flex-row h-navbar items-center justify-center text-white">
     <div class="flex flex-row w-full max-w-1200px items-center justify-between px-6 h-navbar">
       <router-link to="/" class="brand-logo">
         <img src="assets/aura_logo.png" alt="brand-logo" class="aura-logo">
@@ -62,6 +75,8 @@ const sidebar = useSidebarState()
   position: sticky;
   top: 0;
   z-index: 50;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 .router-link-exact-active:not(.brand-logo):not(.iso-link) {
   border-bottom: 3px solid var(--accent);
@@ -98,6 +113,11 @@ const sidebar = useSidebarState()
   width: 3rem;
   height: 3rem;
   margin-left: .25rem;
+}
+.is-scrolled {
+  color: white !important;
+  background-color: black;
+  opacity: .8;
 }
 @media (min-width: 768px) {
   .icon.iso {
