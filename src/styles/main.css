@@ -350,7 +350,7 @@ body,
   border-width: 0;
 }
 .page-content {
-  margin-top: -6rem;
+  margin-top: calc(-1 * var(--navbar-height));
 }
 .container {
   display: flex;
