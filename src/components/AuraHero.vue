@@ -38,7 +38,7 @@ onMounted(() => {
 
 <style>
 .hero-container {
-  width: 100vw;
+  width: 100%;
   min-height: 37.5rem;
 }
 .hero-image-div {
