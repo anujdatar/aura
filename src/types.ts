@@ -5,3 +5,8 @@ export interface RoutesInterface {
   title: string
   path: string
 }
+
+export interface industryImageSrc {
+  src: string
+  title: string
+}
