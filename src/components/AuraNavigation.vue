@@ -33,7 +33,7 @@ onMounted (() => {
       </router-link>
       <div class="nav-link-group hidden md:flex flex-col h-full justify-between items-center">
         <div class="contact-info flex flex-row items-center justify-between px-2">
-          <router-link to="/about" class="iso-link flex flex-row h-full justify-center items-center align-middle">
+          <router-link to="/about/#iso_certs" class="iso-link flex flex-row h-full justify-center items-center align-middle">
             <span class="semibold">
               ISO 9001:2015
             </span>

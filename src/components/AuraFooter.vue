@@ -17,7 +17,7 @@
       </div>
       <div class="flex flex-col justify-between">
         <!-- <iso-cert-display /> -->
-        <router-link to="/about" class="iso-link flex flex-row h-full justify-center items-center align-middle">
+        <router-link to="/about/#iso_certs" class="iso-link flex flex-row h-full justify-center items-center align-middle">
           <span class="semibold">
             ISO 9001:2015
           </span>
