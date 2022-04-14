@@ -5,7 +5,7 @@ const gridImages = [
   {
     title: 'Construction',
     id: 'card1',
-    link: '/industries/#construction',
+    link: '/industries/#earthmoving',
     image: 'assets/images/grid_images/earthmoving.webp',
   },
   {
@@ -29,7 +29,7 @@ const gridImages = [
   {
     title: 'Material Handling',
     id: 'card5',
-    link: '/industries/#handling',
+    link: '/industries/#mat_handling',
     image: 'assets/images/grid_images/mat_handling.webp',
   },
   {
