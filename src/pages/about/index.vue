@@ -77,7 +77,7 @@ onMounted(() => {
   <section-separator />
   <div class="bg-white">
     <div class="container flex-col">
-      <h2 class="heading text-center md:text-left">
+      <h2 id="iso_certs" class="heading text-center md:text-left">
         Management Systems
       </h2>
       <div style="height: 200px;">
