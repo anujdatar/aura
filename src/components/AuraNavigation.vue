@@ -29,7 +29,7 @@ onMounted (() => {
   <nav ref="navbar" class="navbar flex flex-row h-navbar items-center justify-center" :class="props.home ? 'home' : ''">
     <div class="flex flex-row w-full max-w-1200px items-center justify-between px-6 h-navbar">
       <router-link to="/" class="brand-logo">
-        <img src="assets/aura_logo.png" alt="brand-logo" class="aura-logo">
+        <img src="~/../../assets/aura_logo.png" alt="brand-logo" class="aura-logo">
       </router-link>
       <div class="nav-link-group hidden md:flex flex-col h-full justify-between items-center">
         <div class="contact-info flex flex-row items-center justify-between px-2">

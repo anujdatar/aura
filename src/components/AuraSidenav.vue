@@ -23,7 +23,7 @@ const sidebar = useSidebarState()
     <div class="sidenav fixed inset-y-0 right-0">
       <div class="header flex flex-row h-navbar items-center justify-between">
         <router-link to="/" class="brand-logo">
-          <img src="assets/aura_logo.png" alt="brand-logo" class="aura-logo">
+          <img src="~/../../assets/aura_logo.png" alt="brand-logo" class="aura-logo">
         </router-link>
         <button class="close-sidenav rounded-md text-primary" @click="sidebar.close">
           <span class="sr-only">Close panel</span>
