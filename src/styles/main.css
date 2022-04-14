@@ -80,6 +80,9 @@ body,
 .bg-transparent {
   background-color: transparent;
 }
+.bg-white {
+  background-color: white;
+}
 .fill-current {
   fill: currentColor;
 }
