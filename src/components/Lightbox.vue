@@ -85,7 +85,6 @@ onMounted(() => {
   setSlidePositions(lightboxSlides.value)
   moveToSlide(currentSlideNumber.value)
   setSlideText(currentSlideNumber.value)
-  slideTrack.value!.addEventListener('transitionend', handleSlideLoop)
 })
 </script>
 
@@ -113,7 +112,7 @@ onMounted(() => {
         &#10095;
       </button>
       <div class="slides-container align-middle items-center justify-center">
-        <ul ref="slideTrack" class="slides-track">
+        <ul ref="slideTrack" class="slides-track" @transitionend="handleSlideLoop">
           <li
             v-for="(image, i) in modalImages"
             :key="i"
