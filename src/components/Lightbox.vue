@@ -13,6 +13,9 @@ const emit = defineEmits(['close-lightbox'])
 const imageCount = computed(() => {
   return props.images.length
 })
+const isSingleImage = computed(() => {
+  return imageCount.value === 1
+})
 
 const lightboxModal = ref<HTMLDivElement>()
 const imageTitleText = ref<HTMLDivElement>()
@@ -54,6 +57,7 @@ function closeLightboxModal() {
 }
 
 function changeLightboxSlide(n: number) {
+  if (isSingleImage.value) return
   slideTrack.value!.style.transition = 'transform 250ms ease-in'
   const targetSlideNumber = currentSlideNumber.value! + n
   currentSlideNumber.value = targetSlideNumber
@@ -105,10 +109,10 @@ onMounted(() => {
       <button class="lightbox-btn close" @click="closeLightboxModal">
         &times;
       </button>
-      <button class="lightbox-btn prev" @click="changeLightboxSlide(-1)">
+      <button class="lightbox-btn prev" :disabled="isSingleImage" @click="changeLightboxSlide(-1)">
         &#10094;
       </button>
-      <button class="lightbox-btn next" @click="changeLightboxSlide(1)">
+      <button class="lightbox-btn next" :disabled="isSingleImage" @click="changeLightboxSlide(1)">
         &#10095;
       </button>
       <div class="slides-container align-middle items-center justify-center">
@@ -178,9 +182,13 @@ onMounted(() => {
   transition-duration: 500ms;
   font-weight: 600;
 }
-.lightbox-btn:hover {
+.lightbox-btn:hover:not(:disabled) {
   color: var(--accent-alt);
 }
+.lightbox-btn:disabled {
+  cursor: not-allowed;
+}
+
 .lightbox-btn.close {
   position: absolute;
   top: 1.25rem;
