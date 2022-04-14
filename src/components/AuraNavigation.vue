@@ -4,6 +4,7 @@ import { useSidebarState } from '~/stores/sidebar'
 
 interface properties {
   routes: RoutesInterface[]
+  home?: boolean
 }
 
 const props = defineProps<properties>()
@@ -25,7 +26,7 @@ onMounted (() => {
 </script>
 
 <template>
-  <nav ref="navbar" class="navbar flex flex-row h-navbar items-center justify-center text-white">
+  <nav ref="navbar" class="navbar flex flex-row h-navbar items-center justify-center" :class="props.home ? 'home' : ''">
     <div class="flex flex-row w-full max-w-1200px items-center justify-between px-6 h-navbar">
       <router-link to="/" class="brand-logo">
         <img src="assets/aura_logo.png" alt="brand-logo" class="aura-logo">
@@ -77,16 +78,33 @@ onMounted (() => {
   z-index: 50;
   transition-property: background-color;
   transition-duration: 1s;
+  color: white;
+}
+.navbar.is-scrolled {
+  color: white !important;
+  background-color: black;
+  opacity: .8;
+}
+.navbar.home {
+  color: var(--primary);
 }
 .router-link-exact-active:not(.brand-logo):not(.iso-link) {
   border-bottom: 3px solid var(--accent);
-  color: var(--accent) !important;
+  color: var(--accent);
 }
 .contact-info {
   min-height: 3rem;
 }
 .nav-links {
   max-height: 50%;
+}
+.home .nav-link
+.home .iso-link {
+  color: var(--primary) !important;
+}
+.is-scrolled .nav-link,
+.is-scrolled .iso-link {
+  color: white;
 }
 .nav-link:hover:not(.router-link-exact-active) {
   background-color: var(--accent);
@@ -113,11 +131,6 @@ onMounted (() => {
   width: 3rem;
   height: 3rem;
   margin-left: .25rem;
-}
-.is-scrolled {
-  color: white !important;
-  background-color: black;
-  opacity: .8;
 }
 @media (min-width: 768px) {
   .icon.iso {
