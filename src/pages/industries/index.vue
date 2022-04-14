@@ -13,7 +13,7 @@ import {
   textile,
 } from '~/modules/images'
 
-const heroImage = 'assets/images/hero_industries.webp'
+const heroImage = '~/../../assets/images/hero_industries.webp'
 const heroTitle = 'Catering to major OEMs'
 const heroContent = 'Earthmoving and construction, Electrical Systems, Mining and Agricultural Equipment and many more'
 
