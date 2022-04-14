@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const router = useRouter()
+
 const heroImage = '~/../../assets/images/hero_about.webp'
 const heroTitle = 'Pioneer & Leader'
 const heroContent = 'Precision Laser Cutting & Sheet Metal Fabrication'
@@ -33,10 +35,24 @@ const card7 = {
 }
 
 onMounted(() => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-  })
+  const navToRoute = router.currentRoute.value.hash
+  if (navToRoute) {
+    document.querySelector(navToRoute)?.scrollIntoView()
+    const currentPos = window.scrollY
+    const topOffset = currentPos - 96
+
+    window.scrollTo({
+      top: topOffset,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+  else {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+    })
+  }
 })
 </script>
 
