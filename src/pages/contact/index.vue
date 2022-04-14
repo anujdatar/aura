@@ -2,6 +2,13 @@
 function submitContactFrom() {
   console.log('form submitted')
 }
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  })
+})
 </script>
 
 <template>

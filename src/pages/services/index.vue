@@ -27,6 +27,13 @@ const service6 = {
   title: 'Vertical Machining',
   video: 'https://www.youtube-nocookie.com/embed/0cWrkbWjUuA',
 }
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  })
+})
 </script>
 
 <template>

@@ -14,6 +14,13 @@ const card3 = {
   content: 'Customer centric and system dependant method of working',
   image: 'assets/images/card_images/tractor.jpg',
 }
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  })
+})
 </script>
 
 <template>

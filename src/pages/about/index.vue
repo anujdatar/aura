@@ -32,6 +32,12 @@ const card7 = {
   content: 'Proximity to inland container depots & Mumbai Port',
 }
 
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+  })
+})
 </script>
 
 <template>
