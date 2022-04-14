@@ -13,9 +13,32 @@ import {
   textile,
 } from '~/modules/images'
 
+const router = useRouter()
+
 const heroImage = '~/../../assets/images/hero_industries.webp'
 const heroTitle = 'Catering to major OEMs'
 const heroContent = 'Earthmoving and construction, Electrical Systems, Mining and Agricultural Equipment and many more'
+
+onMounted(() => {
+  const navToRoute = router.currentRoute.value.hash
+  if (navToRoute) {
+    document.querySelector(navToRoute)?.scrollIntoView()
+    const currentPos = window.scrollY
+    const topOffset = currentPos - 96
+
+    window.scrollTo({
+      top: topOffset,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+  else {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+    })
+  }
+})
 
 </script>
 
