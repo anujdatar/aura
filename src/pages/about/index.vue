@@ -1,34 +1,34 @@
 <script setup lang="ts">
-const heroImage = 'assets/images/hero_about.webp'
+const heroImage = '~/../../assets/images/hero_about.webp'
 const heroTitle = 'Pioneer & Leader'
 const heroContent = 'Precision Laser Cutting & Sheet Metal Fabrication'
 
 const card1 = {
-  imageSrc: 'assets/images/card_images/sheet.webp',
+  imageSrc: '~/../../assets/images/card_images/sheet.webp',
   content: 'Versatile resource pool to handle variety and complexity',
 }
 const card2 = {
-  imageSrc: 'assets/images/card_images/production.jpg',
+  imageSrc: '~/../../assets/images/card_images/production.jpg',
   content: 'Ability to handle low to high production quantities',
 }
 const card3 = {
-  imageSrc: 'assets/images/card_images/team2.webp',
+  imageSrc: '~/../../assets/images/card_images/team2.webp',
   content: 'Competent and experienced teams',
 }
 const card4 = {
-  imageSrc: 'assets/images/card_images/plasma.webp',
+  imageSrc: '~/../../assets/images/card_images/plasma.webp',
   content: 'Advanced technology with CNC Laser, Plasma, Bending, and Rolling machines',
 }
 const card5 = {
-  imageSrc: 'assets/images/card_images/facility.webp',
+  imageSrc: '~/../../assets/images/card_images/facility.webp',
   content: 'Capacity to augment machinery and plant setup',
 }
 const card6 = {
-  imageSrc: 'assets/images/card_images/highway.jpg',
+  imageSrc: '~/../../assets/images/card_images/highway.jpg',
   content: 'Excellent connectivity through Pune-Bangalore National Highway',
 }
 const card7 = {
-  imageSrc: 'assets/images/card_images/port.jpg',
+  imageSrc: '~/../../assets/images/card_images/port.jpg',
   content: 'Proximity to inland container depots & Mumbai Port',
 }
 
@@ -111,7 +111,7 @@ onMounted(() => {
           </p>
         </div>
         <img
-          src="assets/images/team.webp"
+          src="~/assets/images/team.webp"
           alt="team-image"
           class="md:max-w-1/2 rounded-xl mx-auto md:ml-6 shadow-black shadow-xl"
         >
