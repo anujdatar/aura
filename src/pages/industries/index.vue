@@ -177,6 +177,9 @@ onMounted(() => {
 .industry {
   margin-bottom: 3rem;
 }
+.industry p {
+  color: var(--secondary);
+}
 .sub-industries > div {
   width: 100%;
   max-width: 50%;
