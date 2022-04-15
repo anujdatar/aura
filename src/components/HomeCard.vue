@@ -22,7 +22,7 @@ const props = defineProps<{
 
 <style>
 .home-card {
-  background-color: var(--alt);
+  background-color: var(--alt2);
   width: 100%;
 
   margin-left: 2.5rem;
