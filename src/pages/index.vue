@@ -15,6 +15,15 @@ const card3 = {
   image: 'assets/images/card_images/tractor.jpg',
 }
 
+const clients = [
+  'assets/images/clients/crompton.webp',
+  'assets/images/clients/jcb.webp',
+  'assets/images/clients/l_and_t.webp',
+  'assets/images/clients/mahindra.webp',
+  'assets/images/clients/metso.webp',
+  'assets/images/clients/siemens.webp',
+]
+
 onMounted(() => {
   window.scrollTo({
     top: 0,
@@ -54,6 +63,20 @@ onMounted(() => {
         </p>
       </div>
     </div>
+    <div class="container flex-col text-center">
+      <h2 class="heading">
+        Our Clients
+      </h2>
+      <div class="flex flex-row flex-wrap items-center justify-center">
+        <img
+          v-for="(image, i) in clients"
+          :key="i"
+          :src="image"
+          :alt="'client' + i"
+          class="client-logos"
+        >
+      </div>
+    </div>
   </div>
 </template>
 
@@ -71,6 +94,12 @@ onMounted(() => {
 }
 .heading.home-about {
   text-align: center;
+}
+.client-logos {
+  max-width: 12rem;
+  min-width: 6rem;
+  max-height: 8rem;
+  padding: 1rem;
 }
 @media (min-width: 768px) {
   .factory-image {
