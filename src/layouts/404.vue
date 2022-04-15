@@ -1,13 +1,6 @@
 <script setup lang="ts">
+import { routes } from '~/modules/routes'
 const router = useRouter()
-const routes = [
-  { title: 'Home', path: '/' },
-  { title: 'Industries', path: '/industries' },
-  { title: 'Services', path: '/services' },
-  { title: 'Exports', path: '/exports' },
-  { title: 'About', path: '/about' },
-  { title: 'Contact', path: '/contact' },
-]
 </script>
 
 <template>
