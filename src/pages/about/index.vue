@@ -34,6 +34,27 @@ const card7 = {
   content: 'Proximity to inland container depots & Mumbai Port',
 }
 
+const image9001 = ['~/../../assets/images/iso/aura_iso_9001.jpg']
+const image3834 = ['~/../../assets/images/iso/aura_iso_3834_1.webp',
+  '~/../../assets/images/iso/aura_iso_3834_1.webp']
+
+const show9001Cert = ref<boolean>()
+const show3834Cert = ref<boolean>()
+
+function open9001Cert() {
+  show9001Cert.value = true
+}
+function close9001Cert() {
+  show9001Cert.value = false
+}
+
+function open3834Cert() {
+  show3834Cert.value = true
+}
+function close3834Cert() {
+  show3834Cert.value = false
+}
+
 onMounted(() => {
   const navToRoute = router.currentRoute.value.hash
   if (navToRoute) {
@@ -96,8 +117,36 @@ onMounted(() => {
       <h2 id="iso_certs" class="heading text-center md:text-left">
         Management Systems
       </h2>
-      <div style="height: 200px;">
-      <!-- iso cert display thing goes here -->
+      <div class="iso-cert-div">
+        <!-- iso cert display thing goes here -->
+        <div class="iso-9001-thumbnail" @click="open9001Cert">
+          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail">
+          <div class="flex flex-row justify-center items-center align-middle">
+            <span class="semibold text-center">
+              ISO 9001:2015
+            </span>
+            <iso-icon class="icon iso" />
+          </div>
+        </div>
+        <iso-cert-display
+          v-if="show9001Cert"
+          :images="image9001"
+          @close-lightbox="close9001Cert"
+        />
+        <div class="iso-3834-thumbnail" @click="open3834Cert">
+          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail">
+          <div class="flex flex-row justify-center items-center align-middle">
+            <span class="semibold text-center">
+              DIN EN ISO 3834-2
+            </span>
+            <iso-icon class="icon iso" />
+          </div>
+        </div>
+        <iso-cert-display
+          v-if="show3834Cert"
+          :images="image3834"
+          @close-lightbox="close3834Cert"
+        />
       </div>
       <h2 class="heading text-center md:text-left">
         Our Mission
@@ -151,8 +200,54 @@ onMounted(() => {
       </div>
     </div>
   </div>
-  <!-- <section-separator /> -->
 </template>
+
+<style>
+.iso-cert-div {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.iso-9001-thumbnail,
+.iso-3834-thumbnail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.iso-9001-thumbnail:hover,
+.iso-3834-thumbnail:hover {
+  color: var(--accent);
+}
+.iso-9001-thumbnail img,
+.iso-3834-thumbnail img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  padding-bottom: 1rem;
+}
+.iso-9001-thumbnail span,
+.iso-3834-thumbnail span {
+  padding-right: .5rem;
+}
+
+@media (min-width: 768px) {
+  .iso-cert-div {
+      flex-direction: row;
+  }
+  .iso-9001-thumbnail,
+  .iso-3834-thumbnail {
+    max-width: 50%;
+  }
+}
+</style>
 
 <route lang="yaml">
 meta:
