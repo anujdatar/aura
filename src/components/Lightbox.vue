@@ -82,6 +82,9 @@ onMounted(() => {
   currentSlideNumber.value = props.imageToShow as number
   lightboxModal.value?.focus()
 
+  const bodyEl = document.querySelector('body') as HTMLBodyElement
+  bodyEl!.style.overflow = 'hidden'
+
   lightboxSlides.value[0].setAttribute('id', 'lastClone')
   lightboxSlides.value[imageCount.value + 1].setAttribute('id', 'firstClone')
   slideWidth.value = lightboxSlides.value[0].getBoundingClientRect().width
@@ -89,6 +92,10 @@ onMounted(() => {
   setSlidePositions(lightboxSlides.value)
   moveToSlide(currentSlideNumber.value)
   setSlideText(currentSlideNumber.value)
+})
+onUnmounted(() => {
+  const bodyEl = document.querySelector('body') as HTMLBodyElement
+  bodyEl!.style.overflow = 'auto'
 })
 </script>
 
