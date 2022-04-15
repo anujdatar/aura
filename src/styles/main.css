@@ -80,6 +80,9 @@ body,
 .bg-alt {
   background-color: var(--alt);
 }
+.bg-alt2 {
+  background-color: var(--alt2);
+}
 .bg-transparent {
   background-color: transparent;
 }

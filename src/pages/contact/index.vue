@@ -24,7 +24,7 @@ onMounted(() => {
       </div>
       <!-- contact from here -->
       <div class="form-container flex mx-auto my-auto items-center justify-center">
-        <form class="flex flex-col relative bg-alt rounded-lg" @submit.prevent="submitContactFrom">
+        <form class="flex flex-col relative bg-alt2 rounded-lg" @submit.prevent="submitContactFrom">
           <h2 class="text-primary text-2xl semibold mb-4">
             Contact Us
           </h2>
