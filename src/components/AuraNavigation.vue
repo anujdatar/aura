@@ -93,6 +93,7 @@ onMounted (() => {
   color: var(--accent);
 }
 .contact-info {
+  width: 100%;
   min-height: 3rem;
 }
 .nav-links {
