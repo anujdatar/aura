@@ -4,7 +4,23 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AboutCard: typeof import('./components/AboutCard.vue')['default']
     AuraFooter: typeof import('./components/AuraFooter.vue')['default']
+    AuraHero: typeof import('./components/AuraHero.vue')['default']
+    AuraNavigation: typeof import('./components/AuraNavigation.vue')['default']
+    AuraSidenav: typeof import('./components/AuraSidenav.vue')['default']
+    HomeCard: typeof import('./components/HomeCard.vue')['default']
+    IndustryThumbnails: typeof import('./components/IndustryThumbnails.vue')['default']
+    IsoCertDisplay: typeof import('./components/IsoCertDisplay.vue')['default']
+    IsoIcon: typeof import('./components/icons/IsoIcon.vue')['default']
+    Lightbox: typeof import('./components/Lightbox.vue')['default']
+    LinkedinIcon: typeof import('./components/icons/LinkedinIcon.vue')['default']
+    MailIcon: typeof import('./components/icons/MailIcon.vue')['default']
+    PhoneIcon: typeof import('./components/icons/PhoneIcon.vue')['default']
+    PhotoGrid: typeof import('./components/PhotoGrid.vue')['default']
+    SectionSeparator: typeof import('./components/SectionSeparator.vue')['default']
+    VideoCard: typeof import('./components/VideoCard.vue')['default']
+    YoutubeIcon: typeof import('./components/icons/YoutubeIcon.vue')['default']
   }
 }
 
