@@ -39,10 +39,13 @@ body,
 :root {
   --accent: #f97316; /* orange-500 */
   --accent-alt: #14b8a6; /* teal-700 */
-  --primary: #334155; /* blue-gray-700 */
-  --secondary: #64748b; /* blue-gray-500 */
-  --alt: #e2e8f0; /* blue-gray-200 */
+  --primary: #334155; /* slate-700 */
+  --secondary: #475569; /* slate-600 */
+  --alt: #f1f5f9; /* slate-100 */
   --navbar-height: 6rem; /* 96px */
+
+  --secondary2: #64748b; /* slate-500 */
+  --alt2: #e2e8f0; /* slate-200 */
 }
 .text-white {
   color: white;
