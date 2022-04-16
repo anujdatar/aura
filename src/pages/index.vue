@@ -2,26 +2,26 @@
 const card1 = {
   title: 'Latest Technology in Metal Cutting and Fabrication',
   content: 'Nimble Manufacturing Processes to Cater to Variety and Complexity',
-  image: '~/assets/images/card_images/trumpf.jpg',
+  image: 'assets/images/card_images/trumpf.jpg',
 }
 const card2 = {
   title: 'Strong Engineering Base',
   content: 'Fast Product Development and cost effective engineering solutions',
-  image: '~/assets/images/card_images/fixture.jpg',
+  image: 'assets/images/card_images/fixture.jpg',
 }
 const card3 = {
   title: 'Partnering in Customer\'s progress',
   content: 'Customer centric and system dependant method of working',
-  image: '~/assets/images/card_images/tractor.jpg',
+  image: 'assets/images/card_images/tractor.jpg',
 }
 
 const clients = [
-  '~/assets/images/clients/crompton.webp',
-  '~/assets/images/clients/jcb.webp',
-  '~/assets/images/clients/l_and_t.webp',
-  '~/assets/images/clients/mahindra.webp',
-  '~/assets/images/clients/metso.webp',
-  '~/assets/images/clients/siemens.webp',
+  'assets/images/clients/crompton.webp',
+  'assets/images/clients/jcb.webp',
+  'assets/images/clients/l_and_t.webp',
+  'assets/images/clients/mahindra.webp',
+  'assets/images/clients/metso.webp',
+  'assets/images/clients/siemens.webp',
 ]
 
 onMounted(() => {
