@@ -1,27 +1,27 @@
 <script setup lang="ts">
-const heroImage = '~/../../assets/images/hero_industries.webp'
+const heroImage = 'assets/images/hero_industries.webp'
 const heroTitle = 'Catering to major OEMs'
 const heroContent = 'Earthmoving and construction, Electrical Systems, Mining and Agricultural Equipment and many more'
 
 const exportImages = [
   {
-    src: '~/../../assets/images/exports/exports1.jpg',
+    src: 'assets/images/exports/exports1.jpg',
     title: 'Exports 1',
   },
   {
-    src: '~/../../assets/images/exports/exports2.jpg',
+    src: 'assets/images/exports/exports2.jpg',
     title: 'Exports 2',
   },
   {
-    src: '~/../../assets/images/exports/exports3.jpg',
+    src: 'assets/images/exports/exports3.jpg',
     title: 'Exports 3',
   },
   {
-    src: '~/../../assets/images/exports/exports4.jpg',
+    src: 'assets/images/exports/exports4.jpg',
     title: 'Exports 4',
   },
   {
-    src: '~/../../assets/images/exports/exports5.jpg',
+    src: 'assets/images/exports/exports5.jpg',
     title: 'Exports 5',
   },
 ]
