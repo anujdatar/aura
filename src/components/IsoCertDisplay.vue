@@ -11,7 +11,6 @@ function closeIsoLightbox() {
 }
 
 onMounted(() => {
-  console.log(props.images)
   isoLightbox.value?.focus()
   const bodyEl = document.querySelector('body') as HTMLBodyElement
   bodyEl!.style.overflow = 'hidden'
