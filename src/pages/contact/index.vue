@@ -127,7 +127,7 @@ onMounted(() => {
 }
 
 .form-button {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
   color: var(--alt);
   text-transform: uppercase;
   font-size: .875rem;
