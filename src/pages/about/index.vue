@@ -120,7 +120,7 @@ onMounted(() => {
       <div class="iso-cert-div">
         <!-- iso cert display thing goes here -->
         <div class="iso-9001-thumbnail" @click="open9001Cert">
-          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail">
+          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail" data-aos="flip-left">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               ISO 9001:2015
@@ -134,7 +134,7 @@ onMounted(() => {
           @close-lightbox="close9001Cert"
         />
         <div class="iso-3834-thumbnail" @click="open3834Cert">
-          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail">
+          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="flip-right">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               DIN EN ISO 3834-2
@@ -165,7 +165,7 @@ onMounted(() => {
         of metal fabrication and assembly.
       </p>
       <div class="our-team pt-8 flex flex-col md:flex-row">
-        <div class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center" data-aos="fade-right">
           <h2 class="heading text-center md:text-left">
             Our Team
           </h2>
@@ -179,6 +179,7 @@ onMounted(() => {
           src="~/assets/images/team.webp"
           alt="team-image"
           class="md:max-w-1/2 rounded-xl mx-auto md:ml-6 shadow-black shadow-xl"
+          data-aos="fade-left"
         >
       </div>
     </div>
@@ -190,13 +191,13 @@ onMounted(() => {
         How we can help
       </h2>
       <div class="flex flex-row flex-wrap items-center justify-center relative mt-8">
-        <about-card :card-image="card1.imageSrc" :content="card1.content" />
-        <about-card :card-image="card2.imageSrc" :content="card2.content" />
-        <about-card :card-image="card3.imageSrc" :content="card3.content" />
-        <about-card :card-image="card4.imageSrc" :content="card4.content" />
-        <about-card :card-image="card5.imageSrc" :content="card5.content" />
-        <about-card :card-image="card6.imageSrc" :content="card6.content" />
-        <about-card :card-image="card7.imageSrc" :content="card7.content" />
+        <about-card :card-image="card1.imageSrc" :content="card1.content" data-aos="fade-up" />
+        <about-card :card-image="card2.imageSrc" :content="card2.content" data-aos="fade-up" />
+        <about-card :card-image="card3.imageSrc" :content="card3.content" data-aos="fade-up" />
+        <about-card :card-image="card4.imageSrc" :content="card4.content" data-aos="fade-up" />
+        <about-card :card-image="card5.imageSrc" :content="card5.content" data-aos="fade-up" />
+        <about-card :card-image="card6.imageSrc" :content="card6.content" data-aos="fade-up" />
+        <about-card :card-image="card7.imageSrc" :content="card7.content" data-aos="fade-up" />
       </div>
     </div>
   </div>

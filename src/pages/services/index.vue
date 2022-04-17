@@ -114,6 +114,8 @@ onMounted(() => {
             src="assets/images/factory.jpg"
             alt="factory-image-1"
             class="shadow-xl"
+            data-aos="fade-right"
+            data-aos-mirror="true"
           >
           <p class="text-secondary text-center">
             Shirwal Plant
@@ -124,6 +126,8 @@ onMounted(() => {
             src="assets/images/card_images/plant2.webp"
             alt="factory-image-1"
             class="shadow-xl"
+            data-aos="fade-left"
+            data-aos-mirror="true"
           >
           <p class="text-secondary text-center">
             Nashik Plant

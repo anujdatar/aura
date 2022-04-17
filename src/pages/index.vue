@@ -36,9 +36,33 @@ onMounted(() => {
   <div class="home-nav-border w-full h-navbar absolute top-0" />
   <photo-grid />
   <div class="container home-card-div flex-col md:flex-row justify-center items-center">
-    <home-card :card-title="card1.title" :card-content="card1.content" :card-image="card1.image" />
-    <home-card :card-title="card2.title" :card-content="card2.content" :card-image="card2.image" />
-    <home-card :card-title="card3.title" :card-content="card3.content" :card-image="card3.image" />
+    <home-card
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-mirror="true"
+      data-aos-anchor-placement="center-bottom"
+      :card-title="card1.title"
+      :card-content="card1.content"
+      :card-image="card1.image"
+    />
+    <home-card
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-mirror="true"
+      data-aos-anchor-placement="center-bottom"
+      :card-title="card2.title"
+      :card-content="card2.content"
+      :card-image="card2.image"
+    />
+    <home-card
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-mirror="true"
+      data-aos-anchor-placement="center-bottom"
+      :card-title="card3.title"
+      :card-content="card3.content"
+      :card-image="card3.image"
+    />
   </div>
   <section-separator color="text-alt" />
   <div class="w-full bg-alt">
@@ -56,7 +80,7 @@ onMounted(() => {
           Situated near Pune, the engineering Capital of India, Aura Laserfab offers both manufacturing and job shopping services in the field of Laser Cutting &amp; Sheet Metal Fabrication.
         </p>
         <p class="paragraph">
-          Equipped with the latest technology in Laser Cutting, Bending and Fabrication, Aura manufactures a large variety of components with a mix of volumes. With the use of contemporary techniques of operations management we can deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from a precise laser cut–bend component to a complex welded, machined and painted assembly using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
+          Equipped with the latest technology in Laser Cutting, Bending and Fabrication, Aura manufactures a large variety of components with a mix of volumes. With the use of contemporary techniques of operations management we can deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from a precise laser cut&#x002d;bend component to a complex welded, machined and painted assembly using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
         </p>
         <p class="paragraph">
           With a variety of machinery like Laser Cutting, Levelling, Press brakes, Rolling, Robotic Welding, and Vertical Milling Machine (VMC), Aura Laserfab is a one-stop shop for all Sheet Metal Fabrication requirements.
@@ -67,13 +91,16 @@ onMounted(() => {
       <h2 class="heading">
         Our Clients
       </h2>
-      <div class="flex flex-row flex-wrap items-center justify-center">
+      <div class="flex flex-row flex-wrap items-center justify-center gap">
         <img
           v-for="(image, i) in clients"
           :key="i"
           :src="image"
           :alt="'client' + i"
           class="client-logos"
+          data-aos="zoom-in"
+          data-aos-mirror="true"
+          data-aos-duration="1500"
         >
       </div>
     </div>
@@ -101,6 +128,29 @@ onMounted(() => {
   max-height: 8rem;
   padding: 1rem;
 }
+.gap {
+  gap: 1rem;
+}
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (min-width: 768px) {
   .factory-image {
     max-width: 50%;
