@@ -71,8 +71,9 @@ onMounted(() => {
         src="assets/images/factory.jpg"
         alt="factory-image"
         class="factory-image shadow-black shadow-xl"
+        data-aos="fade-right"
       >
-      <div class="flex flex-col">
+      <div class="flex flex-col" data-aos="fade-left">
         <h2 class="heading home-about">
           An ISO 9001:2015 certified company
         </h2>
