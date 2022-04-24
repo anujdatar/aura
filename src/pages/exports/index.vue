@@ -16,13 +16,21 @@ const exportImages = [
     src: 'assets/images/exports/exports3.jpg',
     title: 'Exports 3',
   },
-  {
-    src: 'assets/images/exports/exports4.jpg',
-    title: 'Exports 4',
-  },
+  // {
+  //   src: 'assets/images/exports/exports4.jpg',
+  //   title: 'Exports 4',
+  // },
   {
     src: 'assets/images/exports/exports5.jpg',
     title: 'Exports 5',
+  },
+  {
+    src: 'assets/images/exports/exports6.webp',
+    title: 'Exports 6',
+  },
+  {
+    src: 'assets/images/exports/exports7.webp',
+    title: 'Exports 7',
   },
 ]
 
@@ -38,28 +46,61 @@ onMounted(() => {
   <aura-hero :image="heroImage" :title="heroTitle" :content="heroContent" />
 
   <div class="page-content bg-alt">
-    <div class="container flex-col">
-      <h2 class="heading text-center md:text-left">
-        Exports
-      </h2>
-      <p class="paragraph">
-        With a dedicated team working on export requirements, Aura Laserfab has established a customer base in Europe, USA and the Middle East.
-      </p>
-      <p class="paragraph">
-        Our Quality Management systems conform to global standards enabling us to ensure defect free on time delivery.
-      </p>
-      <p class="paragraph">
-        Aura Laser gives special attention to the packing of components to ensure delivery in proper and safe condition. Using 3D cad software our team can ensure optimal container utilization to save shipping costs. All required facilities for container loading are available in-house.
-      </p>
-      <p class="paragraph">
-        With strong technical and commercial expertise Aura Laser intends to enter new markets and cater end to end requirement in Metal Fabrication and Assembly.
-      </p>
-      <industry-thumbnails name="exports" :images="exportImages" />
+    <div class="container flex-col-reverse md:flex-row">
+      <div class="exports-images flex flex-wrap justify-between items-center">
+        <img
+          v-for="(image, i) in exportImages"
+          :key="i"
+          :src="image.src"
+          :alt="image.title"
+        >
+      </div>
+      <div class="exports-text">
+        <h2 class="heading text-center md:text-left">
+          Exports
+        </h2>
+        <p class="paragraph">
+          With a dedicated team working on export requirements, Aura Laserfab has established a customer base in Europe, USA and the Middle East.
+        </p>
+        <p class="paragraph">
+          Our Quality Management systems conform to global standards enabling us to ensure defect free on time delivery.
+        </p>
+        <p class="paragraph">
+          Aura Laser gives special attention to the packing of components to ensure delivery in proper and safe condition. Using 3D cad software our team can ensure optimal container utilization to save shipping costs. All required facilities for container loading are available in-house.
+        </p>
+        <p class="paragraph">
+          With strong technical and commercial expertise Aura Laser intends to enter new markets and cater end to end requirement in Metal Fabrication and Assembly.
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
+.exports-text {
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-left: 0rem;
+}
+
+.exports-images {
+  width: 100%;
+  gap: 1rem;
+}
+.exports-images img {
+  max-width: 45%;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .exports-text {
+    width: 50%;
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+  }
+  .exports-images {
+    width: 50%;
+  }
+}
 </style>
 
 <route lang="yaml">
