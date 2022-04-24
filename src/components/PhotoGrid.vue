@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const mainImage = 'assets/images/grid_images/laser.jpg'
+// const mainImage = 'assets/images/grid_images/laser.jpg'
+const mainImage = 'assets/images/hero_services.webp'
 
 const gridImages = [
   {

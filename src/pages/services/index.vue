@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const heroImage = 'assets/images/hero_services.webp'
+// const heroImage = 'assets/images/hero_services.webp'
+const heroImage = 'assets/images/grid_images/laser.jpg'
 const heroTitle = 'Complete solution provider in metal processing & fabrication'
 const heroContent = 'MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly'
 
