@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const heroImage = 'assets/images/hero_exports1.jpg'
 const heroTitle = 'Manufacturing for the World'
-const heroContent = 'Earthmoving and construction, Electrical Systems, Mining and Agricultural Equipment and many more'
+const heroContent = ''
 
 const exportImages = [
   {
