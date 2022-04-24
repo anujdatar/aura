@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const heroImage = 'assets/images/hero_exports1.jpg'
+const heroImage = 'assets/images/hero_exports.jpg'
 const heroTitle = 'Manufacturing for the World'
 const heroContent = ''
 
