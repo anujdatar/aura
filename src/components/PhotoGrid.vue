@@ -51,7 +51,8 @@ const autoImageCycler = ref()
 
 onMounted(() => {
   // set main grid bg image
-  productGrid.value!.style.backgroundImage = `url(${mainImage})`
+  // productGrid.value!.style.backgroundImage = `url(${mainImage})`
+  productGrid.value!.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(${mainImage})`
 
   productGridBgs.value.forEach((element, index) => {
     (element as HTMLDivElement).style.backgroundImage = `url(${gridImages[index].image})`
