@@ -120,7 +120,7 @@ onMounted(() => {
       <div class="iso-cert-div">
         <!-- iso cert display thing goes here -->
         <div class="iso-9001-thumbnail" @click="open9001Cert">
-          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail" data-aos="flip-left">
+          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail" data-aos="fade-right">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               ISO 9001:2015
@@ -134,7 +134,7 @@ onMounted(() => {
           @close-lightbox="close9001Cert"
         />
         <div class="iso-3834-thumbnail" @click="open3834Cert">
-          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="flip-right">
+          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="fade-left">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               DIN EN ISO 3834-2
