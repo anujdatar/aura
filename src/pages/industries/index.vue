@@ -51,7 +51,7 @@ onMounted(() => {
         <h2 class="heading">
           Earthmoving &amp; Construction Equipment
         </h2>
-        <p>
+        <p class="paragraph">
           We supply fabricated and machined assemblies such as Dozers, Linkages, Platforms, Sliders and Carriers for Excavators, Chassis &amp; Operator Platforms for Compactors and Other Cut, Bend and Fabricated Components Loaders, Skid Steers, Engine mounts etc.
         </p>
         <industry-thumbnails name="earthmoving" :images="earthmoving" />
@@ -61,7 +61,7 @@ onMounted(() => {
         <h2 class="heading">
           Electrical Switchgear Products
         </h2>
-        <p>
+        <p class="paragraph">
           Typical Components we supply include SF6 Stainless Steel Welded Tanks for Medium Voltage Switchgear, Breaker Mechanism Units, Enclosures, and Other Precision Mechanism Components.
         </p>
         <industry-thumbnails name="switchgear" :images="switchgear" />
@@ -71,7 +71,7 @@ onMounted(() => {
         <h2 class="heading">
           Mining Equipment
         </h2>
-        <p>
+        <p class="paragraph">
           We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
         </p>
         <industry-thumbnails name="mining" :images="mining" />
@@ -85,7 +85,7 @@ onMounted(() => {
           <h2 class="heading">
             Agriculture and Farm Equipment
           </h2>
-          <p>
+          <p class="paragraph">
             Our Products include Painted Tractor Chassis &amp; Body Parts, Hydraulic and Fuel Tanks, Pedals, Stainless Steel Tanks  &amp; Frames
           </p>
           <industry-thumbnails name="agriculture" :images="agriculture" />
@@ -95,7 +95,7 @@ onMounted(() => {
           <h2 class="heading">
             Material Handling Equipment
           </h2>
-          <p>
+          <p class="paragraph">
             Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
           </p>
           <industry-thumbnails name="handling" :images="material_handling" />
@@ -111,7 +111,7 @@ onMounted(() => {
               <h4 class="text-xl">
                 Automotive Components
               </h4>
-              <p>
+              <p class="paragraph">
                 Products include Trailer Chassis, Landing Gear for Trailers, Parts for Suspension Systems
               </p>
               <industry-thumbnails name="automotive" :images="automotive" />
@@ -121,7 +121,7 @@ onMounted(() => {
               <h4 class="text-xl">
                 Textile Machinery
               </h4>
-              <p>
+              <p class="paragraph">
                 We supply Precision Cut &amp; Bent Components like Ring Frames, Suction Ducts, etc
               </p>
               <industry-thumbnails name="textile" :images="textile" />
@@ -131,7 +131,7 @@ onMounted(() => {
               <h4 class="text-xl">
                 Packaging &amp; Printing Machinery
               </h4>
-              <p>
+              <p class="paragraph">
                 Typical products we supply include Fabricated &amp; Powder Coated Frames, Laser Cut &amp; Bent Parts
               </p>
               <industry-thumbnails name="packaging" :images="packaging" />
@@ -141,7 +141,7 @@ onMounted(() => {
               <h4 class="text-xl">
                 Automated Parking Systems
               </h4>
-              <p>
+              <p class="paragraph">
                 Typical products we supply include Welded Platforms, Pillars &amp; slides.
               </p>
               <industry-thumbnails name="parking" :images="parking" />
@@ -151,7 +151,7 @@ onMounted(() => {
               <h4 class="text-xl">
                 Pollution Control Equipment
               </h4>
-              <p>
+              <p class="paragraph">
                 We supply Laser Cut Bag Holding Plates Fabricated Bag Houses &amp; other Assemblies
               </p>
               <industry-thumbnails name="pollution" :images="pollution" />
@@ -161,7 +161,7 @@ onMounted(() => {
               <h4 class="text-xl">
                 Process Plant &amp; Equipment
               </h4>
-              <p>
+              <p class="paragraph">
                 Typical products we supply include - Fabricated &amp; Painted Assemblies Precision Cut &amp; Bent Parts
               </p>
               <industry-thumbnails name="process" :images="process" />
