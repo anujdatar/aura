@@ -28,7 +28,7 @@
             <youtube-icon class="social-icon youtube" />
 
           </a>
-          <a href="https://linkedin.com/company/aura-laserfab-private-limited-pune" target="_blank" rel="noopener noreferrer">
+          <a href="https://in.linkedin.com/company/aura-laserfab-private-limited-pune" target="_blank" rel="noopener noreferrer">
             <linkedin-icon class="social-icon linkedin" />
           </a>
         </div>
