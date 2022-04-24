@@ -82,7 +82,7 @@ onMounted(() => {
     in
   </aura-hero>
   <div class="page-content bg-alt">
-    <div class="container flex-col">
+    <div class="container flex-col" data-aos="fade-left" data-aos-delay="250">
       <h2 class="heading text-center md:text-left">
         About Aura
       </h2>
@@ -114,13 +114,23 @@ onMounted(() => {
   <section-separator />
   <div class="bg-white">
     <div class="container flex-col">
-      <h2 id="iso_certs" class="heading text-center md:text-left">
+      <h2
+        id="iso_certs"
+        class="heading text-center md:text-left"
+        data-aos="fade-right"
+        data-aos-delay="250"
+      >
         Management Systems
       </h2>
       <div class="iso-cert-div">
         <!-- iso cert display thing goes here -->
-        <div class="iso-9001-thumbnail" @click="open9001Cert">
-          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail" data-aos="fade-right">
+        <div
+          class="iso-9001-thumbnail"
+          data-aos="fade-right"
+          data-aos-delay="250"
+          @click="open9001Cert"
+        >
+          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               ISO 9001:2015
@@ -133,7 +143,12 @@ onMounted(() => {
           :images="image9001"
           @close-lightbox="close9001Cert"
         />
-        <div class="iso-3834-thumbnail" @click="open3834Cert">
+        <div
+          class="iso-3834-thumbnail"
+          data-aos="fade-left"
+          data-aos-delay="250"
+          @click="open3834Cert"
+        >
           <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="fade-left">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
@@ -148,22 +163,32 @@ onMounted(() => {
           @close-lightbox="close3834Cert"
         />
       </div>
-      <h2 class="heading text-center md:text-left">
-        Our Mission
-      </h2>
-      <p class="paragraph">
-        Our mission is to provide a complete solution to customer
-        requirements, nurture and maintain ethical values, focus on
-        quality in every business process while fostering Continuous
-        Improvement in our in-house systems.
-      </p>
-      <h2 class="heading text-center md:text-left pt-8">
-        Our Vision
-      </h2>
-      <p class="paragraph">
-        Our vision is to capture a significant market share in the business
-        of metal fabrication and assembly.
-      </p>
+      <div
+        data-aos="fade-left"
+        data-aos-delay="250"
+      >
+        <h2 class="heading text-center md:text-left">
+          Our Mission
+        </h2>
+        <p class="paragraph">
+          Our mission is to provide a complete solution to customer
+          requirements, nurture and maintain ethical values, focus on
+          quality in every business process while fostering Continuous
+          Improvement in our in-house systems.
+        </p>
+      </div>
+      <div
+        data-aos="fade-right"
+        data-aos-delay="250"
+      >
+        <h2 class="heading text-center md:text-left pt-8">
+          Our Vision
+        </h2>
+        <p class="paragraph">
+          Our vision is to capture a significant market share in the business
+          of metal fabrication and assembly.
+        </p>
+      </div>
       <div class="our-team pt-8 flex flex-col md:flex-row">
         <div class="flex flex-col justify-center" data-aos="fade-right">
           <h2 class="heading text-center md:text-left">
