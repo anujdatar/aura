@@ -11,10 +11,13 @@ const props = defineProps({
     type: String,
     default: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam repudiandae eligendi qui nihil esse nisi.',
   },
+  gradient: {
+    default: [0.7, 0.4],
+  },
 })
 
 onMounted(() => {
-  heroImage.value!.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(${props.image})`
+  heroImage.value!.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, ${props.gradient[0]}), rgba(0, 0, 0, ${props.gradient[1]})), url(${props.image})`
 })
 </script>
 
