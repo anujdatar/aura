@@ -275,7 +275,6 @@ onMounted(() => {
   .factory-image-div.second {
     margin-top: 0;
   }
-
 }
 </style>
 
