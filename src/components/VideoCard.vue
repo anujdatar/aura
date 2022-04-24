@@ -20,6 +20,7 @@ const props = defineProps({
       class="card-text flex flex-col w-full md:w-1/2 justify-center"
       :class="props.textRight ? 'md:pl-8' : 'md:pr-8'"
       :data-aos="props.textRight ? 'fade-left' : 'fade-right'"
+      data-aos-delay="250"
     >
       <h3 class="sub-heading text-primary text-center md:text-left">
         {{ props.title }}
@@ -29,7 +30,11 @@ const props = defineProps({
       </p> -->
       <slot />
     </div>
-    <div class="w-full md:w-1/2" :data-aos="props.textRight ? 'fade-right' : 'fade-left'">
+    <div
+      class="w-full md:w-1/2"
+      :data-aos="props.textRight ? 'fade-right' : 'fade-left'"
+      data-aos-delay="250"
+    >
       <iframe
         :src="props.videoLink"
         title="YouTube video player"
