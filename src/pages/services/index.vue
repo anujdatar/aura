@@ -3,6 +3,7 @@
 const heroImage = 'assets/images/grid_images/laser.jpg'
 const heroTitle = 'Complete solution provider in metal processing & fabrication'
 const heroContent = 'MIG/MAG/TIG Welding, CNC Machining, Painting, Powder Coating and Assembly'
+const heroGradient = [0.4, 0.2]
 
 const service1 = {
   title: 'Laser Cutting',
@@ -29,6 +30,11 @@ const service6 = {
   video: 'https://www.youtube-nocookie.com/embed/0cWrkbWjUuA',
 }
 
+const service7 = {
+  title: 'Surface Treatment',
+  video: 'https://www.youtube-nocookie.com/embed/csFmFj4O44k',
+
+}
 onMounted(() => {
   window.scrollTo({
     top: 0,
@@ -38,97 +44,109 @@ onMounted(() => {
 </script>
 
 <template>
-  <aura-hero :image="heroImage" :title="heroTitle" :content="heroContent" />
+  <aura-hero :image="heroImage" :title="heroTitle" :content="heroContent" :gradient="heroGradient" />
   <div class="page-content bg-alt">
     <div class="container flex-col">
-      <h2 class="heading text-center md:text-left">
-        Infrastructure &amp; Technology
-      </h2>
-      <p class="paragraph">
-        Aura Laserfab can fabricate components ranging from less than a kg
-        to five tons. Aura Laserfab offers both manufacturing and job
-        shopping services in the field of Metal Fabrication &amp; Assembly
-        with help of Laser Cutting, Bending, Rolling, Machining and various
-        fabrication &amp; assembly processes.
-      </p>
-      <p class="paragraph">
-        Focusing on Quality at every stage of manufacturing we strive to
-        find better solutions to the problems of client. This enables our
-        customers to realize the optimum value of their products and
-        improve their competitiveness and profitability.
-      </p>
-      <p class="paragraph">
-        What makes this possible is the thoughtfully developed
-        infrastructure that is more than equipped to undertake challenging
-        jobs and adhere to stringent quality standards.
-      </p>
-      <h2 class="heading text-center md:text-left pt-8">
-        Materials
-      </h2>
-      <p class="paragraph">
-        We buy a wide range of raw materials directly from the manufacturers
-        to ensure good quality, reliability and cost competitiveness of
-        supply. We buy around 800 tons of raw material per month. We procure
-        raw material of various grades confirming to European and Indian
-        Standards of -
-        <ul class="list-disc ml-10 text-secondary">
-          <li>Carbon Steel - IS2062 E250, S235JR, S275JR, 1079D, 513D etc.</li>
-          <li>
-            High Tensile Carbon Steel - E350, S355J2, S355MC, S550MC,
-            S690QL, S700MC, QSTE380 etc.
-          </li>
-          <li>Galvanized Steel - GSM 120, GSM 275 etc.</li>
-          <li>Stainless Steel - SS304, SS316, SS410, SS202 etc.</li>
-          <li>Aluminium - 8011, 3105, Chequered.</li>
-          <li>Special Steels like HARDOX, 16Mo3.</li>
-        </ul>
-      </p>
-      <h2 class="heading text-center md:text-left pt-8">
-        Engineering &amp; Development
-      </h2>
-      <p class="paragraph">
-        A dedicated Product Development Team ensures the development of
-        components in the shortest possible time. With the use of advanced
-        design softwares, we offer quick support during product development.
-      </p>
-      <p class="paragraph">
-        Aura Laser offers innovative Value Analysis &amp; Value Engineering
-        (VAVE) proposals without affecting quality &amp; durability of
-        product directly helping customers reduce cost of their products.
-      </p>
+      <div data-aos="fade-left" data-aos-delay="250">
+        <h2 class="heading text-center md:text-left">
+          Infrastructure &amp; Technology
+        </h2>
+        <p class="paragraph">
+          Aura Laserfab can fabricate components ranging from less than a kg
+          to five tons. Aura Laserfab offers both manufacturing and job
+          shopping services in the field of Metal Fabrication &amp; Assembly
+          with help of Laser Cutting, Bending, Rolling, Machining and various
+          fabrication &amp; assembly processes.
+        </p>
+        <p class="paragraph">
+          Focusing on Quality at every stage of manufacturing we strive to
+          find better solutions to the problems of client. This enables our
+          customers to realize the optimum value of their products and
+          improve their competitiveness and profitability.
+        </p>
+        <p class="paragraph">
+          What makes this possible is the thoughtfully developed
+          infrastructure that is more than equipped to undertake challenging
+          jobs and adhere to stringent quality standards.
+        </p>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="250">
+        <h2 class="heading text-center md:text-left pt-8">
+          Materials
+        </h2>
+        <p class="paragraph">
+          We buy a wide range of raw materials directly from the manufacturers
+          to ensure good quality, reliability and cost competitiveness of
+          supply. We buy around 800 tons of raw material per month. We procure
+          raw material of various grades confirming to European and Indian
+          Standards of -
+          <ul class="list-disc ml-10 text-secondary">
+            <li>Carbon Steel - IS2062 E250, S235JR, S275JR, 1079D, 513D etc.</li>
+            <li>
+              High Tensile Carbon Steel - E350, S355J2, S355MC, S550MC,
+              S690QL, S700MC, QSTE380 etc.
+            </li>
+            <li>Galvanized Steel - GSM 120, GSM 275 etc.</li>
+            <li>Stainless Steel - SS304, SS316, SS410, SS202 etc.</li>
+            <li>Aluminium - 8011, 3105, Chequered.</li>
+            <li>Special Steels like HARDOX, 16Mo3.</li>
+          </ul>
+        </p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="250">
+        <h2 class="heading text-center md:text-left pt-8">
+          Engineering &amp; Development
+        </h2>
+        <p class="paragraph">
+          A dedicated Product Development Team ensures the development of
+          components in the shortest possible time. With the use of advanced
+          design softwares, we offer quick support during product development.
+        </p>
+        <p class="paragraph">
+          Aura Laser offers innovative Value Analysis &amp; Value Engineering
+          (VAVE) proposals without affecting quality &amp; durability of
+          product directly helping customers reduce cost of their products.
+        </p>
+      </div>
     </div>
   </div>
   <section-separator />
   <div class="bg-white">
     <div class="container flex-col">
-      <h2 class="heading text-center md:text-left">
-        Manufacturing Facilities
-      </h2>
-      <p class="paragraph">
-        Aura Laser has three manufacturing facilities. Two facilities are at
-        Shirwal with covered area of 75,000 sq. ft. and one in Nashik
-        With 15,000 sq.ft.
-      </p>
+      <div data-aos="fade-right" data-aos-delay="250">
+        <h2 class="heading text-center md:text-left">
+          Manufacturing Facilities
+        </h2>
+        <p class="paragraph">
+          Aura Laser has two manufacturing facilities. Two facilities are at
+          Shirwal with covered area of 75,000 sq. ft. and one in Nashik
+          With 15,000 sq.ft.
+        </p>
+      </div>
       <div class="factory-images flex flex-col md:flex-row">
-        <div class="factory-image-div">
+        <div
+          class="factory-image-div"
+          data-aos="fade-right"
+          data-aos-delay="250"
+        >
           <img
             src="assets/images/factory.jpg"
             alt="factory-image-1"
             class="shadow-xl"
-            data-aos="fade-right"
-            data-aos-mirror="true"
           >
           <p class="text-secondary text-center">
             Shirwal Plant
           </p>
         </div>
-        <div class="factory-image-div second">
+        <div
+          class="factory-image-div second"
+          data-aos="fade-left"
+          data-aos-delay="250"
+        >
           <img
             src="assets/images/card_images/plant2.webp"
             alt="factory-image-1"
             class="shadow-xl"
-            data-aos="fade-left"
-            data-aos-mirror="true"
           >
           <p class="text-secondary text-center">
             Nashik Plant
@@ -215,6 +233,15 @@ onMounted(() => {
             </p>
           </div>
         </video-card>
+        <video-card :title="service7.title" :video-link="service7.video">
+          <div class="paragraph">
+            <p>Services offered:</p>
+            <p>1. Liquid Painting</p>
+            <p>2. Zinc Plating</p>
+            <p>3. Powder Coating</p>
+            <p>4. Galvanizing</p>
+          </div>
+        </video-card>
       </section>
     </div>
   </div>
@@ -231,8 +258,8 @@ onMounted(() => {
   min-height: 100%;
 }
 .factory-image-div.second {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
+}
 .factory-image-div img {
   height: 100%;
   width: 100%;
