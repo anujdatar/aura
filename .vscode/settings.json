@@ -17,4 +17,11 @@
     "*.css": "postcss",
   },
   "editor.formatOnSave": false,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    // "editor.defaultFormatter": "johnsoncodehk.volar"
+},
 }
