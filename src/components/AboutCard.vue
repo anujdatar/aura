@@ -21,7 +21,7 @@ onMounted(() => {
   <div class="about-card relative w-full mx-auto shadow-xl">
     <div ref="cardImageDiv" class="about-card-image" />
     <blockquote class="flex absolute bottom-0 left-0 right-0">
-      <p class=" flex text-sm mt-2 text-alt text-justify">
+      <p class="flex text-sm mt-2 text-alt text-justify about-content">
         {{ props.content }}
       </p>
     </blockquote>
@@ -57,6 +57,9 @@ onMounted(() => {
   padding: 1rem;
   margin-top: 1.5rem;
   color: var(--alt);
+}
+.about-content {
+  font-size: 1rem;
 }
 @media (min-width: 640px) {
   .about-card {
