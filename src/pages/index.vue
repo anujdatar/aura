@@ -91,7 +91,12 @@ onMounted(() => {
       </div>
       <div class="download-brochure flex flex-col">
         <!-- <a href="aura_iso_3834.pdf" download target="_blank" rel="noopener noreferrer">Download brochure</a> -->
-        <button type="submit" onclick="window.open('aura_iso_3834.pdf')" class="heading uppercase">
+        <button
+          type="submit"
+          onclick="window.open('aura_iso_3834.pdf')"
+          class="heading uppercase"
+          data-aos="fade-up"
+        >
           Download Our Brochure
         </button>
       </div>
@@ -150,7 +155,10 @@ onMounted(() => {
   margin-top: 4rem;
   /* cursor: pointer; */
 }
-
+.download-brochure button {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
 .download-brochure button:hover {
   color: var(--accent);
 }
