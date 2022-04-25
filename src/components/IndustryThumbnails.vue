@@ -141,5 +141,6 @@ onMounted(() => {
   position: absolute;
   top: 0;
   bottom: 0;
+  border-radius: .5rem;
 }
 </style>
