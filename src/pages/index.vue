@@ -112,7 +112,6 @@ onMounted(() => {
             :alt="'client' + i"
             class="client-logos"
             data-aos="zoom-in"
-            data-aos-mirror="true"
             data-aos-duration="1500"
           >
         </div>
