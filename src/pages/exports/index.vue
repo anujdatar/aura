@@ -2,6 +2,7 @@
 const heroImage = 'assets/images/hero_exports.webp'
 const heroTitle = 'Manufacturing for the World'
 const heroContent = ''
+const heroGradient = [0.5, 0.2]
 
 const exportImages = [
   {
@@ -43,7 +44,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <aura-hero :image="heroImage" :title="heroTitle" :content="heroContent" />
+  <aura-hero :image="heroImage" :title="heroTitle" :content="heroContent" :gradient="heroGradient" />
 
   <div class="page-content bg-alt">
     <div class="container flex-col-reverse md:flex-row">
