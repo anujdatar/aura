@@ -18,9 +18,14 @@
       <div class="flex flex-col justify-between">
         <!-- <iso-cert-display /> -->
         <router-link to="/about/#iso_certs" class="iso-link flex flex-row h-full justify-center items-center align-middle">
-          <span class="semibold">
-            ISO 9001:2015
-          </span>
+          <div class="flex flex-col">
+            <span class="semibold">
+              ISO 9001:2015
+            </span>
+            <span class="semibold">
+              DIN EN ISO 3834-2
+            </span>
+          </div>
           <iso-icon class="icon iso" />
         </router-link>
         <div class="flex flex-row md:ml-auto mb-8 md:mb-2 mt-2 justify-between items-end">

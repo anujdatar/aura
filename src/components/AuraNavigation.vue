@@ -34,9 +34,14 @@ onMounted (() => {
       <div class="nav-link-group hidden md:flex flex-col h-full justify-between items-center">
         <div class="contact-info flex flex-row items-center justify-between px-2">
           <router-link to="/about/#iso_certs" class="iso-link flex flex-row h-full justify-center items-center align-middle">
-            <span class="semibold">
-              ISO 9001:2015
-            </span>
+            <div class="flex flex-col">
+              <span class="semibold">
+                ISO 9001:2015
+              </span>
+              <span class="semibold">
+                DIN EN ISO 3834-2
+              </span>
+            </div>
             <iso-icon class="icon iso" />
           </router-link>
           <span class="flex flex-row h-full justify-center items-center align-middle ml-3">
@@ -125,6 +130,10 @@ onMounted (() => {
 .icon.burger:hover {
   color: var(--secondary);
 }
+.iso-link div {
+  font-size: 12px;
+  text-align: right;
+}
 .iso-link:hover {
   color: var(--accent);
 }
@@ -135,8 +144,8 @@ onMounted (() => {
 }
 @media (min-width: 768px) {
   .icon.iso {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
 </style>
