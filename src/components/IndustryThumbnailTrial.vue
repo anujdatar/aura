@@ -64,11 +64,19 @@ function onCloseLightbox() {
 .thumbnail-image-1 {
   min-width: 6rem;
   max-width: 9rem;
-  width: 100%;
   min-height: 6rem;
   max-height: 9rem;
+
+  width: 45%;
   height: 100%;
+
   object-fit: cover;
   border-radius: .5rem;
+}
+@media (min-width: 768px) {
+  .thumbnail-image-1 {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
