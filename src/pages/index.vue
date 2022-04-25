@@ -89,9 +89,9 @@ onMounted(() => {
           </p>
         </div>
       </div>
-      <div class="download-brochure heading flex flex-col">
+      <div class="download-brochure flex flex-col">
         <!-- <a href="aura_iso_3834.pdf" download target="_blank" rel="noopener noreferrer">Download brochure</a> -->
-        <button type="submit" onclick="window.open('aura_iso_3834.pdf')">
+        <button type="submit" onclick="window.open('aura_iso_3834.pdf')" class="heading uppercase">
           Download Our Brochure
         </button>
       </div>
