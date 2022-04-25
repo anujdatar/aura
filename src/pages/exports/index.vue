@@ -2,7 +2,7 @@
 const heroImage = 'assets/images/hero_exports.webp'
 const heroTitle = 'Manufacturing for the World'
 const heroContent = ''
-const heroGradient = [0.5, 0.2]
+const heroGradient = [0.4, 0.2]
 
 const exportImages = [
   {
