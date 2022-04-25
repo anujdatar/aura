@@ -66,43 +66,51 @@ onMounted(() => {
   </div>
   <section-separator color="text-alt" />
   <div class="w-full bg-alt">
-    <div class="container flex-col md:flex-row justify-center items-center text-justify">
-      <img
-        src="assets/images/factory.jpg"
-        alt="factory-image"
-        class="factory-image shadow-black shadow-xl"
-        data-aos="fade-right"
-      >
-      <div class="flex flex-col" data-aos="fade-left">
-        <h2 class="heading home-about">
-          An ISO 9001:2015 certified company
-        </h2>
-        <p class="paragraph">
-          Situated near Pune, the engineering Capital of India, Aura Laserfab offers both manufacturing and job shopping services in the field of Laser Cutting &amp; Sheet Metal Fabrication.
-        </p>
-        <p class="paragraph">
-          Equipped with the latest technology in Laser Cutting, Bending and Fabrication, Aura manufactures a large variety of components with a mix of volumes. With the use of contemporary techniques of operations management we can deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from a precise laser cut&#x002d;bend component to a complex welded, machined and painted assembly using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
-        </p>
-        <p class="paragraph">
-          With a variety of machinery like Laser Cutting, Levelling, Press brakes, Rolling, Robotic Welding, and Vertical Milling Machine (VMC), Aura Laserfab is a one-stop shop for all Sheet Metal Fabrication requirements.
-        </p>
-      </div>
-    </div>
-    <div class="container flex-col text-center">
-      <h2 class="heading">
-        Our Clients
-      </h2>
-      <div class="flex flex-row flex-wrap items-center justify-center gap">
+    <div class="container flex-col">
+      <div class="flex flex-col md:flex-row justify-center items-center text-justify">
         <img
-          v-for="(image, i) in clients"
-          :key="i"
-          :src="image"
-          :alt="'client' + i"
-          class="client-logos"
-          data-aos="zoom-in"
-          data-aos-mirror="true"
-          data-aos-duration="1500"
+          src="assets/images/factory.jpg"
+          alt="factory-image"
+          class="factory-image shadow-black shadow-xl"
+          data-aos="fade-right"
         >
+        <div class="flex flex-col" data-aos="fade-left">
+          <h2 class="heading home-about">
+            An ISO 9001:2015 certified company
+          </h2>
+          <p class="paragraph">
+            Situated near Pune, the engineering Capital of India, Aura Laserfab offers both manufacturing and job shopping services in the field of Laser Cutting &amp; Sheet Metal Fabrication.
+          </p>
+          <p class="paragraph">
+            Equipped with the latest technology in Laser Cutting, Bending and Fabrication, Aura manufactures a large variety of components with a mix of volumes. With the use of contemporary techniques of operations management we can deliver components in shorter lead time meeting universally acceptable quality standards. We manufacture products ranging from a precise laser cut&#x002d;bend component to a complex welded, machined and painted assembly using a variety of raw materials like carbon steel, stainless steel, aluminium, and special steels.
+          </p>
+          <p class="paragraph">
+            With a variety of machinery like Laser Cutting, Levelling, Press brakes, Rolling, Robotic Welding, and Vertical Milling Machine (VMC), Aura Laserfab is a one-stop shop for all Sheet Metal Fabrication requirements.
+          </p>
+        </div>
+      </div>
+      <div class="download-brochure heading flex flex-col">
+        <!-- <a href="aura_iso_3834.pdf" download target="_blank" rel="noopener noreferrer">Download brochure</a> -->
+        <button type="submit" onclick="window.open('aura_iso_3834.pdf')">
+          Download Our Brochure
+        </button>
+      </div>
+      <div class="flex flex-col text-center clients-container">
+        <h2 class="heading">
+          A Few of Our Clients
+        </h2>
+        <div class="flex flex-row flex-wrap items-center justify-center gap">
+          <img
+            v-for="(image, i) in clients"
+            :key="i"
+            :src="image"
+            :alt="'client' + i"
+            class="client-logos"
+            data-aos="zoom-in"
+            data-aos-mirror="true"
+            data-aos-duration="1500"
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -133,23 +141,22 @@ onMounted(() => {
   gap: 1rem;
 }
 
-.bounce-enter-active {
-  animation: bounce-in 0.5s;
-}
-.bounce-leave-active {
-  animation: bounce-in 0.5s reverse;
+.download-brochure {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  margin-top: 4rem;
+  /* cursor: pointer; */
 }
 
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1);
-  }
+.download-brochure button:hover {
+  color: var(--accent);
+}
+
+.clients-container {
+  padding-top: 3rem;
 }
 
 @media (min-width: 768px) {
