@@ -77,6 +77,11 @@ function handleSlideLoop() {
   }
   setSlideText(currentSlideNumber.value!)
 }
+function handleWindowResize() {
+  slideWidth.value = lightboxSlides.value[0].getBoundingClientRect().width
+  setSlidePositions(lightboxSlides.value)
+  moveToSlide(currentSlideNumber.value)
+}
 
 onMounted(() => {
   currentSlideNumber.value = props.imageToShow as number
@@ -92,10 +97,14 @@ onMounted(() => {
   setSlidePositions(lightboxSlides.value)
   moveToSlide(currentSlideNumber.value)
   setSlideText(currentSlideNumber.value)
+
+  window.addEventListener('resize', handleWindowResize)
 })
 onUnmounted(() => {
   const bodyEl = document.querySelector('body') as HTMLBodyElement
   bodyEl!.style.overflow = 'auto'
+
+  window.removeEventListener('resize', handleWindowResize)
 })
 </script>
 
