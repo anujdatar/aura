@@ -95,6 +95,8 @@ onMounted(() => {
   position: relative;
   width: 100%;
   height: 100%;
+
+  align-items: center;
 }
 .thumbnail-track-container {
   position: relative;
@@ -111,23 +113,23 @@ onMounted(() => {
   transition: transform 250ms ease-in;
 }
 .thumbnail-button {
-  padding-left: .5rem;
-  padding-right: .5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
   color: black;
   opacity: .6;
+
+  border-radius: 100%;
+  height: 1.75rem;
+  width: 1.75rem;
 }
 .thumbnail-container:hover .thumbnail-button {
-  background-color: black;
+  background-color: var(--accent);
   color: var(--alt);
   opacity: .3;
 }
 .thumbnail-button:hover,
 .thumbnail-button.hover {
-  background-color: black;
+  background-color: var(--accent);
   color: var(--alt);
-  opacity: .6 !important;
+  opacity: .8 !important;
 }
 
 .thumbnail-image {
