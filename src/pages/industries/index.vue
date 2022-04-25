@@ -54,27 +54,42 @@ onMounted(() => {
         <p class="paragraph">
           We supply fabricated and machined assemblies such as Dozers, Linkages, Platforms, Sliders and Carriers for Excavators, Chassis &amp; Operator Platforms for Compactors and Other Cut, Bend and Fabricated Components Loaders, Skid Steers, Engine mounts etc.
         </p>
-        <industry-thumbnails name="earthmoving" :images="earthmoving" />
+        <!-- <industry-thumbnails name="earthmoving" :images="earthmoving" /> -->
+        <industry-thumbnail-trial name="earthmoving" :images="earthmoving" />
       </section>
       <!-- 2. electrical switchgear section -->
-      <section id="switchgear" class="industry">
-        <h2 class="heading">
-          Electrical Switchgear Products
-        </h2>
-        <p class="paragraph">
-          Typical Components we supply include SF6 Stainless Steel Welded Tanks for Medium Voltage Switchgear, Breaker Mechanism Units, Enclosures, and Other Precision Mechanism Components.
-        </p>
-        <industry-thumbnails name="switchgear" :images="switchgear" />
+      <section id="switchgear" class="industry-1 flex flex-col md:flex-row">
+        <div class="industry-text" data-aos="fade-right">
+          <h2 class="heading">
+            Electrical Switchgear Products
+          </h2>
+          <p class="paragraph">
+            Typical Components we supply include SF6 Stainless Steel Welded Tanks for Medium Voltage Switchgear, Breaker Mechanism Units, Enclosures, and Other Precision Mechanism Components.
+          </p>
+        </div>
+        <industry-thumbnails-test
+          name="switchgear"
+          :images="switchgear"
+          class="thumbnail-test test-right"
+          data-aos="fade-left"
+        />
       </section>
       <!-- 3. mining equipment section -->
-      <section id="mining" class="industry">
-        <h2 class="heading">
-          Mining Equipment
-        </h2>
-        <p class="paragraph">
-          We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
-        </p>
-        <industry-thumbnails name="mining" :images="mining" />
+      <section id="mining" class="industry-1  flex flex-col md:flex-row-reverse">
+        <div class="industry-text" data-aos="fade-left">
+          <h2 class="heading">
+            Mining Equipment
+          </h2>
+          <p class="paragraph">
+            We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
+          </p>
+        </div>
+        <industry-thumbnails-test
+          name="mining"
+          :images="mining"
+          class="thumbnail-test test-left"
+          data-aos="fade-right"
+        />
       </section>
     </div>
     <section-separator />
@@ -177,8 +192,27 @@ onMounted(() => {
 .industry {
   margin-bottom: 3rem;
 }
+.industry-1 {
+  margin-block: 4rem;
+  /* display: flex;
+  flex-direction: row; */
+}
+.industry-text {
+  width: 100%;
+}
 .industry p {
   color: var(--secondary);
+}
+.thumbnail-test {
+  width: 100%;
+}
+.thumbnail-test.test-right {
+  padding-left: 2rem;
+  margin-left: 1rem;
+}
+.thumbnail-test.test-left {
+  padding-right: 2rem;
+  margin-right: 1rem;
 }
 .sub-industries > div {
   width: 100%;

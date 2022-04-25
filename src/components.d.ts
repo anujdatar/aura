@@ -11,6 +11,8 @@ declare module 'vue' {
     AuraSidenav: typeof import('./components/AuraSidenav.vue')['default']
     HomeCard: typeof import('./components/HomeCard.vue')['default']
     IndustryThumbnails: typeof import('./components/IndustryThumbnails.vue')['default']
+    IndustryThumbnailsTest: typeof import('./components/IndustryThumbnailsTest.vue')['default']
+    IndustryThumbnailTrial: typeof import('./components/IndustryThumbnailTrial.vue')['default']
     IsoCertDisplay: typeof import('./components/IsoCertDisplay.vue')['default']
     IsoIcon: typeof import('./components/icons/IsoIcon.vue')['default']
     Lightbox: typeof import('./components/Lightbox.vue')['default']
