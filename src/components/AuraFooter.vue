@@ -49,6 +49,9 @@
 footer {
   padding-top: 2.5rem;
 }
+footer .iso-link {
+  margin-bottom: 1rem;
+}
 .youtube:hover {
   color: #FF0000;
 }
@@ -56,5 +59,10 @@ footer {
   color: #0a66c2;
   /* color: #2867B2; */
   /* color: #0077B5; */
+}
+@media (min-width: 768px) {
+  footer .iso-link {
+    margin-bottom: .25rem;
+  }
 }
 </style>
