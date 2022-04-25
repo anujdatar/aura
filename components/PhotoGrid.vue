@@ -7,27 +7,27 @@
     <div class="product-card-bg card5" />
     <div class="product-card-bg card6" />
 
-    <a class="product-card" rel="card1" href="/industries#construction">
+    <a class="product-card" rel="card1" href="/industries/#construction">
       {{ product1.title }}
       <span class="more">More ></span>
     </a>
-    <a class="product-card" rel="card2" href="/industries#switchgear">
+    <a class="product-card" rel="card2" href="/industries/#switchgear">
       {{ product2.title }}
       <span class="more">More ></span>
     </a>
-    <a class="product-card" rel="card3" href="/industries#mining">
+    <a class="product-card" rel="card3" href="/industries/#mining">
       {{ product3.title }}
       <span class="more">More ></span>
     </a>
-    <a class="product-card" rel="card4" href="/industries#agriculture">
+    <a class="product-card" rel="card4" href="/industries/#agriculture">
       {{ product4.title }}
       <span class="more">More ></span>
     </a>
-    <a class="product-card" rel="card5" href="/industries#handling">
+    <a class="product-card" rel="card5" href="/industries/#handling">
       {{ product5.title }}
       <span class="more">More ></span>
     </a>
-    <a class="product-card" rel="card6" href="/industries#other">
+    <a class="product-card" rel="card6" href="/industries/#other">
       {{ product6.title }}
       <span class="more">More ></span>
     </a>
@@ -189,7 +189,7 @@ export default {
   background-image: var(--card-image-6);
 }
 .product-card {
-  @apply relative;
+  @apply relative block;
   @apply w-1/2 md:w-1/3 h-1/3 md:h-1/2 p-4;
   @apply border border-alt;
   @apply no-underline text-right;

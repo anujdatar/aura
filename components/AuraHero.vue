@@ -57,6 +57,7 @@ export default {
 <style>
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), var(--hero-image);
-  background-position-y: var(--hero-offset);
+  /* background-position-y: var(--hero-offset); */
+  background-position-y: 75%;
 }
 </style>

@@ -17,7 +17,7 @@
           </nuxt-link>
           <span class="flex flex-row justify-center items-center align-middle ml-3">
             <mail-icon class="w-4 h-full pt-1" />
-            <span class="h-full flex justify-center items-center text-center align-middle">
+            <span class="h-full flex justify-center items-center align-middle text-center">
               sales@auralaser.in
             </span>
           </span>
