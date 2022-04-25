@@ -59,7 +59,7 @@ onMounted(() => {
       </section>
       <!-- 2. electrical switchgear section -->
       <section id="switchgear" class="industry-1 flex flex-col md:flex-row">
-        <div class="industry-text" data-aos="fade-right">
+        <div class="industry-text" data-aos="fade-right" data-aos-delay="200">
           <h2 class="heading">
             Electrical Switchgear Products
           </h2>
@@ -72,11 +72,12 @@ onMounted(() => {
           :images="switchgear"
           class="thumbnail-test test-right"
           data-aos="fade-left"
+          data-aos-delay="200"
         />
       </section>
       <!-- 3. mining equipment section -->
       <section id="mining" class="industry-1  flex flex-col md:flex-row-reverse">
-        <div class="industry-text" data-aos="fade-left">
+        <div class="industry-text" data-aos="fade-left" data-aos-delay="200">
           <h2 class="heading">
             Mining Equipment
           </h2>
@@ -89,6 +90,7 @@ onMounted(() => {
           :images="mining"
           class="thumbnail-test test-left"
           data-aos="fade-right"
+          data-aos-delay="200"
         />
       </section>
     </div>
