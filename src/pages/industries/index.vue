@@ -208,19 +208,21 @@ onMounted(() => {
 .thumbnail-test {
   width: 100%;
 }
-.thumbnail-test.test-right {
-  padding-left: 2rem;
-  margin-left: 1rem;
-}
-.thumbnail-test.test-left {
-  padding-right: 2rem;
-  margin-right: 1rem;
-}
 .sub-industries > div {
   width: 100%;
   max-width: 50%;
   margin-bottom: 2rem;
   padding: 1rem;
+}
+@media (min-width: 768px) {
+  .thumbnail-test.test-right {
+    padding-left: 2rem;
+    margin-left: 1rem;
+  }
+  .thumbnail-test.test-left {
+    padding-right: 2rem;
+    margin-right: 1rem;
+  }
 }
 </style>
 
