@@ -138,14 +138,8 @@ onMounted (() => {
   color: var(--accent);
 }
 .icon.iso {
-  width: 3rem;
-  height: 3rem;
-  margin-left: .25rem;
-}
-@media (min-width: 768px) {
-  .icon.iso {
-    width: 3rem;
-    height: 3rem;
-  }
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: .5rem;
 }
 </style>
