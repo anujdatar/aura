@@ -8,7 +8,7 @@
       </nuxt-link>
       <!-- site navigation links -->
       <div id="nav-links" class="flex flex-col h-full justify-between items-center hidden md:flex pr-6">
-        <div class="flex flex-row w-full contact-info items-center justify-between px-2 mt-1">
+        <div class="flex flex-row w-full contact-info items-center justify-between mt-1">
           <nuxt-link to="/about/#isoCert" class="iso flex flex-row w-full mt-2 text-center justify-center">
             <p class="mr-2 text-xl md:text-base">
               ISO 9001:2015
