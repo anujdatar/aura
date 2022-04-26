@@ -118,9 +118,9 @@ onMounted(() => {
           Manufacturing Facilities
         </h2>
         <p class="paragraph">
-          Aura Laser has two manufacturing facilities. Two facilities are at
-          Shirwal with covered area of 75,000 sq. ft. and one in Nashik
-          With 15,000 sq.ft.
+          Aura Laser has two manufacturing facilities. One facility at
+          Shirwal with a covered area of 75,000 sq. ft. and one in Nashik
+          with 15,000 sq.ft.
         </p>
       </div>
       <div class="factory-images flex flex-col md:flex-row">
