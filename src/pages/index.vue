@@ -22,6 +22,7 @@ const clients = [
   'assets/images/clients/mahindra.webp',
   'assets/images/clients/metso.webp',
   'assets/images/clients/siemens.webp',
+  'assets/images/clients/thyssen.webp',
 ]
 
 onMounted(() => {
