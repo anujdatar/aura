@@ -58,40 +58,24 @@ onMounted(() => {
         <industry-thumbnail-trial name="earthmoving" :images="earthmoving" />
       </section>
       <!-- 2. electrical switchgear section -->
-      <section id="switchgear" class="industry-1 flex flex-col md:flex-row">
-        <div class="industry-text" data-aos="fade-right" data-aos-delay="200">
-          <h2 class="heading">
-            Electrical Switchgear Products
-          </h2>
-          <p class="paragraph">
-            Typical Components we supply include SF6 Stainless Steel Welded Tanks for Medium Voltage Switchgear, Breaker Mechanism Units, Enclosures, and Other Precision Mechanism Components.
-          </p>
-        </div>
-        <industry-thumbnails-test
-          name="switchgear"
-          :images="switchgear"
-          class="thumbnail-test test-right"
-          data-aos="fade-left"
-          data-aos-delay="200"
-        />
+      <section id="switchgear" class="industry">
+        <h2 class="heading">
+          Electrical Switchgear Products
+        </h2>
+        <p class="paragraph">
+          Typical Components we supply include SF6 Stainless Steel Welded Tanks for Medium Voltage Switchgear, Breaker Mechanism Units, Enclosures, and Other Precision Mechanism Components.
+        </p>
+        <industry-thumbnail-trial name="switchgear" :images="switchgear" />
       </section>
       <!-- 3. mining equipment section -->
-      <section id="mining" class="industry-1  flex flex-col md:flex-row-reverse">
-        <div class="industry-text" data-aos="fade-left" data-aos-delay="200">
-          <h2 class="heading">
-            Mining Equipment
-          </h2>
-          <p class="paragraph">
-            We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
-          </p>
-        </div>
-        <industry-thumbnails-test
-          name="mining"
-          :images="mining"
-          class="thumbnail-test test-left"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        />
+      <section id="mining" class="industry">
+        <h2 class="heading">
+          Mining Equipment
+        </h2>
+        <p class="paragraph">
+          We supply components such as Conveyor Frames, Hydraulic &amp; Fuel Tanks, Engine Base, Lift Axel Assembly etc.
+        </p>
+        <industry-thumbnail-trial name="mining" :images="mining" />
       </section>
     </div>
     <section-separator />
@@ -105,7 +89,7 @@ onMounted(() => {
           <p class="paragraph">
             Our Products include Painted Tractor Chassis &amp; Body Parts, Hydraulic and Fuel Tanks, Pedals, Stainless Steel Tanks  &amp; Frames
           </p>
-          <industry-thumbnails name="agriculture" :images="agriculture" />
+          <industry-thumbnail-trial name="agriculture" :images="agriculture" />
         </section>
         <!-- 5. material handling section -->
         <section id="mat_handling" class="industry">
@@ -115,7 +99,7 @@ onMounted(() => {
           <p class="paragraph">
             Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
           </p>
-          <industry-thumbnails name="handling" :images="material_handling" />
+          <industry-thumbnail-trial name="handling" :images="material_handling" />
         </section>
         <!-- 6. other industries section -->
         <section id="other" class="industry">
@@ -131,7 +115,7 @@ onMounted(() => {
               <p class="paragraph">
                 Products include Trailer Chassis, Landing Gear for Trailers, Parts for Suspension Systems
               </p>
-              <industry-thumbnails name="automotive" :images="automotive" />
+              <industry-thumbnail-trial name="automotive" :images="automotive" />
             </div>
             <!-- 6.b. textile machinary div -->
             <div id="textile" class="sub-industry">
@@ -141,7 +125,7 @@ onMounted(() => {
               <p class="paragraph">
                 We supply Precision Cut &amp; Bent Components like Ring Frames, Suction Ducts, etc
               </p>
-              <industry-thumbnails name="textile" :images="textile" />
+              <industry-thumbnail-trial name="textile" :images="textile" />
             </div>
             <!-- 6.c. packaging and printing machinary div -->
             <div id="packaging" class="sub-industry">
@@ -151,7 +135,7 @@ onMounted(() => {
               <p class="paragraph">
                 Typical products we supply include Fabricated &amp; Powder Coated Frames, Laser Cut &amp; Bent Parts
               </p>
-              <industry-thumbnails name="packaging" :images="packaging" />
+              <industry-thumbnail-trial name="packaging" :images="packaging" />
             </div>
             <!-- 6.d. parking systems div -->
             <div id="parking" class="sub-industry">
@@ -161,7 +145,7 @@ onMounted(() => {
               <p class="paragraph">
                 Typical products we supply include Welded Platforms, Pillars &amp; slides.
               </p>
-              <industry-thumbnails name="parking" :images="parking" />
+              <industry-thumbnail-trial name="parking" :images="parking" />
             </div>
             <!-- 6.e. pollution control div -->
             <div id="pollution" class="sub-industry">
@@ -171,7 +155,7 @@ onMounted(() => {
               <p class="paragraph">
                 We supply Laser Cut Bag Holding Plates Fabricated Bag Houses &amp; other Assemblies
               </p>
-              <industry-thumbnails name="pollution" :images="pollution" />
+              <industry-thumbnail-trial name="pollution" :images="pollution" />
             </div>
             <!-- 6.f. process plant equipment div -->
             <div id="process" class="sub-industry">
@@ -181,7 +165,7 @@ onMounted(() => {
               <p class="paragraph">
                 Typical products we supply include - Fabricated &amp; Painted Assemblies Precision Cut &amp; Bent Parts
               </p>
-              <industry-thumbnails name="process" :images="process" />
+              <industry-thumbnail-trial name="process" :images="process" />
             </div>
           </div>
         </section>
@@ -194,34 +178,37 @@ onMounted(() => {
 .industry {
   margin-bottom: 3rem;
 }
-.industry-1 {
+/* .industry-1 {
   margin-block: 4rem;
-  /* display: flex;
-  flex-direction: row; */
-}
+  display: flex;
+  flex-direction: row;
+} */
 .industry-text {
   width: 100%;
 }
 .industry p {
   color: var(--secondary);
 }
-.thumbnail-test {
+/* .thumbnail-test {
   width: 100%;
-}
+} */
 .sub-industries > div {
   width: 100%;
-  max-width: 50%;
+  /* max-width: 50%; */
   margin-bottom: 2rem;
   padding: 1rem;
 }
 @media (min-width: 768px) {
-  .thumbnail-test.test-right {
+  /* .thumbnail-test.test-right {
     padding-left: 2rem;
     margin-left: 1rem;
-  }
-  .thumbnail-test.test-left {
+  } */
+  /* .thumbnail-test.test-left {
     padding-right: 2rem;
     margin-right: 1rem;
+  } */
+  .sub-industries > div {
+    max-width: 50%;
   }
 }
 </style>
