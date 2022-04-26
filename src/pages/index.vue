@@ -155,7 +155,9 @@ onMounted(() => {
   /* cursor: pointer; */
 }
 .download-brochure button {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 10px;
   text-decoration: underline;
 }
 .download-brochure button:hover {
