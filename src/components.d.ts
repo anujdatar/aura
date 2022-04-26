@@ -18,6 +18,7 @@ declare module 'vue' {
     Lightbox: typeof import('./components/Lightbox.vue')['default']
     LinkedinIcon: typeof import('./components/icons/LinkedinIcon.vue')['default']
     MailIcon: typeof import('./components/icons/MailIcon.vue')['default']
+    PageLoader: typeof import('./components/PageLoader.vue')['default']
     PhoneIcon: typeof import('./components/icons/PhoneIcon.vue')['default']
     PhotoGrid: typeof import('./components/PhotoGrid.vue')['default']
     SectionSeparator: typeof import('./components/SectionSeparator.vue')['default']
