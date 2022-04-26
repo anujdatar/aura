@@ -25,13 +25,13 @@ onMounted(() => {
   <div class="hero-container relative flex content-center items-center justify-center bg-alt">
     <div ref="heroImage" class="hero-image-div" />
     <div class="hero-text container relative flex flex-col text-white text-center">
-      <h1 class="text-4xl semibold">
+      <h1 class="text-4xl semibold" data-aos="fade-up" data-aos-delay="1000">
         {{ props.title }}
       </h1>
-      <h2 class="text-3xl semibold">
+      <h2 class="text-3xl semibold" data-aos="fade-down" data-aos-delay="1000">
         <slot />
       </h2>
-      <p class="text-xl text-alt">
+      <p class="text-xl text-alt" data-aos="fade-down" data-aos-delay="1000">
         {{ props.content }}
       </p>
     </div>
