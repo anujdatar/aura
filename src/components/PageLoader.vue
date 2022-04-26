@@ -1,45 +1,22 @@
 <script setup lang="ts">
-// const props = defineProps ({
-//   start: Boolean,
-//   stop: Boolean,
-// })
+const props = defineProps ({
+  start: Boolean,
+  zIndex: String,
+})
 
-const spin = ref(true)
 const spinContainer = ref<HTMLDivElement>()
+const curtain = ref<HTMLDivElement>()
+// const spin = ref<boolean>()
 
-// function onCloseLoader() {}
-
-// const stopWatch = watch(props.start, () => {
-//   console.log('eeeeeeeeeeeeeee')
-// })
-
-// onMounted(() => {
-//   console.log('what is it?', props.start)
-//   // setTimeout(() => {
-//   //   console.log('aaaaaaaaa')
-//   //   // props.start = true
-//   //   // spinContainer.value!.style.zIndex = '-10'
-//   //   spin.value = true
-//   // }, 500)
-
-//   document.onreadystatechange = () => {
-//     if (document.readyState === 'complete') {
-//       console.log('Home Page completed with image and files!')
-//       spin.value = false
-//       spinContainer.value!.style.zIndex = '-10'
-//     }
-//     // fetch to next page or some code
-//   }
-//   document.addEventListener('load', () => {
-//     // dom is fully loaded, but maybe waiting on images & css files
-//     console.log('sssssssssssssssss')
-//     spin.value = false
-//     spinContainer.value!.style.zIndex = '-10'
-//   })
-// })
-
-// onUnmounted(() => {
-//   stopWatch()
+onMounted(() => {
+  // spin.value = props.start
+  curtain.value!.addEventListener('transitionend', () => {
+    spinContainer.value!.style.zIndex = '-1'
+  })
+})
+// onUpdated(() => {
+//   spin.value = props.start
+//   spinContainer.value!.style.zIndex = '1000'
 // })
 </script>
 
@@ -47,22 +24,21 @@ const spinContainer = ref<HTMLDivElement>()
   <div ref="spinContainer" class="spinner-container">
     <div class="spinner-backdrop">
       <transition name="curtain-left">
-        <div v-if="spin" class="loader-curtain-left" />
+        <div v-if="props.start" ref="curtain" class="loader-curtain-left" />
       </transition>
       <transition name="curtain-right">
-        <div v-if="spin" class="loader-curtain-right" />
+        <div v-if="props.start" class="loader-curtain-right" />
       </transition>
-      <div v-if="spin" class="hourglass-loader" />
+      <div v-if="props.start" class="hourglass-loader" />
     </div>
   </div>
 </template>
 
 <style>
 .spinner-container {
-  z-index: 1005;
+  z-index: 100;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, .95); */
 
   display: flex;
   justify-content: center;
@@ -77,12 +53,6 @@ const spinContainer = ref<HTMLDivElement>()
   top: 0;
   left: 0;
 }
-
-/* .loader-curtain {
-  display: relative;
-  width: 100%;
-  height: 100%;
-} */
 
 .loader-curtain-left,
 .loader-curtain-right {
@@ -105,16 +75,16 @@ const spinContainer = ref<HTMLDivElement>()
 
 .curtain-left-leave-to {
   transform: translateX(-100%);
-  opacity: 0;
+  z-index: -1;
 }
 .curtain-right-leave-to {
   transform: translateX(100%);
-  opacity: 0;
+  z-index: -1;
 }
 .curtain-left-leave-from,
 .curtain-right-leave-from {
   transform: translateX(0);
-  opacity: 1;
+  z-index: 1005;
 }
 .curtain-left-leave-active,
 .curtain-right-leave-active {
