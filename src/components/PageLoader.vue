@@ -14,9 +14,13 @@ onMounted(() => {
   setTimeout(() => {
     spin.value = false
     curtain.value!.addEventListener('transitionend', () => {
+      spinContainer.value!.style.zIndex = '-1'
       stopSpinner()
     })
   }, 1000)
+})
+onBeforeUnmount(() => {
+  spinContainer.value!.style.zIndex = '-1'
 })
 </script>
 
