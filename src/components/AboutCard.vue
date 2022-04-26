@@ -36,7 +36,8 @@ onMounted(() => {
   height: 250px;
   overflow-wrap: break-word;
   border-radius: .5rem; /* 8px */
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-color: darkslategrey;
   margin-inline: 1rem;
   margin-bottom: 1.5rem;
 }
