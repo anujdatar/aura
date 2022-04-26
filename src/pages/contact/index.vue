@@ -17,7 +17,7 @@ onMounted(() => {
       <div id="map" class="flex flex-col">
         <iframe
           title="map"
-          src="https://maps.google.com/maps/embed/v1/place?key=AIzaSyALhTi2QKCPFX-Ad8mEhitkdFPdSNq2UAo&q=aura%20laserfab%20shirwal&center=18.15388,73.96&zoom=17"
+          src="https://maps.google.com/maps/embed/v1/place?key=AIzaSyALhTi2QKCPFX-Ad8mEhitkdFPdSNq2UAo&q=aura%20laserfab%20shirwal&center=18.15388,73.9618&zoom=17"
           width="100%"
           height="100%"
         />
