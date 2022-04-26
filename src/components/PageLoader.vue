@@ -1,35 +1,35 @@
 <script setup lang="ts">
-const props = defineProps ({
-  start: Boolean,
-  zIndex: String,
-})
-
 const spinContainer = ref<HTMLDivElement>()
 const curtain = ref<HTMLDivElement>()
-// const spin = ref<boolean>()
+const spin = ref<boolean>()
+
+const emit = defineEmits(['close-spinner'])
+
+function stopSpinner() {
+  emit('close-spinner')
+}
 
 onMounted(() => {
-  // spin.value = props.start
-  curtain.value!.addEventListener('transitionend', () => {
-    spinContainer.value!.style.zIndex = '-1'
-  })
+  spin.value = true
+  setTimeout(() => {
+    spin.value = false
+    curtain.value!.addEventListener('transitionend', () => {
+      stopSpinner()
+    })
+  }, 1000)
 })
-// onUpdated(() => {
-//   spin.value = props.start
-//   spinContainer.value!.style.zIndex = '1000'
-// })
 </script>
 
 <template>
   <div ref="spinContainer" class="spinner-container">
     <div class="spinner-backdrop">
       <transition name="curtain-left">
-        <div v-if="props.start" ref="curtain" class="loader-curtain-left" />
+        <div v-if="spin" ref="curtain" class="loader-curtain-left" />
       </transition>
       <transition name="curtain-right">
-        <div v-if="props.start" class="loader-curtain-right" />
+        <div v-if="spin" class="loader-curtain-right" />
       </transition>
-      <div v-if="props.start" class="hourglass-loader" />
+      <div v-if="spin" class="hourglass-loader" />
     </div>
   </div>
 </template>

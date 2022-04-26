@@ -6,27 +6,29 @@ useHead({
   ],
 })
 
-const startLoading = ref<boolean>(true)
-// const loadingZIndex = ref('1000')
+const startLoading = ref<boolean>()
 
-useRouter().afterEach((to, from, next) => {
+function handleCloseSpinner() {
+  startLoading.value = false
+}
+
+useRouter().afterEach(() => {
   startLoading.value = true
-  // loadingZIndex.value = '1000'
-  setTimeout(() => {
-    startLoading.value = false
-    // loadingZIndex.value = '-1'
-  }, 1000)
 })
 
 onMounted(() => {
-  setTimeout(() => {
-    startLoading.value = false
-    // loadingZIndex.value = '-1'
-  }, 2000)
+  startLoading.value = true
+  watch(startLoading, () => {
+    if (startLoading.value === true) {
+      setTimeout(() => {
+        startLoading.value = false
+      }, 2000)
+    }
+  })
 })
 </script>
 
 <template>
-  <page-loader :start="startLoading" />
+  <page-loader v-if="startLoading" @close-spinner="handleCloseSpinner" />
   <router-view />
 </template>
