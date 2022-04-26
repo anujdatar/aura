@@ -375,6 +375,7 @@ body,
   padding-bottom: 9rem;
   margin-right: auto;
   margin-left:auto;
+  overflow: hidden
 }
 /* .overflow-hidden {
   overflow: hidden;
