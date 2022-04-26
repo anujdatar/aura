@@ -84,22 +84,22 @@ onMounted(() => {
         <!-- 4. agriculture and farm equipment section -->
         <section id="agriculture" class="industry">
           <h2 class="heading">
-            Agriculture and Farm Equipment
+            Agriculture &amp; Farm Equipment
           </h2>
           <p class="paragraph">
             Our Products include Painted Tractor Chassis &amp; Body Parts, Hydraulic and Fuel Tanks, Pedals, Stainless Steel Tanks  &amp; Frames
           </p>
           <industry-thumbnail-trial name="agriculture" :images="agriculture" />
         </section>
-        <!-- 5. material handling section -->
-        <section id="mat_handling" class="industry">
+        <!-- 5. escalator and elevator section -->
+        <section id="escalators_elevators" class="industry">
           <h2 class="heading">
-            Material Handling Equipment
+            Escalator &amp; Elevator Components
           </h2>
           <p class="paragraph">
             Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
           </p>
-          <industry-thumbnail-trial name="handling" :images="material_handling" />
+          <industry-thumbnail-trial name="escalators" :images="material_handling" />
         </section>
         <!-- 6. other industries section -->
         <section id="other" class="industry">

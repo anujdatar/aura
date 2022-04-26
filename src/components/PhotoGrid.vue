@@ -27,11 +27,17 @@ const gridImages = [
     link: '/industries/#agriculture',
     image: 'assets/images/grid_images/agro.webp',
   },
+  // {
+  //   title: 'Material Handling',
+  //   id: 'card5',
+  //   link: '/industries/#mat_handling',
+  //   image: 'assets/images/grid_images/mat_handling.webp',
+  // },
   {
-    title: 'Material Handling',
+    title: 'Escalators & Elevators',
     id: 'card5',
-    link: '/industries/#mat_handling',
-    image: 'assets/images/grid_images/mat_handling.webp',
+    link: '/industries/#escalators_elevators',
+    image: 'assets/images/grid_images/escalator.webp',
   },
   {
     title: 'Other',
