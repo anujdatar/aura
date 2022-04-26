@@ -35,6 +35,7 @@ onMounted(() => {
         <div v-if="spin" class="loader-curtain-right" />
       </transition>
       <div v-if="spin" class="hourglass-loader" />
+      <div v-if="spin" class="hourglass-loader2" />
     </div>
   </div>
 </template>
@@ -105,7 +106,7 @@ onMounted(() => {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50px, -50px);
+  transform: translate(-40px, -40px);
 }
 .hourglass-loader:after {
   content: " ";
@@ -115,21 +116,47 @@ onMounted(() => {
   height: 80px;
   margin: 8px;
   box-sizing: border-box;
-  border: 5px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border: 3px solid var(--accent);
+  border-color: var(--accent) transparent var(--accent) transparent;
   animation: hourglass-loader 1.2s infinite;
 }
+
+/* ************************************************ */
+.hourglass-loader2 {
+  display: inline-block;
+  /* position: relative; */
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20px, -20px);
+}
+.hourglass-loader2:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 2px solid var(--accent-alt);
+  border-color: transparent var(--accent-alt) transparent var(--accent-alt);
+  animation: hourglass-loader 1.2s infinite;
+}
+/* ************************************************ */
 @keyframes hourglass-loader {
   0% {
     transform: rotate(0);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
   50% {
-    transform: rotate(900deg);
+    transform: rotate(450deg);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   100% {
-    transform: rotate(1800deg);
+    transform: rotate(900deg);
   }
 }
 </style>
