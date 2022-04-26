@@ -11,7 +11,6 @@ function stopSpinner() {
 
 onMounted(() => {
   spin.value = true
-  spinContainer.value!.style.zIndex = '100'
   setTimeout(() => {
     spin.value = false
     curtain.value!.addEventListener('transitionend', () => {
@@ -21,6 +20,7 @@ onMounted(() => {
   setTimeout(() => {
     if (spinContainer.value)
       spinContainer.value.style.zIndex = '-1'
+    stopSpinner()
   }, 2000)
 })
 </script>
