@@ -62,12 +62,12 @@ function onCloseLightbox() {
 }
 
 .thumbnail-image-1 {
-  min-width: 6rem;
+  min-width: 5rem;
   max-width: 9rem;
-  min-height: 6rem;
+  min-height: 5rem;
   max-height: 9rem;
 
-  width: 42%;
+  width: 45%;
   height: 100%;
 
   object-fit: cover;
@@ -75,6 +75,10 @@ function onCloseLightbox() {
 }
 @media (min-width: 768px) {
   .thumbnail-image-1 {
+    min-width: 6rem;
+    max-width: 9rem;
+    min-height: 6rem;
+    max-height: 9rem;
     width: 100%;
     height: 100%;
   }
