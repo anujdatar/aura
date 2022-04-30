@@ -163,7 +163,7 @@ onMounted(() => {
                 Process Plant &amp; Equipment
               </h4>
               <p class="paragraph">
-                Typical products we supply include - Fabricated &amp; Painted Assemblies Precision Cut &amp; Bent Parts
+                We supply Laser Cut Bag Holding Plates, Fabricated Bag Houses & other Fabricated & Painted Assemblies & Precision Cut & Bent Parts
               </p>
               <industry-thumbnail-trial name="process" :images="process" />
             </div>
