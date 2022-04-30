@@ -46,6 +46,8 @@ body,
 
   --secondary2: #64748b; /* slate-500 */
   --alt2: #e2e8f0; /* slate-200 */
+
+  --slate: #111827;
 }
 .text-white {
   color: white;
@@ -90,7 +92,7 @@ body,
   background-color: white;
 }
 .bg-slate {
-  background-color: #111827;
+  background-color: var(--slate);
 }
 .fill-current {
   fill: currentColor;
