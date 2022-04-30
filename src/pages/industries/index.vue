@@ -3,6 +3,7 @@ import {
   agriculture,
   automotive,
   earthmoving,
+  escalators,
   material_handling,
   mining,
   packaging,
@@ -98,7 +99,7 @@ onMounted(() => {
           <p class="paragraph">
             Typical components include powder coated escalator side frames, zinc coated welded assemblies, wheel assemblies, ribs, bracketry items etc.
           </p>
-          <industry-thumbnail-trial name="escalators" :images="material_handling" />
+          <industry-thumbnail-trial name="escalators" :images="escalators" />
         </section>
         <!-- 6. other industries section -->
         <section id="other" class="industry">
