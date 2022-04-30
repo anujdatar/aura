@@ -67,7 +67,7 @@ function onCloseLightbox() {
   min-height: 6rem;
   max-height: 9rem;
 
-  width: 45%;
+  width: 42%;
   height: 100%;
 
   object-fit: cover;
