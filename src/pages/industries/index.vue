@@ -97,7 +97,7 @@ onMounted(() => {
             Escalator &amp; Elevator Components
           </h2>
           <p class="paragraph">
-            Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
+            Typical components include powder coated escalator side frames, zinc coated welded assemblies, wheel assemblies, ribs, bracketry items etc.
           </p>
           <industry-thumbnail-trial name="escalators" :images="material_handling" />
         </section>
@@ -153,7 +153,7 @@ onMounted(() => {
                 Material Handling Equipment
               </h4>
               <p class="paragraph">
-                Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
+                Typical components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
               </p>
               <industry-thumbnail-trial name="material_handling" :images="material_handling" />
             </div>
