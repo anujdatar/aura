@@ -147,17 +147,17 @@ onMounted(() => {
               </p>
               <industry-thumbnail-trial name="parking" :images="parking" />
             </div>
-            <!-- 6.e. pollution control div -->
-            <div id="pollution" class="sub-industry">
+            <!-- 6.e. material handling div -->
+            <div id="material_handling" class="sub-industry">
               <h4 class="text-xl">
-                Pollution Control Equipment
+                Material Handling Equipment
               </h4>
               <p class="paragraph">
-                We supply Laser Cut Bag Holding Plates Fabricated Bag Houses &amp; other Assemblies
+                Typical Components include Apron Cells &amp; Buckets for Conveyors, Frames of Baggage Handling Conveyors, Buckets &amp; Chassis of Mini Dumpers and other assemblies
               </p>
-              <industry-thumbnail-trial name="pollution" :images="pollution" />
+              <industry-thumbnail-trial name="material_handling" :images="material_handling" />
             </div>
-            <!-- 6.f. process plant equipment div -->
+            <!-- 6.f. process plant and pollution control equipment div -->
             <div id="process" class="sub-industry">
               <h4 class="text-xl">
                 Process Plant &amp; Equipment
