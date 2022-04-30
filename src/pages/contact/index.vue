@@ -30,19 +30,19 @@ onMounted(() => {
           </h2>
           <div class="relative mb-4">
             <label for="name" class="form-label">Name</label>
-            <input id="name" type="text" class="form-input">
+            <input id="name" type="text" name="name" class="form-input">
           </div>
           <div class="relative mb-4">
             <label for="company" class="form-label">Company</label>
-            <input id="company" type="text" class="form-input">
+            <input id="company" type="text" name="company" class="form-input">
           </div>
           <div class="relative mb-4">
             <label for="email" class="form-label">Email</label>
-            <input id="email" type="text" class="form-input">
+            <input id="email" type="text" name="email" class="form-input">
           </div>
           <div class="relative mb-4">
             <label for="message" class="form-label">Message</label>
-            <textarea id="message" class="form-input" />
+            <textarea id="message" name="message" class="form-input" />
           </div>
           <div class="text-center mb-4">
             <button class="form-button" type="submit">
