@@ -7,7 +7,6 @@ import {
   mining,
   packaging,
   parking,
-  pollution,
   process,
   switchgear,
   textile,

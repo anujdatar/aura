@@ -24,11 +24,11 @@ export const switchgear = [
     title: 'GI 275GSM Components',
   },
   {
-    src: '~/../../assets/images/industries/switchgear/8_GI_Components.jpg',
+    src: '~/../../assets/images/industries/switchgear/8_GI_Components.webp',
     title: 'GI Components',
   },
   {
-    src: '~/../../assets/images/industries/switchgear/9_GI_Parts-1.6-2.0_mm.jpg',
+    src: '~/../../assets/images/industries/switchgear/9_GI_Parts-1.6-2.0_mm.webp',
     title: 'GI Parts &#10142; 1.6-2.0 mm',
   },
   {

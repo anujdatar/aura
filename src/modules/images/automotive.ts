@@ -8,7 +8,7 @@ export const automotive = [
     title: 'Parts for Suspension Systems',
   },
   {
-    src: '~/../../assets/images/industries/automotive/3_landing_gear_frame.jpg',
+    src: '~/../../assets/images/industries/automotive/3_landing_gear_frame.webp',
     title: 'Landing Gear Frame',
   },
 ]
