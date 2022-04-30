@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="page-content bg-alt w-full h-full contact-page">
+  <div class="page-content bg-slate w-full h-full contact-page">
     <div class="contacts-map-section">
       <div id="map" class="flex flex-col">
         <iframe
@@ -176,5 +176,5 @@ onMounted(() => {
 
 <route lang="yaml">
 meta:
-  layout: home
+  layout: default
 </route>
