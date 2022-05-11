@@ -48,7 +48,11 @@ onMounted(() => {
 
   <div class="page-content bg-alt">
     <div class="container flex-col-reverse md:flex-row">
-      <div class="exports-images flex flex-wrap justify-between items-center">
+      <div
+        class="exports-images flex flex-wrap justify-between items-center"
+        data-aos="fade-right"
+        data-aos-delay="250"
+      >
         <img
           v-for="(image, i) in exportImages"
           :key="i"
@@ -56,7 +60,7 @@ onMounted(() => {
           :alt="image.title"
         >
       </div>
-      <div class="exports-text">
+      <div class="exports-text" data-aos="fade-left" data-aos-delay="250">
         <h2 class="heading text-center md:text-left">
           Exports
         </h2>
