@@ -1,8 +1,4 @@
 <script setup lang="ts">
-function submitContactFrom() {
-  console.log('form submitted')
-}
-
 onMounted(() => {
   window.scrollTo({
     top: 0,
