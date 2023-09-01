@@ -28,7 +28,11 @@ onMounted(() => {
       </div>
       <!-- contact from here -->
       <div class="form-container flex mx-auto my-auto items-center justify-center" data-aos="fade-left">
-        <form class="flex flex-col relative bg-alt2 rounded-lg" @submit.prevent="submitContactFrom">
+        <form
+          class="flex flex-col relative bg-alt2 rounded-lg"
+          action="https://formsubmit.co/sales@auralaser.in"
+          method="POST"
+        >
           <h2 class="text-primary text-2xl semibold mb-4">
             Contact Us
           </h2>
@@ -48,6 +52,10 @@ onMounted(() => {
             <label for="message" class="form-label">Message</label>
             <textarea id="message" name="message" class="form-input" />
           </div>
+          <input type="hidden" name="_subject" value="New Website Contact Form Submission">
+          <input type="hidden" name="_next" value="https://www.auralaser.in/contact">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting Aura Laserfab Pvt. Ltd. We will get back to you shortly.">
           <div class="text-center mb-4">
             <button class="form-button" type="submit">
               Send Message
