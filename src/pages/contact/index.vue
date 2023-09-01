@@ -15,12 +15,6 @@ onMounted(() => {
   <div class="page-content bg-primary w-full h-full contact-page">
     <div class="contacts-map-section">
       <div id="map" class="flex flex-col">
-        <!--<iframe
-          title="map"
-          src="https://maps.google.com/maps/embed/v1/place?key=AIzaSyALhTi2QKCPFX-Ad8mEhitkdFPdSNq2UAo&q=aura%20laserfab%20shirwal&center=18.15388,73.9618&zoom=17"
-          width="100%"
-          height="100%"
-        />-->
         <iframe
           title="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.217777904991!2d73.9578373758383!3d18.153879080271164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2f64204c17821%3A0xd0bec5900841f42c!2sAura%20Laserfab%20Private%20Limited!5e0!3m2!1sen!2sin!4v1693547893541!5m2!1sen!2sin"
