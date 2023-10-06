@@ -181,7 +181,7 @@ onMounted(() => {
           <img src="~/assets/images/iso/aura_iso_1090_1.webp" alt="iso-1090-thumbnail" data-aos="fade-left">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
-              EN ISO-1:2009 Exc 3
+              EN ISO-1:2009 EXC 3
             </span>
             <iso-icon class="icon iso" />
           </div>
