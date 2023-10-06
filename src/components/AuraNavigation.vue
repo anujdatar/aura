@@ -47,12 +47,14 @@ onMounted (() => {
           <span class="flex flex-row h-full justify-center items-center align-middle ml-3">
             <mail-icon />
             <span class="h-full flex justify-center items-center align-middle text-center pb-1">
-              sales@auralaser.in
+              <a href="mailto:sales@auralaser.in">sales@auralaser.in</a>
             </span>
           </span>
           <span class="flex flex-row h-full justify-center items-center ml-3">
             <phone-icon />
-            <span class="pb-1">+91-9881727472</span>
+            <span class="pb-1">
+              <a href="tel:+919881727472">+91-9881727472</a>
+            </span>
           </span>
         </div>
         <div class="nav-links flex flex-row w-full justify-between">
