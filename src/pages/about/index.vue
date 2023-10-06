@@ -37,9 +37,12 @@ const card7 = {
 const image9001 = ['~/../../assets/images/iso/aura_iso_9001.webp']
 const image3834 = ['~/../../assets/images/iso/aura_iso_3834_1.webp',
   '~/../../assets/images/iso/aura_iso_3834_1.webp']
+const image1090 = ['~/../../assets/images/iso/aura_iso_1090_1.webp',
+  '~/../../assets/images/iso/aura_iso_1090_1.webp']
 
 const show9001Cert = ref<boolean>()
 const show3834Cert = ref<boolean>()
+const show1090Cert = ref<boolean>()
 
 function open9001Cert() {
   show9001Cert.value = true
@@ -53,6 +56,13 @@ function open3834Cert() {
 }
 function close3834Cert() {
   show3834Cert.value = false
+}
+
+function open1090Cert() {
+  show1090Cert.value = true
+}
+function close1090Cert() {
+  show1090Cert.value = false
 }
 
 onMounted(() => {
@@ -162,6 +172,25 @@ onMounted(() => {
           :images="image3834"
           @close-lightbox="close3834Cert"
         />
+        <div
+          class="iso-1090-thumbnail"
+          data-aos="fade-left"
+          data-aos-delay="250"
+          @click="open1090Cert"
+        >
+          <img src="~/assets/images/iso/aura_iso_1090_1.webp" alt="iso-1090-thumbnail" data-aos="fade-left">
+          <div class="flex flex-row justify-center items-center align-middle">
+            <span class="semibold text-center">
+              EN ISO-1:2009 Exc 3
+            </span>
+            <iso-icon class="icon iso" />
+          </div>
+        </div>
+        <iso-cert-display
+          v-if="show1090Cert"
+          :images="image1090"
+          @close-lightbox="close1090Cert"
+        />
       </div>
       <div
         data-aos="fade-left"
@@ -235,7 +264,8 @@ onMounted(() => {
   /* flex-wrap: wrap; */
 }
 .iso-9001-thumbnail,
-.iso-3834-thumbnail {
+.iso-3834-thumbnail,
+.iso-1090-thumbnail {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -248,11 +278,13 @@ onMounted(() => {
   margin-right: auto;
 }
 .iso-9001-thumbnail:hover,
-.iso-3834-thumbnail:hover {
+.iso-3834-thumbnail:hover,
+.iso-1090-thumbnail:hover {
   color: var(--accent);
 }
 .iso-9001-thumbnail img,
-.iso-3834-thumbnail img {
+.iso-3834-thumbnail img,
+.iso-1090-thumbnail img {
   width: 100%;
   height: 100%;
   max-height: 400px;
@@ -260,7 +292,8 @@ onMounted(() => {
   padding-bottom: 1rem;
 }
 .iso-9001-thumbnail span,
-.iso-3834-thumbnail span {
+.iso-3834-thumbnail span,
+.iso-1090-thumbnail span {
   padding-right: .5rem;
 }
 
@@ -269,7 +302,8 @@ onMounted(() => {
       flex-direction: row;
   }
   .iso-9001-thumbnail,
-  .iso-3834-thumbnail {
+  .iso-3834-thumbnail,
+  .iso-1090-thumbnail {
     max-width: 50%;
   }
 }
