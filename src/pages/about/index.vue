@@ -287,7 +287,7 @@ onMounted(() => {
 .iso-1090-thumbnail img {
   width: 100%;
   height: 100%;
-  max-height: 400px;
+  max-height: 340px;
   object-fit: contain;
   padding-bottom: 1rem;
 }
