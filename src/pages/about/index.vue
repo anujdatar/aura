@@ -34,7 +34,7 @@ const card7 = {
   content: 'Proximity to inland container depots & Mumbai Port',
 }
 
-const image9001 = ['~/../../assets/images/iso/aura_iso_9001.jpg']
+const image9001 = ['~/../../assets/images/iso/aura_iso_9001.webp']
 const image3834 = ['~/../../assets/images/iso/aura_iso_3834_1.webp',
   '~/../../assets/images/iso/aura_iso_3834_1.webp']
 
@@ -130,7 +130,7 @@ onMounted(() => {
           data-aos-delay="250"
           @click="open9001Cert"
         >
-          <img src="~/assets/images/iso/aura_iso_9001.jpg" alt="iso-9001-thumbnail">
+          <img src="~/assets/images/iso/aura_iso_9001.webp" alt="iso-9001-thumbnail">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               ISO 9001:2015
