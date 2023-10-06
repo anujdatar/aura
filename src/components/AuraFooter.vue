@@ -33,11 +33,14 @@
         <!-- <iso-cert-display /> -->
         <router-link to="/about/#iso_certs" class="iso-link flex flex-row h-full justify-center items-center align-middle">
           <div class="flex flex-col">
-            <span class="semibold">
+            <span class="semibold" style="font-size: .6rem;">
               ISO 9001:2015
             </span>
-            <span class="semibold">
+            <span class="semibold" style="font-size: .6rem;">
               DIN EN ISO 3834-2
+            </span>
+            <span class="semibold" style="font-size: .6rem;">
+              EN ISO 1090-1:2009 EXC 3
             </span>
           </div>
           <iso-icon class="icon iso" />
