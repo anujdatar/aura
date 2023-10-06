@@ -155,11 +155,11 @@ onMounted(() => {
         />
         <div
           class="iso-3834-thumbnail"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="250"
           @click="open3834Cert"
         >
-          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="fade-left">
+          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="fade-up">
           <div class="flex flex-row justify-center items-center align-middle">
             <span class="semibold text-center">
               DIN EN ISO 3834-2
