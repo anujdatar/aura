@@ -14,6 +14,20 @@
         <p class="text-sm leading-6">
           Shirwal, Dist. Satara - 412801
         </p>
+        <p class="flex text-sm leading-6">
+          <span class="flex flex-row h-full justify-center items-center align-middle">
+            <mail-icon />
+            <span class="h-full flex justify-center items-center align-middle text-center pb-1">
+              <a href="mailto:sales@auralaser.in">sales@auralaser.in</a>
+            </span>
+          </span>
+          <span class="flex flex-row h-full justify-center items-center ml-3">
+            <phone-icon />
+            <span class="pb-1">
+              <a href="tel:+919881727472">+91-9881727472</a>
+            </span>
+          </span>
+        </p>
       </div>
       <div class="flex flex-col justify-between">
         <!-- <iso-cert-display /> -->
