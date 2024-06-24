@@ -72,7 +72,11 @@ onMounted(() => {
           </div>
         </div>
         <div class="form-container flex flex-col relative bg-alt2 rounded-lg">
-          <form action="">
+          <form
+            class="flex flex-col relative bg-alt2 rounded-lg"
+            action="https://formsubmit.co/a14445c56c3b2cd4e311079b712b1792"
+            method="POST"
+          >
             <h2 class="text-primary text-2xl semibold mb-4">
               Contact Us
             </h2>
