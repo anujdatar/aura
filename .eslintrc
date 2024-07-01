@@ -1,6 +1,18 @@
 {
   "extends": "@antfu",
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "semi": [
+      "error",
+      "never"
+    ],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "void": "any",
+        "normal": "always",
+        "component": "always"
+      }
+    ]
   }
 }
