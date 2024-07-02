@@ -6,6 +6,17 @@
       "error",
       "never"
     ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "vue/first-attribute-linebreak": [
+      "error",
+      {
+        "singleline": "ignore",
+        "multiline": "below"
+      }
+    ],
     "vue/html-self-closing": [
       "error",
       {
@@ -16,5 +27,8 @@
         }
       }
     ],
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "vue/singleline-html-element-content-newline": "off"
   }
 }
