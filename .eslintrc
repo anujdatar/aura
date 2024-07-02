@@ -9,10 +9,12 @@
     "vue/html-self-closing": [
       "error",
       {
-        "void": "any",
-        "normal": "always",
-        "component": "always"
+        "html": {
+          "void": "any",
+          "normal": "always",
+          "component": "always"
+        }
       }
-    ]
+    ],
   }
 }
