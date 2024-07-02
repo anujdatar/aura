@@ -9,6 +9,7 @@ declare module 'vue' {
     AuraHero: typeof import('./components/AuraHero.vue')['default']
     AuraNavigation: typeof import('./components/AuraNavigation.vue')['default']
     AuraSidenav: typeof import('./components/AuraSidenav.vue')['default']
+    ContactForm: typeof import('./components/ContactForm.vue')['default']
     HomeCard: typeof import('./components/HomeCard.vue')['default']
     IndustryThumbnails: typeof import('./components/IndustryThumbnails.vue')['default']
     IndustryThumbnailsTest: typeof import('./components/IndustryThumbnailsTest.vue')['default']
