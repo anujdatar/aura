@@ -210,7 +210,7 @@ onMounted(() => {
 
 @media (min-width: 768px) {
   .map-component {
-    width: 45%;
+    width: 30%;
   }
 }
 </style>
