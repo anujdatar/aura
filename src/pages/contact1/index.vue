@@ -11,9 +11,46 @@ onMounted(() => {
   <div class="home-nav-border w-full h-navbar absolute top-0" />
   <div class="page-content contact-page">
     <div class="contact-page-container">
+      <div class="contact-section-outer w-full flex flex-col">
+        <!-- <ContactForm /> -->
+        <h2 class="section-title text-primary mb-4">Contact Us</h2>
+        <div class="card-shadow w-3/5 rounded-lg">
+          <div class="contact-card flex flex-col text-primary">
+            <h4 class="text-2xl">Sales</h4>
+            <span>
+              <strong class="contact-field-title">Email:</strong>
+              <a href="mailto:sales@auralaser.in">sales@auralaser.in</a>
+            </span>
+            <span>
+              <strong class="contact-field-title">Phone:</strong>
+              <a href="phone:+919881727472">+91 9881-727-472</a>
+            </span>
+          </div>
+          <div class="contact-card flex flex-col text-primary">
+            <h4 class="text-2xl">Purchase</h4>
+            <span>
+              <strong class="contact-field-title">Email:</strong>
+              <a href="mailto:purchase@auralaser.in">purchase@auralaser.in</a>
+            </span>
+            <span>
+              <strong class="contact-field-title">Phone:</strong>
+              <a href="phone:+919763176631">+91 9763-176-631</a>
+            </span>
+          </div>
+          <div class="contact-card flex flex-col text-primary">
+            <h4 class="text-2xl">Recruitment &amp; HR</h4>
+            <span>
+              <strong class="contact-field-title">Email:</strong>
+              <a href="mailto:hr@auralaser.in">hr@auralaser.in</a>
+            </span>
+            <span>
+              <strong class="contact-field-title">Phone:</strong>
+              <a href="phone:+917028115515">+91 7028-115-515</a>
+            </span>
+          </div>
         </div>
       </div>
-      <h2 class="page-title text-primary">Plant Locations</h2>
+      <h2 class="section-title text-primary">Plant Locations</h2>
       <div class="maps-container flex flex-col md:flex-row flex-wrap">
         <div class="map-component card-shadow rounded-lg">
           <h4>Plant 1: Shirwal</h4>
@@ -72,20 +109,15 @@ onMounted(() => {
             </p>
           </div>
         </div>
-        <div class="map-component card-shadow rounded-lg">
-          <h4>Additional contacts</h4>
-          <p>
-            D-224, D-Block,<br />
-            Chakan Industrial Area, Phase 2,<br />
-            Bhamboli, Chakan, Pune, Maharashtra - 410501
-          </p>
-        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.mb-4 {
+  margin-bottom: 2rem;
+}
 .home-nav-border {
   border-bottom: 3px solid var(--accent);
 }
@@ -101,11 +133,22 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
 }
-.page-title {
+.section-title {
   font-size: 2.5rem;
   padding-top: 2rem;
   border-bottom: 2px solid var(--accent);
-  width: 290px;
+  /* width: 290px; */
+}
+
+.contact-section-outer .card-shadow {
+  margin-top: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.contact-card {
+  padding: 1rem;
+}
+.contact-field-title {
+  padding-right: 6px;
 }
 
 .maps-container {
