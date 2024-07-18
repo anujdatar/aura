@@ -11,45 +11,6 @@ onMounted(() => {
   <div class="home-nav-border w-full h-navbar absolute top-0" />
   <div class="page-content contact-page">
     <div class="contact-page-container">
-      <div class="contact-section-outer w-full flex flex-col">
-        <!-- <ContactForm /> -->
-        <h2 class="section-title text-primary mb-4">Contact Us</h2>
-        <div class="card-shadow w-3/5 rounded-lg">
-          <div class="contact-card flex flex-col text-primary">
-            <h4 class="text-2xl">Sales</h4>
-            <span>
-              <strong class="contact-field-title">Email:</strong>
-              <a href="mailto:sales@auralaser.in">sales@auralaser.in</a>
-            </span>
-            <span>
-              <strong class="contact-field-title">Phone:</strong>
-              <a href="phone:+919881727472">+91 9881-727-472</a>
-            </span>
-          </div>
-          <div class="contact-card flex flex-col text-primary">
-            <h4 class="text-2xl">Purchase</h4>
-            <span>
-              <strong class="contact-field-title">Email:</strong>
-              <a href="mailto:purchase@auralaser.in">purchase@auralaser.in</a>
-            </span>
-            <span>
-              <strong class="contact-field-title">Phone:</strong>
-              <a href="phone:+919763176631">+91 9763-176-631</a>
-            </span>
-          </div>
-          <div class="contact-card flex flex-col text-primary">
-            <h4 class="text-2xl">Recruitment &amp; HR</h4>
-            <span>
-              <strong class="contact-field-title">Email:</strong>
-              <a href="mailto:hr@auralaser.in">hr@auralaser.in</a>
-            </span>
-            <span>
-              <strong class="contact-field-title">Phone:</strong>
-              <a href="phone:+917028115515">+91 7028-115-515</a>
-            </span>
-          </div>
-        </div>
-      </div>
       <h2 class="section-title text-primary">Plant Locations</h2>
       <div class="maps-container flex flex-col md:flex-row flex-wrap">
         <div class="map-component card-shadow rounded-lg">
