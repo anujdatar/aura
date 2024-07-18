@@ -21,7 +21,7 @@ onMounted(() => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.217777904991!2d73.9578373758383!3d18.153879080271164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2f64204c17821%3A0xd0bec5900841f42c!2sAura%20Laserfab%20Private%20Limited!5e0!3m2!1sen!2sin!4v1693547893541!5m2!1sen!2sin"
               width="100%"
               height="300"
-              style="border: 0"
+              style="border: 0; border-top: 1px solid #e2e8f0"
               allowfullscreen="false"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -40,7 +40,7 @@ onMounted(() => {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7500.246373816523!2d73.741489!3d19.961321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddecaf51fb53b7%3A0xd09c0caeb360c7aa!2sAura%20Laser%20Private%20Limited%20Nashik!5e0!3m2!1sen!2sus!4v1719230042890!5m2!1sen!2sus"
               width="100%"
               height="300"
-              style="border: 0"
+              style="border: 0; border-top: 1px solid #e2e8f0"
               allowfullscreen="false"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -58,7 +58,7 @@ onMounted(() => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.9962971979176!2d73.77526631160728!3d18.798318360556042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b5004d47101f%3A0x13ef1db310e02320!2sAura%20Laserfab%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1719832838558!5m2!1sen!2sin"
               width="100%"
               height="300"
-              style="border: 0"
+              style="border: 0; border-top: 1px solid #e2e8f0"
               allowfullscreen="false"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -68,6 +68,45 @@ onMounted(() => {
               Chakan Industrial Area, Phase 2,<br />
               Bhamboli, Chakan, Pune, Maharashtra - 410501
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-section-outer w-full flex flex-col">
+        <!-- <ContactForm /> -->
+        <h2 class="section-title text-primary mb-4">Contact Us</h2>
+        <div class="card-shadow w-3/5 rounded-lg">
+          <div class="contact-card flex flex-col text-primary">
+            <h4 class="text-2xl">Sales</h4>
+            <span>
+              <strong class="contact-field-title">Email:</strong>
+              <a href="mailto:sales@auralaser.in">sales@auralaser.in</a>
+            </span>
+            <span>
+              <strong class="contact-field-title">Phone:</strong>
+              <a href="phone:+919881727472">+91 9881-727-472</a>
+            </span>
+          </div>
+          <div class="contact-card flex flex-col text-primary">
+            <h4 class="text-2xl">Purchase</h4>
+            <span>
+              <strong class="contact-field-title">Email:</strong>
+              <a href="mailto:purchase@auralaser.in">purchase@auralaser.in</a>
+            </span>
+            <span>
+              <strong class="contact-field-title">Phone:</strong>
+              <a href="phone:+919763176631">+91 9763-176-631</a>
+            </span>
+          </div>
+          <div class="contact-card flex flex-col text-primary">
+            <h4 class="text-2xl">Recruitment &amp; HR</h4>
+            <span>
+              <strong class="contact-field-title">Email:</strong>
+              <a href="mailto:hr@auralaser.in">hr@auralaser.in</a>
+            </span>
+            <span>
+              <strong class="contact-field-title">Phone:</strong>
+              <a href="phone:+917028115515">+91 7028-115-515</a>
+            </span>
           </div>
         </div>
       </div>
@@ -141,7 +180,7 @@ onMounted(() => {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
   padding-inline: 0.5rem;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* .map {
