@@ -19,7 +19,8 @@ const card3 = {
 }
 const card4 = {
   imageSrc: '~/../../assets/images/card_images/plasma.webp',
-  content: 'Advanced technology with CNC Laser, Plasma, Bending, and Rolling machines',
+  content:
+    'Advanced technology with CNC Laser, Plasma, Bending, and Rolling machines',
 }
 const card5 = {
   imageSrc: '~/../../assets/images/card_images/facility.webp',
@@ -35,14 +36,22 @@ const card7 = {
 }
 
 const image9001 = ['~/../../assets/images/iso/aura_iso_9001.webp']
-const image3834 = ['~/../../assets/images/iso/aura_iso_3834_1.webp',
-  '~/../../assets/images/iso/aura_iso_3834_1.webp']
-const image1090 = ['~/../../assets/images/iso/aura_iso_1090_1.webp',
-  '~/../../assets/images/iso/aura_iso_1090_1.webp']
+const image3834 = [
+  '~/../../assets/images/iso/aura_iso_3834_1.webp',
+  '~/../../assets/images/iso/aura_iso_3834_1.webp',
+]
+const image1090 = [
+  '~/../../assets/images/iso/aura_iso_1090_1.webp',
+  '~/../../assets/images/iso/aura_iso_1090_1.webp',
+]
+const image14001 = ['~/../../assets/images/iso/aura_iso_14001.webp']
+const image45001 = ['~/../../assets/images/iso/aura_iso_45001.webp']
 
 const show9001Cert = ref<boolean>()
 const show3834Cert = ref<boolean>()
 const show1090Cert = ref<boolean>()
+const show14001Cert = ref<boolean>()
+const show45001Cert = ref<boolean>()
 
 function open9001Cert() {
   show9001Cert.value = true
@@ -64,6 +73,18 @@ function open1090Cert() {
 function close1090Cert() {
   show1090Cert.value = false
 }
+function open14001Cert() {
+  show14001Cert.value = true
+}
+function close14001Cert() {
+  show14001Cert.value = false
+}
+function open45001Cert() {
+  show45001Cert.value = true
+}
+function close45001Cert() {
+  show45001Cert.value = false
+}
 
 onMounted(() => {
   const navToRoute = router.currentRoute.value.hash
@@ -77,8 +98,7 @@ onMounted(() => {
       left: 0,
       behavior: 'smooth',
     })
-  }
-  else {
+  } else {
     window.scrollTo({
       top: 0,
       left: 0,
@@ -93,31 +113,29 @@ onMounted(() => {
   </aura-hero>
   <div class="page-content bg-alt">
     <div class="container flex-col" data-aos="fade-left" data-aos-delay="250">
-      <h2 class="heading text-center md:text-left">
-        About Aura
-      </h2>
+      <h2 class="heading text-center md:text-left">About Aura</h2>
       <p class="paragraph">
-        Since its inception in 2006, Aura Laser has grown from a laser
-        cutting services provider to a complete solutions provider in the
-        field of sheet metal fabrication and assembly. With more than thirty
-        years of experience each in laser cutting, bending and metal
-        fabrication, the leadership of the company is with the dynamic duo
-        of the founder-directors, Mr. Unmesh Mahajani who is a B.E. (Mech)
-        from NIT Durgapur and Mr. Abhay Paranjpe who is Chartered Accountant.
+        Since its inception in 2006, Aura Laser has grown from a laser cutting
+        services provider to a complete solutions provider in the field of sheet
+        metal fabrication and assembly. With more than thirty years of
+        experience each in laser cutting, bending and metal fabrication, the
+        leadership of the company is with the dynamic duo of the
+        founder-directors, Mr. Unmesh Mahajani who is a B.E. (Mech) from NIT
+        Durgapur and Mr. Abhay Paranjpe who is Chartered Accountant.
       </p>
       <p class="paragraph">
         Both the Directors possess the capability of understanding varied
-        product requirements. Having dealt with a diverse set of clients,
-        they can offer valuable feedbacks and suggestions to customers to
-        improve their products and bottom line.
+        product requirements. Having dealt with a diverse set of clients, they
+        can offer valuable feedbacks and suggestions to customers to improve
+        their products and bottom line.
       </p>
       <p class="paragraph">
-        A team of around 75 + Qualified Employees, highly competent
-        technicians and engineers are the strong pillars of this
-        organization. The employees possess requisite domain experience in
-        CNC Technology, Engineering, and Sheet Metal Processing including
-        Laser Cutting, Plasma Cutting, Bending, Rolling, Machining,
-        Precision Fabrication, Assembly and Quality Assurance.
+        A team of around 75 + Qualified Employees, highly competent technicians
+        and engineers are the strong pillars of this organization. The employees
+        possess requisite domain experience in CNC Technology, Engineering, and
+        Sheet Metal Processing including Laser Cutting, Plasma Cutting, Bending,
+        Rolling, Machining, Precision Fabrication, Assembly and Quality
+        Assurance.
       </p>
     </div>
   </div>
@@ -140,11 +158,12 @@ onMounted(() => {
           data-aos-delay="250"
           @click="open9001Cert"
         >
-          <img src="~/assets/images/iso/aura_iso_9001.webp" alt="iso-9001-thumbnail">
+          <img
+            src="~/assets/images/iso/aura_iso_9001.webp"
+            alt="iso-9001-thumbnail"
+          />
           <div class="flex flex-row justify-center items-center align-middle">
-            <span class="semibold text-center">
-              ISO 9001:2015
-            </span>
+            <span class="semibold text-center"> ISO 9001:2015 </span>
             <iso-icon class="icon iso" />
           </div>
         </div>
@@ -159,11 +178,13 @@ onMounted(() => {
           data-aos-delay="250"
           @click="open3834Cert"
         >
-          <img src="~/assets/images/iso/aura_iso_3834_1.webp" alt="iso-3834-thumbnail" data-aos="fade-up">
+          <img
+            src="~/assets/images/iso/aura_iso_3834_1.webp"
+            alt="iso-3834-thumbnail"
+            data-aos="fade-up"
+          />
           <div class="flex flex-row justify-center items-center align-middle">
-            <span class="semibold text-center">
-              DIN EN ISO 3834-2
-            </span>
+            <span class="semibold text-center"> DIN EN ISO 3834-2 </span>
             <iso-icon class="icon iso" />
           </div>
         </div>
@@ -174,15 +195,17 @@ onMounted(() => {
         />
         <div
           class="iso-1090-thumbnail"
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-delay="250"
           @click="open1090Cert"
         >
-          <img src="~/assets/images/iso/aura_iso_1090_1.webp" alt="iso-1090-thumbnail" data-aos="fade-left">
+          <img
+            src="~/assets/images/iso/aura_iso_1090_1.webp"
+            alt="iso-1090-thumbnail"
+            data-aos="fade-right"
+          />
           <div class="flex flex-row justify-center items-center align-middle">
-            <span class="semibold text-center">
-              EN ISO-1:2009 EXC 3
-            </span>
+            <span class="semibold text-center"> EN ISO-1:2009 EXC 3 </span>
             <iso-icon class="icon iso" />
           </div>
         </div>
@@ -191,38 +214,68 @@ onMounted(() => {
           :images="image1090"
           @close-lightbox="close1090Cert"
         />
+        <div
+          class="iso-14001-thumbnail"
+          data-aos="fade-left"
+          data-aos-delay="250"
+          @click="open14001Cert"
+        >
+          <img
+            src="~/assets/images/iso/aura_iso_14001.webp"
+            alt="iso-14001-thumbnail"
+            data-aos="fade-left"
+          />
+          <div class="flex flex-row justify-center items-center align-middle">
+            <span class="semibold text-center"> EN ISO 14001:2015 </span>
+            <iso-icon class="icon iso" />
+          </div>
+        </div>
+        <iso-cert-display
+          v-if="show14001Cert"
+          :images="image14001"
+          @close-lightbox="close14001Cert"
+        />
+        <div
+          class="iso-45001-thumbnail"
+          data-aos="fade-up"
+          data-aos-delay="250"
+          @click="open45001Cert"
+        >
+          <img
+            src="~/assets/images/iso/aura_iso_45001.webp"
+            alt="iso-45001-thumbnail"
+            data-aos="fade-up"
+          />
+          <div class="flex flex-row justify-center items-center align-middle">
+            <span class="semibold text-center"> ISO 45001:2018 </span>
+            <iso-icon class="icon iso" />
+          </div>
+        </div>
+        <iso-cert-display
+          v-if="show45001Cert"
+          :images="image45001"
+          @close-lightbox="close45001Cert"
+        />
       </div>
-      <div
-        data-aos="fade-left"
-        data-aos-delay="250"
-      >
-        <h2 class="heading text-center md:text-left">
-          Our Mission
-        </h2>
+      <div data-aos="fade-left" data-aos-delay="250">
+        <h2 class="heading text-center md:text-left">Our Mission</h2>
         <p class="paragraph">
           Our mission is to provide a complete solution to customer
-          requirements, nurture and maintain ethical values, focus on
-          quality in every business process while fostering Continuous
-          Improvement in our in-house systems.
+          requirements, nurture and maintain ethical values, focus on quality in
+          every business process while fostering Continuous Improvement in our
+          in-house systems.
         </p>
       </div>
-      <div
-        data-aos="fade-right"
-        data-aos-delay="250"
-      >
-        <h2 class="heading text-center md:text-left pt-8">
-          Our Vision
-        </h2>
+      <div data-aos="fade-right" data-aos-delay="250">
+        <h2 class="heading text-center md:text-left pt-8">Our Vision</h2>
         <p class="paragraph">
-          Our vision is to capture a significant market share in the business
-          of metal fabrication and assembly.
+          Our vision is to capture a significant market share in the business of
+          metal fabrication and assembly.
         </p>
       </div>
       <div class="our-team pt-8 flex flex-col md:flex-row">
         <div class="flex flex-col justify-center" data-aos="fade-right">
-          <h2 class="heading text-center md:text-left">
-            Our Team
-          </h2>
+          <h2 class="heading text-center md:text-left">Our Team</h2>
           <p class="paragraph">
             The Core Team of over 75 qualified engineers and technicians, have a
             strong and diverse experience in of design &amp; development,
@@ -234,24 +287,52 @@ onMounted(() => {
           alt="team-image"
           class="md:max-w-1/2 rounded-xl mx-auto md:ml-6 shadow-black shadow-xl"
           data-aos="fade-left"
-        >
+        />
       </div>
     </div>
   </div>
   <section-separator color="text-alt" />
   <div class="bg-alt">
     <div class="container flex-col">
-      <h2 class="heading text-center">
-        How we can help
-      </h2>
-      <div class="flex flex-row flex-wrap items-center justify-center relative mt-8">
-        <about-card :card-image="card1.imageSrc" :content="card1.content" data-aos="fade-up" />
-        <about-card :card-image="card2.imageSrc" :content="card2.content" data-aos="fade-up" />
-        <about-card :card-image="card3.imageSrc" :content="card3.content" data-aos="fade-up" />
-        <about-card :card-image="card4.imageSrc" :content="card4.content" data-aos="fade-up" />
-        <about-card :card-image="card5.imageSrc" :content="card5.content" data-aos="fade-up" />
-        <about-card :card-image="card6.imageSrc" :content="card6.content" data-aos="fade-up" />
-        <about-card :card-image="card7.imageSrc" :content="card7.content" data-aos="fade-up" />
+      <h2 class="heading text-center">How we can help</h2>
+      <div
+        class="flex flex-row flex-wrap items-center justify-center relative mt-8"
+      >
+        <about-card
+          :card-image="card1.imageSrc"
+          :content="card1.content"
+          data-aos="fade-up"
+        />
+        <about-card
+          :card-image="card2.imageSrc"
+          :content="card2.content"
+          data-aos="fade-up"
+        />
+        <about-card
+          :card-image="card3.imageSrc"
+          :content="card3.content"
+          data-aos="fade-up"
+        />
+        <about-card
+          :card-image="card4.imageSrc"
+          :content="card4.content"
+          data-aos="fade-up"
+        />
+        <about-card
+          :card-image="card5.imageSrc"
+          :content="card5.content"
+          data-aos="fade-up"
+        />
+        <about-card
+          :card-image="card6.imageSrc"
+          :content="card6.content"
+          data-aos="fade-up"
+        />
+        <about-card
+          :card-image="card7.imageSrc"
+          :content="card7.content"
+          data-aos="fade-up"
+        />
       </div>
     </div>
   </div>
@@ -261,11 +342,13 @@ onMounted(() => {
 .iso-cert-div {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .iso-9001-thumbnail,
 .iso-3834-thumbnail,
-.iso-1090-thumbnail {
+.iso-1090-thumbnail,
+.iso-14001-thumbnail,
+.iso-45001-thumbnail {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -279,12 +362,16 @@ onMounted(() => {
 }
 .iso-9001-thumbnail:hover,
 .iso-3834-thumbnail:hover,
-.iso-1090-thumbnail:hover {
+.iso-1090-thumbnail:hover,
+.iso-14001-thumbnail:hover,
+.iso-45001-thumbnail:hover {
   color: var(--accent);
 }
 .iso-9001-thumbnail img,
 .iso-3834-thumbnail img,
-.iso-1090-thumbnail img {
+.iso-1090-thumbnail img,
+.iso-14001-thumbnail img,
+.iso-45001-thumbnail img {
   width: 100%;
   height: 100%;
   max-height: 340px;
@@ -293,17 +380,21 @@ onMounted(() => {
 }
 .iso-9001-thumbnail span,
 .iso-3834-thumbnail span,
-.iso-1090-thumbnail span {
-  padding-right: .5rem;
+.iso-1090-thumbnail span,
+.iso-14001-thumbnail span,
+.iso-45001-thumbnail span {
+  padding-right: 0.5rem;
 }
 
 @media (min-width: 768px) {
   .iso-cert-div {
-      flex-direction: row;
+    flex-direction: row;
   }
   .iso-9001-thumbnail,
   .iso-3834-thumbnail,
-  .iso-1090-thumbnail {
+  .iso-1090-thumbnail,
+  .iso-14001-thumbnail,
+  .iso-45001-thumbnail {
     max-width: 50%;
   }
 }
